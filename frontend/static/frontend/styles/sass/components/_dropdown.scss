@@ -1,0 +1,149 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content, .rename {    
+    @include dropdown;
+
+    .element-color {
+        color: $dark-gray;
+        align-items: center;
+
+        i {
+            font-size: 1rem;
+            margin: 0;
+            margin-right: 7px;
+            margin-left: 8px;
+        }
+
+        p {
+            flex: 1;
+        }
+    }
+}
+
+.edit-drpdn {
+
+    .fa-edit {
+        margin-right: 7px;
+    }
+}
+
+.rename { 
+    a {
+        cursor: default;
+        padding: 0px;
+        min-width: 250px;
+
+        &:hover {
+            background-color: white;
+        }
+
+        input {
+            width: 100%;
+            margin: 0px 8px 0px 8px;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+            background: rgba(242, 241, 238, 0.6);
+            caret-color: $dark-gray;
+            color: $dark-gray;
+        }
+    }
+}
+
+.left-aligned {
+    right: 0;
+}
+
+// Color dropdown
+.colors {
+    margin-bottom: 6px;
+    h3 {
+        margin-left: 13px;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+        color: $med-light-gray;
+    }
+
+    .color {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        transition: 0.15s;
+        color: $dark-gray;
+    }
+
+    .check {
+        margin-right: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+.colors-hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.square {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.color:hover {
+    background-color: rgba(55, 53, 47, 0.08);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.color > p {
+    flex: 1;
+}
+
+.element-dropdown {
+    .sub-menu {
+        top: 0;
+        right: -180px;
+    }
+}
+
+// Add element dropdown
+.add-element-drpdn {
+    width: 324px;
+    height: 40vh;
+    overflow: scroll;
+
+    a {
+        align-items: center;
+    }
+
+    .drpdn-text {
+        margin-left: 8px;
+
+        .drpdn-head {
+            font-size: 0.9rem;
+            color: $dark-gray;
+        }
+
+        .drpdn-sub-head {
+            font-size: 0.75rem;
+            color: rgba($dark-gray, 0.6);
+            margin-top: 2px;
+        }
+    }
+
+    .drpdn-icon {
+        box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px;
+        border-radius: 3px;
+        margin-left: 10px;
+        color: $dark-gray;
+        height: 46px;
+        width: 46px;
+        background-color: white;
+    }
+}

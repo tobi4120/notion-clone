@@ -1,0 +1,18 @@
+.element-options {
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+    transition: $transition;
+
+    .add_element, .element-option-icon {
+        @include element-options(1.4rem);
+    }
+}
+
+.page_title {
+
+    .add_element {
+        @include element-options(1.5rem);
+        margin-right: 7px;
+    }
+}

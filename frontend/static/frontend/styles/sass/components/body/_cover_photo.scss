@@ -1,0 +1,198 @@
+// Photo container (shown if photo is on a page)
+.photo-container {
+    margin-bottom: 45px;
+    width: 100%;
+    position: relative;
+
+    .cover-photo {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+        object-position: center 40%;
+    }
+
+    .cover-buttons {
+        position: fixed;
+        right: 0;
+        top: 208px;
+        margin: 15px;
+        margin-right: 125px;
+        background-color: white;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 3px;
+        color: rgba($dark-gray, 0.6);
+        box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+        transition: 0.2s;
+        opacity: 0;
+        display: flex;
+        font-size: 0.8rem;
+
+        .change-cover-button {
+            border-right: 1px solid rgba($dark-gray, 0.09);
+            padding: 4px 6px;
+
+            &:hover {
+                background-color: rgb(239, 239, 238);
+                transition: $transition;
+                border-radius: 3px 0 0 3px;
+            }
+        }
+        
+        .remove-cover-button {
+            padding: 4px 6px;
+
+            &:hover {
+                background-color: rgb(239, 239, 238);
+                transition: $transition;
+                border-radius: 0 3px 3px 0;
+            }
+        }
+    }
+
+    &:hover .cover-buttons {
+        opacity: 100;
+        transition: 0.3s;
+    }
+}
+
+// Photo Dropdown
+.photo-dropdown {
+    position: absolute;
+    right: 0;
+    top: 204px;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 3px;
+    width: 558px;
+    height: 420px;
+    overflow: scroll;
+    background-color: white;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, 
+    rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+    z-index: 2;
+    padding: 10px;
+}
+
+.photo-drpdn-header {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: rgba($dark-gray, 0.6);
+    margin: 10px 0px 5px 8px;
+}
+
+.first-header {
+    margin: 3px 0px 5px 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding: 8px;
+}
+
+.grid-photo {
+    width: 127px;
+    height: 64px;
+    position: relative;
+
+    img {
+        width: 100%;
+        border-radius: 3px;
+        height: 64px;
+        object-fit: cover;
+        object-position: center 40%;
+    }
+}
+
+.img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.2;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
+
+// Add photo Container
+.add-photo-container {
+    opacity: 0;
+    transition: 0.3s;
+    padding-top: 80px;
+    margin-bottom: 5px;
+
+    &:hover {
+        opacity: 100;
+        transition: 0.3s;
+    }
+
+    .add-photo {
+        display: inline-flex;
+        transition: 0.3s;
+        cursor: pointer;
+        align-items: center;
+        padding: 2px 5px;
+        border-radius: 3px;
+        margin-left: 95px;
+
+        &:hover {
+            transition: 0.3s;
+            background-color: $hover-color;
+        }
+
+        .photo-icon {
+            color: rgba($dark-gray, 0.3);
+            font-size: 1.2rem;
+            line-height: 1.2px;
+            margin-right: 5px;
+        }
+        
+        .add-photo-text {
+            color: rgba($medium-gray, 0.4);
+            font-size: $normal-font-size;
+        }
+    }
+}
+
+// Photos
+.nasa_tim_peake_spacewalk {
+    object-position: center 59% !important;
+}
+
+.nasa_robert_stewart_spacewalk_2  {
+    object-position: center 45% !important; 
+}
+
+.met_silk_kashan_carpet {
+    object-position: center 47% !important;
+}
+
+.met_william_morris_1878 {
+    object-position: center 50% !important;
+}
+
+.woodcuts_10 {
+    object-position: center 0% !important;
+}
+
+.woodcuts_15 {
+    object-position: center 35% !important;
+}
+
+.woodcuts_3 {
+    object-position: center 20% !important;
+}
+
+.woodcuts_1 {
+    object-position: center 72% !important;
+}

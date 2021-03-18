@@ -1,0 +1,32 @@
+.page_link {
+    color: $dark-gray;
+    width: 100%;
+
+    i {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-family: san-fran-med, $back-up-fonts;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.16);
+        display: inline;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+.Page_link {
+    margin-top: 2px;
+    align-items: center;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 5px 3px;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}

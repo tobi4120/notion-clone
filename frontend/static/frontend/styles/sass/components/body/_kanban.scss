@@ -1,0 +1,154 @@
+.kanban {
+    margin-bottom: 35px;
+    width: 100%;
+    margin-left: 3px;
+
+    hr {
+        @include hr
+    }
+}
+
+.kanban-title {
+    color: $dark-gray;
+    font-size: 1.3rem;
+    font-family: san-fran-semi, $back-up-fonts;
+    margin-bottom: 7px;
+    width: 100%;
+}
+
+.kanban_groups {
+    display: flex;
+    margin-top: 10px;
+
+    .new-group {
+        button {
+            @include kanabn_button
+        }
+
+        input {
+            @include notion_input;
+        }
+
+        p {
+            min-width: 80px;
+        }
+    }
+}
+
+.current_groups {
+    display: flex;
+}
+
+// Kanban Group
+.kanban_group {
+    padding-right: 16px;
+
+    .kanban-group-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .group-options {
+            color: $medium-gray;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        i:hover {
+            background-color: $hover-color;
+        }
+
+        .group-name-and-card-count {
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+
+        .group-title {
+            padding: 3px;
+
+            &:hover {
+                background-color: $hover-color;
+                border-radius: 3px;
+            }
+
+            p {
+                color: $dark-gray;
+                font-size: $normal-font-size;
+                border-radius: 3px;
+                padding: 1.5px 6px;
+                cursor: pointer;
+            }
+        }
+
+        input {
+            @include notion_input;
+            max-width: 158px;
+        }
+
+        .card-count {
+            color: $medium-gray;
+            font-size: $normal-font-size;
+            margin-left: 10px;
+        }
+    }
+}
+
+.new-card {
+    @include kanabn_button;
+    height: 32px;
+    width: 260px;
+}
+
+// Kanban Card
+.kanban_card {
+    border-radius: 3px;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+    background-color: white;
+    min-height: 40px;
+    width: 260px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+
+    &:hover .close-card {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .card_name {
+        flex: 1;
+        color: $dark-gray;
+        font-family: san-fran-med, $back-up-fonts;
+        white-space: pre-wrap;
+        width: 100%;
+        cursor: text;
+        resize: none;
+        padding: 0px 10px;
+        font-size: $normal-font-size;
+    }
+
+    .untitled {
+        font-family: san-fran-med, $back-up-fonts;
+        opacity: 0.7;
+    }
+
+    .close-card {
+        cursor: pointer;
+        color: $medium-gray;
+        border-radius: 3px;
+        padding: 0px 3px 2px 3px;
+        opacity: 0;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
+
+.Kanban {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}

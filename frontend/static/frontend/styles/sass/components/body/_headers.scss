@@ -1,0 +1,33 @@
+.heading_1 {
+    font-size: 1.8rem;
+    color: $dark-gray;
+    font-family: san-fran-semi, $back-up-fonts;
+    width: 100%;
+    padding: 5px 3px;
+    
+    &::placeholder {
+        color: $medium-gray;
+    }
+}
+
+.Heading_1 {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.heading_2 {
+    font-size: 1.45rem;
+    color: $dark-gray;
+    font-family: san-fran-semi, $back-up-fonts;
+    width: 100%;
+    padding: 5px 3px;
+
+    &::placeholder {
+        color: $medium-gray;
+    }
+}
+
+.Heading_2 {
+    margin-top: 25px;
+    align-items: center;
+}

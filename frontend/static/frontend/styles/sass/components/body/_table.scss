@@ -1,0 +1,460 @@
+.Table {
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table-container {
+    margin-left: 2px;
+}
+
+// Table title
+.table-title {
+    color: $dark-gray;
+    font-size: 1.3rem;
+    font-family: san-fran-semi, $back-up-fonts;
+    margin-bottom: 7px;
+}
+
+// Table head cell
+.table-head {
+    border-top: 1px solid $border-color;
+    padding-right: 5px !important;
+    padding-left: 4px !important;
+    height: 33px !important;
+    align-items: center !important;
+
+    .table-head-icon {
+        color: $medium-gray;
+        align-items: center;
+        display: flex;
+        margin-right: 4px;
+    }
+
+    input {
+        color: $med-light-gray;
+        font-size: $normal-font-size;
+    }
+
+    &:hover .fa-ellipsis-h {
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .fa-ellipsis-h {
+        opacity: 0;
+        transition: 0.3s;
+        color: $medium-gray;
+        padding: 4px;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}
+
+// Table row
+.table-row {
+    .element-options {
+        transition: 0.3s;
+
+        &:hover {
+            transition: 0.3s;
+        }
+    }
+}
+
+// Table cell
+.cell {
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    background-color: white;
+    min-width: 100px;
+    min-height: 33px;
+    position: relative;
+    display: flex;
+    align-items: start;
+    padding: 7px 8px;
+    white-space: normal;
+
+    &:nth-last-child(2) {
+        border-right: none;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+.content {
+    input {
+        font-size: $normal-font-size;
+        color: $dark-gray;
+        font-family: san-fran, $back-up-fonts;
+    }
+}
+
+// Table column dropdown
+.table_dropdown {
+    width: 240px;
+
+    hr {
+        @include hr;
+        margin: 7px 0px;
+    }
+
+    .column-dropdown-header {
+
+        .property-type-title {
+            font-size: 0.7rem;
+            color: $med-light-gray;
+            font-family: san-fran-med, $back-up-fonts;
+            margin: 5px 0px 5px 14px;
+        }
+
+       .property-type-container {
+           display: flex;
+           padding-left: 5px;
+           align-items: center;
+           height: 16px;
+       }
+
+       .property-type {
+           flex: 1;
+       }
+    }
+
+    .table-dropdown-icon {
+        font-size: 1.2rem;
+        align-items: center;
+        display: flex;
+
+        .fa-hashtag {
+            margin: 0;
+            margin-left: 4px;
+            font-size: 0.9rem;
+        }
+    }
+
+    .fa-trash-alt {
+        margin-left: 3px;
+        margin-right: 3px;
+        font-size: 0.9rem;
+    }
+
+    .menu-option {
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    // Property types dropdown
+    .sub-menu {
+        margin-left: 233px;
+        top: 0;
+        width: 150px;
+
+        p {
+            margin-left: 8px;
+        }
+
+        .fa-hashtag {
+            margin: 0;
+            margin-left: 3px;
+            margin-right: 4px;
+            font-size: 0.9rem;
+        }
+    }
+
+    & > a > p, .property-type { 
+        margin: 0; 
+        margin-left: 8px;
+    }
+}
+
+.tableColumn_dropdown > a {
+    font-weight: normal; 
+    display: flex;
+}
+
+.table-row, .table-header {
+    background-color: white;
+    height: 100%;
+    display: flex;
+}
+
+.property-show-more {
+    font-size: 1.1rem;
+}
+
+// Table row dropdown 
+.row-dropdown {
+    width: 120px;
+
+    a {
+        align-items: center;
+    }
+}
+
+// URL 
+.url-cell {
+    position: relative;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    font-size: $normal-font-size;
+    color: $dark-gray;
+
+    input {
+        position: absolute;
+        background-color: white;
+        min-width: 240px;
+        box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
+            rgba(15, 15, 15, 0.2) 0px 9px 24px;
+        padding: 9px 10px;
+        z-index: 1;
+        border-radius: 3px;
+        top: -8px;
+        left: -9px;
+        width: 102.5%;
+    }
+
+    p {
+        cursor: default;
+        text-decoration: underline;
+        text-decoration-color: rgba(55, 53, 47, 0.3);
+        margin: 0;
+        width: 90%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .url-button {
+        color: $medium-gray;
+        position: absolute;
+        top: 1px;
+        right: 0;
+        padding: 0.5px;
+        border-radius: 3px;
+        display: flex;
+        align-items: start;
+        transition: 0.3s;
+        transform: translateY(-5px);
+
+        &:hover {
+            background-color: $hover-color;
+            transition: 0.3s;
+        }
+    }
+}
+
+//Multi-select
+.multi-select {
+    display: flex;
+
+    // Tags shown inside the cell
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tag {
+            @include tag;
+            margin: 0;
+            margin-right: 7px;
+            margin-top: 7px;
+        }
+    }
+}
+
+.multi-select-popup {
+    position: absolute;
+    background-color: white;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    min-width: 300px;
+    z-index: 10;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
+        rgba(15, 15, 15, 0.2) 0px 9px 24px;
+    border-radius: 5px;
+
+    // Tag input to create a new tag or select an existing one
+    .tag-input-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2px 9px 8px 9px;
+        box-shadow: rgba(55, 53, 47, 0.16) 0px -1px inset;
+        background-color:rgba(242, 241, 238, 0.6);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        .tag {
+            @include tag;
+
+            .close {
+                color: rgba($dark-gray, 0.6);
+                font-size: 1rem;
+            }
+        }
+
+        input {
+            border: none;
+            flex-grow: 1;
+            width: 50px;
+            background: none;
+            margin-top: 5px;
+            height: 21px;
+
+            &::placeholder {
+                color: $medium-gray;
+            }
+
+            &:focus {
+                outline: none
+            }
+        }   
+    }
+
+    // Menu that shows all existing tags
+    .tag-options {
+        margin-bottom: 8px;
+
+        .tag-option-title {
+            font-size: 0.75rem;
+            color: $med-light-gray;
+            font-family: san-fran-med, $back-up-fonts;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .tag-option {
+            display: flex;
+            background-color: white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(55, 53, 47, 0.08);
+            }
+
+            &:hover .tag-elipse {
+                opacity: 100;
+                transition: 0.3s;
+            }
+            
+            .tag {
+                @include tag;
+                margin: 0;
+                margin-left: 15px;
+            }
+        }
+
+        .tag-option-dropdown {
+            position: absolute;
+            background-color: white;
+            border: 1px solid lightgray;
+            right: -10%;
+            border-radius: 5px;
+            z-index: 2;
+            width: 190px;
+            box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+            cursor: default;
+
+            input {
+                margin: 10px;
+                width: 90%;
+                @include notion_input;
+            }
+
+            hr {
+                @include hr;
+            }
+        }
+    }
+}
+
+.span-input-tag, .span-tag {
+    max-width: 235px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.tag > .close {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-elipse {
+    position: absolute;
+    top: 0;
+    transform: translateY(12%);
+    right: 0;
+    margin-right: 15px;
+    opacity: 0;
+    transition: 20ms ease-in 0s;
+    padding: 5px;
+    color: rgba(55, 53, 47, 0.4);
+}
+
+.tag-elipse:hover {
+    background-color: rgba(55, 53, 47, 0.08);
+    border-radius: 3px;
+    transition: 20ms ease-in 0s;
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    cursor: default;
+
+    z-index: 1;
+}
+// Date
+.table-date {
+    height: 16.626px;
+
+    input {
+        padding: 0px;
+    }
+}
+
+// Column resize
+.col-reSize {
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: rgba(46, 170, 220, 0);
+    cursor: col-resize;
+    right: 0;
+    transition: 200ms ease-out 0s;
+}
+
+.col-reSize:hover {
+    background-color: rgba(46, 170, 220, 0.8);
+    transition: 200ms ease-out 0s;
+}
+
+// Text
+.table-text-input {
+    overflow: hidden;
+    width: 100%;
+    resize: none;
+    color: $dark-gray;
+    font-size: $normal-font-size;
+    font-family: san-fran, $back-up-fonts;
+}

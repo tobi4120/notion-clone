@@ -1,0 +1,74 @@
+.semi-transparent-bg {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    justify-content: center;
+}
+
+.modal {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px 30px;
+    z-index: 10;
+    border-radius: 3px;
+    width: 336px;
+    color: $dark-gray;
+    background-color: white;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 5px 10px, 
+    rgba(15, 15, 15, 0.2) 0px 15px 40px;
+    overflow-y: scroll;
+
+    p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        color: $dark-gray;
+        font-weight: 500;
+        font-family: san-fran, $back-up-fonts;
+    }
+
+    button {
+        display: block;
+        border: none;
+        background: none;
+        margin: auto;
+        height: 32px;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 8px;
+        font-size: $normal-font-size;
+    }
+
+    .delete-btn {
+        color: rgb(235, 87, 87);
+        border: 1px solid rgba(235, 87, 87, 0.5);
+
+        &:hover {
+            background: rgba(235, 87, 87, 0.1);
+        }
+    }
+
+    .cancel-btn {
+        border: 1px solid rgba($dark-gray, 0.16);
+
+        &:hover {
+            background: rgba($dark-gray, 0.08);
+        }
+    }
+}
+
+.quick-find-modal {
+    width: 600px;
+    padding: 0;
+    top: 35%;
+}

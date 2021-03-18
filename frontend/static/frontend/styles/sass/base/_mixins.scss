@@ -1,0 +1,125 @@
+@mixin menu-item {
+    display: flex;
+    align-items: center;
+    padding: $menu-padding;
+    padding-top: 6.25px;
+    padding-bottom: 6.25px;
+    cursor: pointer;
+
+    i {
+        color: $medium-gray;
+        margin-right: 10px;
+        font-size: $normal-font-size;
+    }
+
+    p {
+        color: $med-light-gray;
+        font-size: $normal-font-size;
+        font-family: san-fran-med, $back-up-fonts;
+    }
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+@mixin dropdown {
+    position: absolute;
+    border-radius: 3px;
+    background-color: white;
+    font-size: $normal-font-size;
+    z-index: 10;
+    min-width: 180px;
+    box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
+    rgba(15, 15, 15, 0.2) 0px 9px 24px;
+    padding: 6px 0px 6px 0px;
+
+    a, .dropdown-option {
+        color: $dark-gray;
+        padding: 6px 6px;
+        display: flex;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+
+    i {
+        margin: 0px 10px 0px 8px;
+        color: $dark-gray;
+        font-size: 1rem;
+    }
+}
+
+@mixin element-options($font-size) {
+    color: rgba($dark-gray, 0.3);
+    font-size: $font-size;
+    border-radius: 3px;
+    display: flex;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $hover-color;
+        transition: 0.3s;
+    }  
+}
+
+@mixin notion_input {
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: $dark-gray;
+    font-size: $normal-font-size;
+    background-color: rgba(242, 241, 238, 0.6);
+    border: none;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+
+    &:focus {
+        border: 1px solid rgb(46, 170, 220);
+        box-shadow: 0px 0px 0px 2.5px rgba(46, 170, 220, 0.4);
+    }
+}
+
+@mixin kanabn_button {
+    border: none;
+    background-color: white;
+    font-size: $normal-font-size;
+    color: $medium-gray;
+    cursor: pointer;
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    span {
+        font-size: 1.3rem;
+        height: 20.8px;
+        margin-right: 5px;
+    }
+}
+
+@mixin hr {
+    background:rgb(223, 223, 222);
+    height:1px;
+    border:none;
+}
+
+@mixin tag {
+    color: $dark-gray;
+    font-size: $normal-font-size;
+    margin-top: 5px;
+    margin-right: 7px;
+    padding: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    max-width: 235px;
+    overflow: hidden;
+}

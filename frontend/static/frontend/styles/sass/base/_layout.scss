@@ -1,0 +1,30 @@
+@font-face {
+    src: url(../../fonts/SF-Pro.ttf);
+    font-family: san-fran;
+}
+
+@font-face {
+    src: url(../../fonts/SF-Pro-Text-Medium.otf);
+    font-family: san-fran-med;
+}
+
+@font-face {
+    src: url(../../fonts/SF-Pro-Text-Bold.otf);
+    font-family: san-fran-bold;
+}
+
+@font-face {
+    src: url(../../fonts/SF-Pro-Text-Semibold.otf);
+    font-family: san-fran-semi;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: san-fran, Helvetica, sans-serif;
+
+    &:focus {
+        outline: 0;
+    }
+}

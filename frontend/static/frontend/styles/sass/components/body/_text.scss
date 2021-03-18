@@ -1,0 +1,28 @@
+.text-element {
+    width: 100%;
+
+    .text {
+        resize: none;
+        border: none;
+        font-size: 1rem;
+        color: $dark-gray;
+        width: 100%;
+        line-height: 1.4;
+        background: none;
+        align-items: center;
+        display: flex;
+        padding: 5px 3px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.Text {
+    margin-bottom: 7px;
+
+    .element-options {
+        margin-top: 5px;
+    }
+}
