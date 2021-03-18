@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="../../static/frontend/styles/css/index.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/styles/css/index.css' %}">
     <link rel="icon" type="image/png" href="../../static/frontend/Notion_app_logo.png"/>
     <script src="https://kit.fontawesome.com/f8f9643d98.js" crossorigin="anonymous"></script>
     <title>Notion</title>
@@ -12,6 +12,6 @@
   <body>
     <div id="root"></div>
     {% load static %}
-    <script src="../../static/frontend/main.js"></script>
+    <script src="{% static 'frontend/main.js' %}"></script>
   </body>
 </html>
