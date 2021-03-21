@@ -97,6 +97,7 @@ DATABASES = {
         'PASSWORD': env('database_password'),
         'HOST': 'database-1.cnjiipmf4v9e.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
+        
     }
 }
 
