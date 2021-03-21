@@ -235,3 +235,5 @@ sketch
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/react,vscode,django,python
+.env
+.env
