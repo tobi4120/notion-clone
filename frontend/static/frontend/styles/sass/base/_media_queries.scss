@@ -127,4 +127,18 @@
         }
     }
 
+    // Login and sign up 
+    .logo {
+        margin-left: 30px;
+    }
+
+}
+
+// Login and sign up -- below 330px
+@media (max-width: 330px) {
+    .form {
+        form {
+            width: 90%;
+        }
+    }
 }

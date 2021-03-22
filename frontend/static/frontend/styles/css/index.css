@@ -1592,4 +1592,10 @@ a {
     .add-photo-container .add-photo {
       margin: 0; }
   .table-head .fa-ellipsis-h {
-    opacity: 1; } }
+    opacity: 1; }
+  .logo {
+    margin-left: 30px; } }
+
+@media (max-width: 330px) {
+  .form form {
+    width: 90%; } }
