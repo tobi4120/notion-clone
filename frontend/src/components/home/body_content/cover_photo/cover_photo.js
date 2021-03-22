@@ -116,7 +116,8 @@ function CoverPhoto(props) {
                                 props.remove_cover_image(props.page.id)}>
                                 Remove cover
                             </div>
-                        </div>}
+                        </div>
+                    }
 
                     {/* Choose a photo dropdown */}
                     {dropdown_shown && 
