@@ -1,0 +1,40 @@
+.empty-page-text {
+    margin-left: 50px;
+    color: rgba(55, 53, 47, 0.4);
+
+    div:first-child {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+        margin-left: 5px;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.templates-modal {
+    width: 40%;
+    padding: 10px 0px;
+
+    .template-option {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        span {
+            font-size: 1.4rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}

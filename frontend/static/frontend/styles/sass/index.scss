@@ -11,9 +11,10 @@
 @import "components/_loader";
 
     // Body
-    @import "components/body/_body-header";
-    @import "components/body/_cover_photo";
     @import "components/body/_general";
+    @import "components/body/_body-header";
+    @import "components/body/templates";
+    @import "components/body/_cover_photo";
     @import "components/body/_element_options";
     @import "components/body/_kanban";
     @import "components/body/_colors";

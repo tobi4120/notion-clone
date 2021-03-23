@@ -447,6 +447,107 @@
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.side-by-side {
+  display: flex;
+  align-items: flex-start; }
+
+.body {
+  height: 100vh;
+  width: auto; }
+  .body[hide_menu_animation='1'] {
+    animation-name: body-full-width;
+    animation-duration: .4s; }
+  .body[show_menu_animation='1'] {
+    animation-name: body-condensed;
+    animation-duration: .4s; }
+
+.body-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  width: 100%; }
+
+.body-content {
+  padding-left: 50px;
+  padding-bottom: 200px;
+  width: 100%; }
+
+.test {
+  height: 90%; }
+
+.page_title {
+  margin-left: 19px;
+  color: #37352f;
+  font-size: 1.21rem;
+  margin-bottom: 33px; }
+  .page_title h1 {
+    font-family: san-fran-bold, "Helvetica, sans-serif"; }
+
+.element {
+  display: flex; }
+
+.first_child {
+  margin-top: 0px !important; }
+
+.show-menu-btn {
+  cursor: pointer; }
+
+.pointer {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+.add_element {
+  font-size: 1.7rem;
+  cursor: pointer; }
+
+.option {
+  transition: 0.3s;
+  display: flex; }
+  .option:hover {
+    opacity: 1;
+    transition: 0.3s; }
+
+.opacity_1 {
+  opacity: 1; }
+
+.width_100 {
+  width: 100%; }
+
+.user_input {
+  border: none; }
+  .user_input:focus {
+    outline: none; }
+
+.fa-ellipsis-h {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  cursor: pointer; }
+
+.e_container {
+  width: 100%; }
+
+.inline {
+  display: inline; }
+
+.flex_1 {
+  flex: 1; }
+
+.group {
+  display: flex;
+  max-width: 90%; }
+
+.column {
+  height: 100%;
+  width: 100%; }
+
+.empty {
+  flex-grow: 1; }
+
+.dragging-over {
+  box-shadow: 0px 0px 0px 3px rgba(45, 170, 219, 0.3); }
+
 .body-header {
   display: flex;
   padding: 12px;
@@ -479,6 +580,33 @@
     display: inline;
     margin-left: 2px;
     color: rgba(55, 53, 47, 0.4); }
+
+.empty-page-text {
+  margin-left: 50px;
+  color: rgba(55, 53, 47, 0.4); }
+  .empty-page-text div:first-child {
+    margin-bottom: 10px; }
+  .empty-page-text a {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px; }
+    .empty-page-text a i {
+      margin-right: 5px; }
+
+.templates-modal {
+  width: 40%;
+  padding: 10px 0px; }
+  .templates-modal .template-option {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer; }
+    .templates-modal .template-option:hover {
+      background-color: rgba(55, 53, 47, 0.08); }
+    .templates-modal .template-option span {
+      font-size: 1.4rem;
+      margin-right: 5px;
+      margin-bottom: 5px; }
 
 .photo-container {
   margin-bottom: 45px;
@@ -637,107 +765,6 @@
 
 .woodcuts_1 {
   object-position: center 72% !important; }
-
-.side-by-side {
-  display: flex;
-  align-items: flex-start; }
-
-.body {
-  height: 100vh;
-  width: auto; }
-  .body[hide_menu_animation='1'] {
-    animation-name: body-full-width;
-    animation-duration: .4s; }
-  .body[show_menu_animation='1'] {
-    animation-name: body-condensed;
-    animation-duration: .4s; }
-
-.body-container {
-  height: 100%;
-  display: grid;
-  grid-template-rows: auto auto 1fr;
-  width: 100%; }
-
-.body-content {
-  padding-left: 50px;
-  padding-bottom: 200px;
-  width: 100%; }
-
-.test {
-  height: 90%; }
-
-.page_title {
-  margin-left: 19px;
-  color: #37352f;
-  font-size: 1.21rem;
-  margin-bottom: 33px; }
-  .page_title h1 {
-    font-family: san-fran-bold, "Helvetica, sans-serif"; }
-
-.element {
-  display: flex; }
-
-.first_child {
-  margin-top: 0px !important; }
-
-.show-menu-btn {
-  cursor: pointer; }
-
-.pointer {
-  cursor: pointer; }
-
-a {
-  text-decoration: none; }
-
-.add_element {
-  font-size: 1.7rem;
-  cursor: pointer; }
-
-.option {
-  transition: 0.3s;
-  display: flex; }
-  .option:hover {
-    opacity: 1;
-    transition: 0.3s; }
-
-.opacity_1 {
-  opacity: 1; }
-
-.width_100 {
-  width: 100%; }
-
-.user_input {
-  border: none; }
-  .user_input:focus {
-    outline: none; }
-
-.fa-ellipsis-h {
-  font-size: 0.8rem;
-  margin-right: 5px;
-  cursor: pointer; }
-
-.e_container {
-  width: 100%; }
-
-.inline {
-  display: inline; }
-
-.flex_1 {
-  flex: 1; }
-
-.group {
-  display: flex;
-  max-width: 90%; }
-
-.column {
-  height: 100%;
-  width: 100%; }
-
-.empty {
-  flex-grow: 1; }
-
-.dragging-over {
-  box-shadow: 0px 0px 0px 3px rgba(45, 170, 219, 0.3); }
 
 .element-options {
   display: flex;
