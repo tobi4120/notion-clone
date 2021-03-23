@@ -71,16 +71,32 @@
         overflow-x: scroll;
     }
 
+    .add_element {
+        opacity: 1 !important;
+    }
+
     .element-options {
         margin-left: 10px;
+
         .dropdown {
+            position: static;
+
+            .dropdown-content {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) !important;
+            }
+
             .dropdown_parent {
+
                 .add_element, .element-option-icon {
                     opacity: 1 !important;
                 }
             }
         }
     }
+
 
     // Cover Photo
     .photo-container {
@@ -121,9 +137,53 @@
     }
 
     // Table
-    .table-head {
-        .fa-ellipsis-h {
-            opacity: 1;
+    .Table {
+        padding-bottom: 250px;
+        margin-bottom: -250px;
+
+        .table-head {
+            .fa-ellipsis-h {
+                opacity: 1;
+            }
+        }
+    
+        .table-row {
+            .element-options {
+                opacity: 1 !important;
+                position: relative;
+            }
+        }
+
+        .dropdown-content {
+            transform: translate(0) !important;
+        }
+
+        .row-dropdown {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-80%, -50%) !important;
+        }
+
+        .sub-menu {
+            margin-left: 0;
+        }
+
+        .multi-select-popup {
+            transform: translateX(0) !important;
+
+            .tag-options {
+
+                .tag-option-dropdown {
+                    right: 0;
+                }
+            }
+
+            .tag-option {
+                i {
+                    opacity: 1;
+                }
+            }
         }
     }
 
