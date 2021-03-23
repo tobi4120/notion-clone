@@ -10,13 +10,13 @@ const DropdownContentPlaceholder = React.forwardRef((props, ref) => {
             props.set_transform(`translateY(${props.translate_Y || '-95%'})`) 
 
             // Check if dropdown is past the width of the window size
-            if (rect.right > window.innerWidth || window.innerWidth - rect.bottom < 10) {
+            if (rect.right > window.innerWidth) {
                 props.set_transform(`translateY(${props.translate_Y || '-95%'}) translateX(${props.translate_X || '-20%'})`)
             }
         } else {
 
             // Check if dropdown is past the width of the window size
-            if (rect.right > window.innerWidth || window.innerWidth - rect.bottom < 10) {
+            if (rect.right > window.innerWidth) {
                 props.set_transform(`translateX(${props.translate_X || '-20%'})`)
             }
         }

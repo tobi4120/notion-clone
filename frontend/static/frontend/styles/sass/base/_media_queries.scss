@@ -65,10 +65,18 @@
         padding-left: 0;
     }
 
+    .group {
+        display: block;
+    }
+
     .element {
         width: 100vw;
         max-width: 100%;
         overflow-x: scroll;
+    }
+
+    .add-element-drpdn {
+        transform: translateX(0%) !important;
     }
 
     .add_element {
@@ -97,9 +105,10 @@
         }
     }
 
-
     // Cover Photo
     .photo-container {
+        position: relative;
+
         .cover-buttons {
             opacity: 1;
             position: absolute;
@@ -116,7 +125,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) !important;
-        width: 100%
+        width: 90%
     }
 
     .grid {
@@ -140,6 +149,10 @@
     .Table {
         padding-bottom: 250px;
         margin-bottom: -250px;
+
+        .table {
+            margin-bottom: 30px;
+        }
 
         .table-head {
             .fa-ellipsis-h {
@@ -184,6 +197,16 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+
+    // Kanban
+    .Kanban {
+        padding-bottom: 250px;
+        margin-bottom: -250px;
+
+        .dropdown-content {
+            transform: translate(-88%, 0) !important
         }
     }
 

@@ -482,15 +482,23 @@
 
 .photo-container {
   margin-bottom: 45px;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
+  .photo-container .photo-container-placeholder {
+    background-color: green;
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .photo-container .photo-container-placeholder .anchor {
+      position: relative; }
   .photo-container .cover-photo {
     width: 100%;
     height: 30vh;
     object-fit: cover;
     object-position: center 40%; }
   .photo-container .cover-buttons {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 208px;
     margin: 15px;
@@ -525,7 +533,7 @@
 .photo-dropdown {
   position: absolute;
   right: 0;
-  top: 204px;
+  top: 245px;
   margin-right: 15px;
   background-color: white;
   border-radius: 3px;
@@ -1560,10 +1568,14 @@ a {
     overflow-x: hidden; }
   .body-content {
     padding-left: 0; }
+  .group {
+    display: block; }
   .element {
     width: 100vw;
     max-width: 100%;
     overflow-x: scroll; }
+  .add-element-drpdn {
+    transform: translateX(0%) !important; }
   .add_element {
     opacity: 1 !important; }
   .element-options {
@@ -1577,20 +1589,22 @@ a {
         transform: translate(-50%, -50%) !important; }
       .element-options .dropdown .dropdown_parent .add_element, .element-options .dropdown .dropdown_parent .element-option-icon {
         opacity: 1 !important; }
-  .photo-container .cover-buttons {
-    opacity: 1;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    margin: 0; }
+  .photo-container {
+    position: relative; }
+    .photo-container .cover-buttons {
+      opacity: 1;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      margin: 0; }
   .photo-dropdown {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
-    width: 100%; }
+    width: 90%; }
   .grid {
     grid-template-columns: auto auto; }
     .grid .grid-photo {
@@ -1603,6 +1617,8 @@ a {
   .Table {
     padding-bottom: 250px;
     margin-bottom: -250px; }
+    .Table .table {
+      margin-bottom: 30px; }
     .Table .table-head .fa-ellipsis-h {
       opacity: 1; }
     .Table .table-row .element-options {
@@ -1623,6 +1639,11 @@ a {
         right: 0; }
       .Table .multi-select-popup .tag-option i {
         opacity: 1; }
+  .Kanban {
+    padding-bottom: 250px;
+    margin-bottom: -250px; }
+    .Kanban .dropdown-content {
+      transform: translate(-88%, 0) !important; }
   .logo {
     margin-left: 30px; } }
 

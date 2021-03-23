@@ -125,9 +125,10 @@ function CoverPhoto(props) {
                             page={props.page} 
                             add_cover_image={props.add_cover_image}
                             set_dropdown={set_dropdown} />}
-                </div>:
-
-                // Else show add photo button
+                </div>
+            
+            // Else show add photo button
+            :
                 <div className="add-photo-container">
                     <div className="add-photo" onClick={() => props.add_cover_image(props.page.id, 
                         Object.keys(photos)[rand_num])}>

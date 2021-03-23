@@ -2,7 +2,19 @@
 .photo-container {
     margin-bottom: 45px;
     width: 100%;
-    position: relative;
+
+    .photo-container-placeholder {
+        background-color: green;
+        height: 30vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .anchor {
+            position: relative;
+        }
+    }
 
     .cover-photo {
         width: 100%;
@@ -12,7 +24,7 @@
     }
 
     .cover-buttons {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 208px;
         margin: 15px;
@@ -60,7 +72,7 @@
 .photo-dropdown {
     position: absolute;
     right: 0;
-    top: 204px;
+    top: 245px;
     margin-right: 15px;
     background-color: white;
     border-radius: 3px;
