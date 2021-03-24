@@ -1,3 +1,4 @@
+import { CardActions } from '@material-ui/core';
 import axios from 'axios';
 const regeneratorRuntime = require("regenerator-runtime");
 import { getCookie } from './index'
@@ -11,9 +12,9 @@ axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
 // Create a kanban
-export const create_kanban = async (element_id) => {
+export const create_kanban = async (element_id, optional_text) => {
     const newKanban = await axios.post('/api_kanbans/', {
-        name: "",
+        name: optional_text || "",
         page_element: element_id,
     }, {headers: headers});
 
@@ -83,7 +84,7 @@ export const delete_group = (kanban_id, group_id) =>
     };
 
 // Add kanban card
-export const add_card = (kanban_group, kanban, group_kanbanCards) => 
+export const add_card = (kanban_group, kanban, group_kanbanCards, card_desc) => 
     async (dispatch) => {
         let order_on_group = 1
 
@@ -94,7 +95,7 @@ export const add_card = (kanban_group, kanban, group_kanbanCards) =>
 
         // POST Request
         const response = await axios.post(`/api_kanban_cards/`, {
-            description: "",
+            description: card_desc || "",
             order_on_group: order_on_group,
             kanban_group: kanban_group
         }, {headers: headers});
