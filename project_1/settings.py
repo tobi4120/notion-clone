@@ -12,11 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path, os
 from datetime import timedelta
-import environ
-
-# Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
@@ -48,7 +43,6 @@ INSTALLED_APPS = [
     'knox',
     'corsheaders',
     'frontend',
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -91,18 +85,10 @@ WSGI_APPLICATION = 'project_1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('database_name'),
-        'USER': env('database_user'),
-        'PASSWORD': env('database_password'),
-        'HOST': 'database-1.cnjiipmf4v9e.us-east-2.rds.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 
 
 # Password validation

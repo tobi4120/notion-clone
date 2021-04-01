@@ -928,7 +928,7 @@ a {
     width: 100%;
     cursor: text;
     resize: none;
-    padding: 0px 10px;
+    padding: 10px;
     font-size: 0.875rem; }
   .kanban_card .untitled {
     font-family: san-fran-med, "Helvetica, sans-serif";

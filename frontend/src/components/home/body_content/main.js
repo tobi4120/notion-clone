@@ -16,6 +16,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import Loader from '../../home/loader'
 import CoverPhoto from './cover_photo/cover_photo'
 import Column from './column';
+import Templates from "./templates";
 
 class Main extends Component {
     state = {
@@ -24,6 +25,7 @@ class Main extends Component {
         option_opacity: 0, 
         isMenuOpen: false,
         page_elements: {},
+        templates_modal: false,
     }
 
     componentDidMount() { 
@@ -166,6 +168,16 @@ class Main extends Component {
         this.props.change_order_patchReq(this.props.selected_page.page_elements, this.props.selected_page);
     }
 
+    // Close template modal
+    close_template_modal = () => {
+        this.setState({ templates_modal: false })
+    }
+
+    // Toggle page loading
+    isLoaded = (status) => {
+        this.setState({ isLoaded: status })
+    }
+
     render() {
         if (this.state.isLoaded === false) {
             return <Loader />
@@ -219,6 +231,30 @@ class Main extends Component {
 
                             <h1 className="inline">{this.props.selected_page.name}</h1>
                         </div>
+
+                        {/* Templates */}
+                        {this.props.selected_page.page_elements[0][0].length === 0 && 
+                            <div className="empty-page-text">
+                                <div>
+                                    Hover over the page title and click the plus sign to add elements to the page.
+                                </div>
+
+                                <div>
+                                    You can also choose a page layout from one of our pre-designed 
+                                    <a onClick={() => this.setState({ templates_modal: true })}>
+                                        <i className="fas fa-shapes"></i>
+                                        templates.
+                                    </a>
+                                </div>
+                            </div>
+                        }
+
+                        {this.state.templates_modal === true && 
+                                <Templates 
+                                    page={this.props.selected_page}
+                                    close_template_modal={this.close_template_modal}
+                                    isLoaded={this.isLoaded} />
+                        }
 
                         {/* Columns */}
                         <DragDropContext onDragEnd={this.onDragEnd}>

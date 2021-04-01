@@ -62,7 +62,7 @@ export const select_page = (page_id) =>
 
 // Create page element
 export const create_element = (current_index, page_id, element_type, order_on_page, element_above_order,
-    element, link_pageId) => 
+    element, link_pageId, optional_text) => 
     async (dispatch) => {
 
         // Get the order for the element on the page
@@ -89,19 +89,19 @@ export const create_element = (current_index, page_id, element_type, order_on_pa
             response.data.heading_1[0] = heading_1_response
 
         } else if (element_type === "Heading_2") {
-            const heading_2_response = await create_H2(response.data.id)
+            const heading_2_response = await create_H2(response.data.id, optional_text)
 
             // Add the heading_2 to the newly created element
             response.data.heading_2[0] = heading_2_response
 
         } else if (element_type === "Text") {
-            const text_response = await create_text(response.data.id)
+            const text_response = await create_text(response.data.id, optional_text)
 
             // Add the text to the newly created element
             response.data.text[0] = text_response
 
         } else if (element_type === "Kanban") {
-            const kanban_response = await create_kanban(response.data.id)
+            const kanban_response = await create_kanban(response.data.id, optional_text)
 
             // Add the kanban to the newly created element
             response.data.kanban[0] = kanban_response
@@ -128,6 +128,7 @@ export const create_element = (current_index, page_id, element_type, order_on_pa
         response.current_index = current_index
 
         dispatch({ type: 'CREATE_ELEMENT', payload: response });
+        return response
     };
 
 // Delete page element
@@ -193,9 +194,9 @@ export const edit_H1 = (heading_id, heading_text) =>
     };
 
 // Create a Heading 2
-const create_H2 = async (element_id) => {
+const create_H2 = async (element_id, optional_text) => {
     const response = await axios.post('/api_Heading_2s/', {
-        heading_text: "",
+        heading_text: optional_text || "",
         page_element: element_id,
     }, {headers: headers});
 
@@ -211,9 +212,9 @@ export const edit_H2 = (heading_id, heading_text) =>
     };
 
 // Create a Text element
-const create_text = async (element_id) => {
+const create_text = async (element_id, optional_text) => {
     const response = await axios.post('/api_Texts/', {
-        text: "",
+        text: optional_text || "",
         page_element: element_id,
     }, {headers: headers});
 
