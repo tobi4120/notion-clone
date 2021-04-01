@@ -7,6 +7,7 @@ import { edit_page_name, edit_name_onChange } from "../../../actions/page_menu";
 import { create_element } from "../../../actions";
 import { add_card } from "../../../actions/kanban";
 import { create_template_table } from "../../../actions/templates";
+import { add_tag, add_tag_to_cell } from "../../../actions/table";
 
 function Templates(props) {
     const node = useRef();
@@ -101,7 +102,29 @@ You can also swap the order of groups by clicking and dragging the group title.`
         await props.add_cover_image(props.page.id, "red")
 
         // Create a table 
-        await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "job_apps")
+        let table = await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "job_apps")
+
+        // Add tags to "Position" and "Status" columns
+        table = table.data.table[0]
+
+            // Position column
+            const tag  = await props.add_tag("Full Stack Developer", table.rows[0].data[1], table.rows[1].data[1].id, 0, 0, 1, table, "pink")
+
+            await props.add_tag("Frontend Developer", table.rows[0].data[1], table.rows[2].data[1].id, 0, 1, 1, table, "yellow")
+
+            await props.add_tag("Backend Developer", table.rows[0].data[1], table.rows[3].data[1].id, 0, 2, 1, table, "grey")
+
+            await props.add_tag_to_cell(tag.data, table.rows[4].data[1].id, 0, 3, 1, { className: "tag-option" }, table)
+
+            // Status column
+            await props.add_tag("Received offer!", table.rows[0].data[2], table.rows[1].data[1].id, 0, 0, 2, table, "green")
+
+            await props.add_tag("Interview scheduled", table.rows[0].data[2], table.rows[2].data[1].id, 0, 1, 2, table, "brown")
+
+            await props.add_tag("Application sent", table.rows[0].data[2], table.rows[3].data[1].id, 0, 2, 2, table, "orange")
+
+            await props.add_tag("Rejected", table.rows[0].data[2], table.rows[4].data[1].id, 0, 3, 2, table, "red")
+
 
         // Change page to "loaded"
         props.isLoaded(true)
@@ -133,4 +156,6 @@ export default connect(null, {
     create_element,
     add_card,
     create_template_table,
+    add_tag, 
+    add_tag_to_cell,
 })(Templates);

@@ -32,7 +32,13 @@ export const create_template_table = (current_index, page_id, element_type, orde
             column: element.column,
         }, {headers: headers});
 
-        const Table_response = await create_Table(response.data.id)
+        let Table_response = null
+
+        if (table_type === "travel") {
+            Table_response = await create_Table(response.data.id)
+        } else if (table_type === "job_apps") {
+            Table_response = await create_jobs_Table(response.data.id)
+        }
 
         // Add the table to the newly created element
         response.data.table[0] = Table_response
@@ -52,6 +58,18 @@ const create_Table = async (element_id) => {
     }, {headers: headers});
 
     response.data.rows = await createRows(5, response.data.id)
+
+    return response.data
+}
+
+// Create jobs table
+const create_jobs_Table = async (element_id) => {
+    const response = await axios.post('/api_tables/', {
+        page_element: element_id,
+        name: "Job Applications"
+    }, {headers: headers});
+
+    response.data.rows = await create_jobs_Rows(5, response.data.id)
 
     return response.data
 }
@@ -91,6 +109,59 @@ const createRows = async (rows, table_id) => {
             {"content": "Tibidabo Park", "type": "Text"}, {"content": "2021-07-5T18:00:00Z", "type": "Date"}, {"content": "Plaça del Tibidabo, 3, 4, 08035 Barcelona, Spain", "type": "Text"}, 
             {"content": "https://www.tibidabo.cat/en/home", "type": "URL"}, {"content": "Go to the top of Tibidabo Cathedral - amazing 360 views!", "type": "Text"}
         ],
+    ]
+
+    while (rowCount <= rows) {
+        const response = await axios.post(`/api_table_rows/`, {
+            table: table_id,
+            order: rowCount
+        }, {headers: headers});
+
+        response.data.data = await createData(5, response.data.id, rowCount, row_data[rowCount - 1])
+        
+        rows_array.push(response.data)
+
+        rowCount++
+    }
+    return rows_array
+}
+
+// Add rows to newly created table
+const create_jobs_Rows = async (rows, table_id) => {
+    let rowCount = 1
+    let rows_array = []
+    const row_data = [
+
+        // Header row
+        [
+            {"content": "Company", "type": "Text"}, {"content": "Position", "type": "Multi_select"}, {"content": "Status", "type": "Multi_select"}, 
+            {"content": "Job Description", "type": "URL"}, {"content": "Comments", "type": "Text"}
+        ],
+
+        // Row 2
+        [
+            {"content": "Notion", "type": "Text"}, {"content": null, "type": "Multi_select"}, {"content": null, "type": "Multi_select"}, 
+            {"content": "https://notion.so/jobs", "type": "URL"}, {"content": "Call Ada to thank her for the referral!", "type": "Text"}
+        ],
+
+        // Row 3
+        [
+            {"content": "Acme, Inc.", "type": "Text"}, {"content": null, "type": "Multi_select"}, {"content": null, "type": "Multi_select"}, 
+            {"content": "https://acmecorp.com/careers", "type": "URL"}, {"content": null, "type": "Text"}
+        ],
+
+        // Row 4
+        [
+            {"content": "LexCorp", "type": "Text"}, {"content": null, "type": "Multi_select"}, {"content": null, "type": "Multi_select"}, 
+            {"content": "https://lexcorp.com/about", "type": "URL"}, {"content": "Follow up with Lois' friend who works there.", "type": "Text"}
+        ],
+
+        // Row 5
+        [
+            {"content": "Vought International", "type": "Text"}, {"content": null, "type": "Multi_select"}, {"content": null, "type": "Multi_select"}, 
+            {"content": "https://vought.com/jobs", "type": "URL"}, {"content": "Looking for more years of experience.", "type": "Text"}
+        ],
+        
     ]
 
     while (rowCount <= rows) {

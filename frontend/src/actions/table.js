@@ -265,7 +265,7 @@ export const add_tag_to_cell = (tag, data_id, table_index, row_index, col_index,
     }
 
 // Add tag (applies to all cells in column)
-export const add_tag = (tag_name, table_head, cell_id, table_index, row_index, col_index, table) =>
+export const add_tag = (tag_name, table_head, cell_id, table_index, row_index, col_index, table, color) =>
     async(dispatch) => {
 
         // If tag already exists select it. Do not create another one
@@ -288,12 +288,14 @@ export const add_tag = (tag_name, table_head, cell_id, table_index, row_index, c
 
         const response = await axios.post('api_tags/', {
             name: tag_name,
-            color: colors[num],
+            color: color || colors[num],
             table_head: table_head.id,
             table_data: [cell_id]
         }, {headers: headers})
 
         dispatch({ type: 'ADD_TAG', payload: { response, table_index, row_index, col_index } })
+
+        return response
     }
 
 // Edit tag name
@@ -333,10 +335,10 @@ export const change_tag_color = (tag_id, color, table_index, col_index) =>
 // Re-size table column
 export const re_sizeCol =(new_width, table_index, col_index) => {
 
-    return({ type: 'RE_SIZE_COL', payload: {new_width, table_index, col_index } })
+    return({ type: 'RE_SIZE_COL', payload: { new_width, table_index, col_index } })
 }
 
-// Re-size table column (path request) 
+// Re-size table column (patch request) 
 export const re_sizeCol_patch = (new_width, table, col_index) => 
     async() => {
         // Loop through all the rows and update the column with the new_width
