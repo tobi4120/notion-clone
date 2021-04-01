@@ -11,8 +11,8 @@ axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
 // Create and configure table for travel planner template
-export const create_travel_table = (current_index, page_id, element_type, order_on_page, element_above_order,
-    element, link_pageId, optional_text) => 
+export const create_template_table = (current_index, page_id, element_type, order_on_page, element_above_order,
+    element, table_type) => 
     async (dispatch) => {
 
         // Get the order for the element on the page
@@ -51,7 +51,7 @@ const create_Table = async (element_id) => {
         name: "Barcelona Schedule"
     }, {headers: headers});
 
-    response.data.rows = await createRows(2, response.data.id)
+    response.data.rows = await createRows(5, response.data.id)
 
     return response.data
 }
@@ -60,19 +60,37 @@ const create_Table = async (element_id) => {
 const createRows = async (rows, table_id) => {
     let rowCount = 1
     let rows_array = []
-    let row_data = [
+    const row_data = [
 
         // Header row
         [
             {"content": "Activity", "type": "Text"}, {"content": "Date", "type": "Date"}, {"content": "Location", "type": "Text"}, 
             {"content": "URL", "type": "URL"}, {"content": "Notes", "type": "Text"}
-        ]
+        ],
 
         // Row 2
         [
-            {"content": "Activity", "type": "Text"}, {"content": "Date", "type": "Date"}, {"content": "Location", "type": "Text"}, 
-            {"content": "URL", "type": "URL"}, {"content": "Notes", "type": "Text"}
-        ]
+            {"content": "Departing Flight", "type": "Text"}, {"content": "2021-06-29T11:00:00Z", "type": "Date"}, {"content": "SFO, Terminal 1", "type": "Text"}, 
+            {"content": null, "type": "URL"}, {"content": null, "type": "Text"}
+        ],
+
+        // Row 3
+        [
+            {"content": "Gates Hotel Diagonal Barcelona", "type": "Text"}, {"content": "2021-06-30T18:00:00Z", "type": "Date"}, {"content": "Avinguda Diagonal, 205, 08018 Barcelona, Spain", "type": "Text"}, 
+            {"content": "https://www.booking.com/hotel/es/the-gates-diagonal-barcelona.html", "type": "URL"}, {"content": "Find key in lockbox, code 567.", "type": "Text"}
+        ],
+
+        // Row 4
+        [
+            {"content": "Dali Museum", "type": "Text"}, {"content": "2021-07-2T16:00:00Z", "type": "Date"}, {"content": "Plaça Gala i Salvador Dalí, 5, 17600 Figueres, Girona, Spain", "type": "Text"}, 
+            {"content": "https://www.salvador-dali.org/en/museums/dali-theatre-museum-in-figueres/", "type": "URL"}, {"content": null, "type": "Text"}
+        ],
+
+        // Row 5
+        [
+            {"content": "Tibidabo Park", "type": "Text"}, {"content": "2021-07-5T18:00:00Z", "type": "Date"}, {"content": "Plaça del Tibidabo, 3, 4, 08035 Barcelona, Spain", "type": "Text"}, 
+            {"content": "https://www.tibidabo.cat/en/home", "type": "URL"}, {"content": "Go to the top of Tibidabo Cathedral - amazing 360 views!", "type": "Text"}
+        ],
     ]
 
     while (rowCount <= rows) {
@@ -80,8 +98,6 @@ const createRows = async (rows, table_id) => {
             table: table_id,
             order: rowCount
         }, {headers: headers});
-
-        console.log(row_data)
 
         response.data.data = await createData(5, response.data.id, rowCount, row_data[rowCount - 1])
         
@@ -103,7 +119,11 @@ const createData = async (cols, row_id, rowCount, row_data) => {
         const response = await axios.post(`/api_table_data/`, {
             header: header,
             property_type: row_data[dataCount - 1].type,
-            text: row_data[dataCount - 1].content, 
+            text: rowCount === 1? row_data[dataCount - 1].content: row_data[dataCount - 1].type === "Text"? row_data[dataCount - 1].content: null, 
+            number: rowCount === 1? null: row_data[dataCount - 1].type === "Number"? row_data[dataCount - 1].content: null,
+            date: rowCount === 1? null: row_data[dataCount - 1].type === "Date"? row_data[dataCount - 1].content: null, 
+            checkbox: rowCount === 1? null: row_data[dataCount - 1].type === "Checkbox"? row_data[dataCount - 1].content: null,
+            url: rowCount === 1? null: row_data[dataCount - 1].type === "URL"? row_data[dataCount - 1].content: null,
             width: 198,
             order: dataCount,
             table_row: row_id

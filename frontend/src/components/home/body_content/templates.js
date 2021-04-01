@@ -6,7 +6,7 @@ import { add_cover_image } from "../../../actions/image";
 import { edit_page_name, edit_name_onChange } from "../../../actions/page_menu";
 import { create_element } from "../../../actions";
 import { add_card } from "../../../actions/kanban";
-import { create_travel_table } from "../../../actions/templates";
+import { create_template_table } from "../../../actions/templates";
 
 function Templates(props) {
     const node = useRef();
@@ -78,14 +78,30 @@ You can also swap the order of groups by clicking and dragging the group title.`
         // Add page cover
         await props.add_cover_image(props.page.id, "earth_3")
 
-        // Add an H2
-        await props.create_element(-1, props.page.id, "Heading_2", 0, 0, { group: 0, column: 0 }, null, "TRAVEL DATES: April 30 - May 5")
+        // Add some text
+        await props.create_element(-1, props.page.id, "Text", 0, 0, { group: 0, column: 0 }, null, "TRAVEL DATES: June 29 - August 5")
 
         // Create a table 
-        let table = await props.create_travel_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, null, null)
-        table = table.data.table[0]
+        await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "travel")
 
-        console.log(table)
+        // Change page to "loaded"
+        props.isLoaded(true)
+    }
+
+    // Create Job Applications Page
+    const job_applications = async () => {
+
+        // Change page to "loading"
+        await props.isLoaded(false)
+
+        // Close modal
+        await props.close_template_modal();
+
+        // Add page cover
+        await props.add_cover_image(props.page.id, "red")
+
+        // Create a table 
+        await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "job_apps")
 
         // Change page to "loaded"
         props.isLoaded(true)
@@ -102,6 +118,10 @@ You can also swap the order of groups by clicking and dragging the group title.`
                     <span>🛫</span>
                     Travel Planner
                 </div>
+                <div className="template-option" onClick={() => job_applications()}>
+                    <span>📥</span>
+                    Job Applications
+                </div>
             </div>
         </div>
     )
@@ -112,5 +132,5 @@ export default connect(null, {
     edit_name_onChange,
     create_element,
     add_card,
-    create_travel_table,
+    create_template_table,
 })(Templates);
