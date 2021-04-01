@@ -102,7 +102,7 @@ You can also swap the order of groups by clicking and dragging the group title.`
         await props.add_cover_image(props.page.id, "red")
 
         // Create a table 
-        let table = await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "job_apps")
+        let table = await props.create_template_table(-1, props.page.id, "Table", 0, 0, { group: 0, column: 0 }, "job_apps")
 
         // Add tags to "Position" and "Status" columns
         table = table.data.table[0]
@@ -130,6 +130,34 @@ You can also swap the order of groups by clicking and dragging the group title.`
         props.isLoaded(true)
     }
 
+    // Create Journal page
+    const journal = async () => {
+
+        // Change page to "loading"
+        await props.isLoaded(false)
+
+        // Close modal
+        await props.close_template_modal();
+
+        // Add page cover
+        await props.add_cover_image(props.page.id, "woodcuts_1")
+
+        // Add an H2
+        await props.create_element(-1, props.page.id, "Heading_2", 0, 0, { group: 0, column: 0 }, null, "Section 1")
+
+        // Add text
+        await props.create_element(0, props.page.id, "Text", 1, null, { group: 0, column: 0 }, null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+
+        // Add an H2
+        await props.create_element(1, props.page.id, "Heading_2", 2, null, { group: 0, column: 0 }, null, "Section 2")
+
+        // Add text
+        await props.create_element(2, props.page.id, "Text", 3, null, { group: 0, column: 0 }, null, "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).")
+
+        // Change page to "loaded"
+        props.isLoaded(true)
+    }
+
     return (
         <div className="semi-transparent-bg" ref={node}>
             <div className="modal templates-modal">
@@ -144,6 +172,10 @@ You can also swap the order of groups by clicking and dragging the group title.`
                 <div className="template-option" onClick={() => job_applications()}>
                     <span>📥</span>
                     Job Applications
+                </div>
+                <div className="template-option" onClick={() => journal()}>
+                    <span>🖊️</span>
+                    Journal
                 </div>
             </div>
         </div>
