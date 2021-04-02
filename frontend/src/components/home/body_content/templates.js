@@ -41,7 +41,7 @@ function Templates(props) {
         props.add_cover_image(props.page.id, "earth_4")
 
         // Add some text
-        await props.create_element(-1, props.page.id, "Text", 0, 0, { group: 0, column: 0 }, null, 
+        await props.create_element(-1, props.page.id, "Text", 0, null, { group: 0, column: 0 }, null, 
         `You can add new cards to each group by clicking the "+ New" button at the bottom of the group.
 Click on a card to edit its description or click and drag to move it to a different position in the same group or to a new group. 
 You can also swap the order of groups by clicking and dragging the group title.`)
@@ -80,7 +80,7 @@ You can also swap the order of groups by clicking and dragging the group title.`
         await props.add_cover_image(props.page.id, "earth_3")
 
         // Add some text
-        await props.create_element(-1, props.page.id, "Text", 0, 0, { group: 0, column: 0 }, null, "TRAVEL DATES: June 29 - August 5")
+        await props.create_element(-1, props.page.id, "Text", 0, null, { group: 0, column: 0 }, null, "TRAVEL DATES: June 29 - August 5")
 
         // Create a table 
         await props.create_template_table(0, props.page.id, "Table", 1, null, { group: 0, column: 0 }, "travel")
@@ -102,7 +102,7 @@ You can also swap the order of groups by clicking and dragging the group title.`
         await props.add_cover_image(props.page.id, "red")
 
         // Create a table 
-        let table = await props.create_template_table(-1, props.page.id, "Table", 0, 0, { group: 0, column: 0 }, "job_apps")
+        let table = await props.create_template_table(-1, props.page.id, "Table", 0, null, { group: 0, column: 0 }, "job_apps")
 
         // Add tags to "Position" and "Status" columns
         table = table.data.table[0]
@@ -143,7 +143,7 @@ You can also swap the order of groups by clicking and dragging the group title.`
         await props.add_cover_image(props.page.id, "woodcuts_1")
 
         // Add an H2
-        await props.create_element(-1, props.page.id, "Heading_2", 0, 0, { group: 0, column: 0 }, null, "Section 1")
+        await props.create_element(-1, props.page.id, "Heading_2", 0, null, { group: 0, column: 0 }, null, "Section 1")
 
         // Add text
         await props.create_element(0, props.page.id, "Text", 1, null, { group: 0, column: 0 }, null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
