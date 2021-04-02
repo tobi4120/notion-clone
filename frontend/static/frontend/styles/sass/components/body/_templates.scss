@@ -32,9 +32,15 @@
         }
 
         span {
-            font-size: 1.4rem;
-            margin-right: 5px;
+            font-size: 1.3rem;
+            margin-right: 10px;
             margin-bottom: 5px;
+        }
+    }
+
+    .pen, .inbox {
+        span {
+            margin-bottom: 0;
         }
     }
 }

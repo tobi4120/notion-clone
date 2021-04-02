@@ -604,9 +604,11 @@ a {
     .templates-modal .template-option:hover {
       background-color: rgba(55, 53, 47, 0.08); }
     .templates-modal .template-option span {
-      font-size: 1.4rem;
-      margin-right: 5px;
+      font-size: 1.3rem;
+      margin-right: 10px;
       margin-bottom: 5px; }
+  .templates-modal .pen span, .templates-modal .inbox span {
+    margin-bottom: 0; }
 
 .photo-container {
   margin-bottom: 45px;

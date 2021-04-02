@@ -169,11 +169,11 @@ You can also swap the order of groups by clicking and dragging the group title.`
                     <span>🛫</span>
                     Travel Planner
                 </div>
-                <div className="template-option" onClick={() => job_applications()}>
+                <div className="template-option inbox" onClick={() => job_applications()}>
                     <span>📥</span>
                     Job Applications
                 </div>
-                <div className="template-option" onClick={() => journal()}>
+                <div className="template-option pen" onClick={() => journal()}>
                     <span>🖊️</span>
                     Journal
                 </div>
