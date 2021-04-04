@@ -95,9 +95,6 @@
     }
     
     .page_name {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         flex: 1;
     }
 
@@ -139,6 +136,10 @@
     .page-title {
         font-family: san-fran-med, $back-up-fonts;
         color: $dark-gray;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 125px;
     }
 }
 

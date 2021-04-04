@@ -158,9 +158,6 @@
     margin-left: 2px;
     margin-right: 0px; }
   .page .page_name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     flex: 1; }
   .page .fa-file-alt {
     margin-left: 10px;
@@ -185,7 +182,11 @@
   background-color: rgba(55, 53, 47, 0.08); }
   .active .page-title {
     font-family: san-fran-med, "Helvetica, sans-serif";
-    color: #37352f; }
+    color: #37352f;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 125px; }
 
 .add-page {
   display: flex;
@@ -1575,6 +1576,10 @@ a {
         text-decoration: underline; }
 
 @media (max-width: 725px) {
+  .empty-page-text {
+    margin-right: 40px; }
+  .templates-modal {
+    width: 80%; }
   .menu {
     max-width: none;
     min-width: 0;
