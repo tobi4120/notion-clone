@@ -109,8 +109,8 @@ class Element_dropdown extends Component {
 
                         <div className="dropdown-content" ref={this.myRef}
                             style={{ transform: this.state.parent_transform, opacity: this.state.parent_opacity }}>
-                            <a onClick={()=> {
-                                this.props.delete_element(this.props.element);
+                            <a onClick={async ()=> {
+                                await this.props.delete_element(this.props.element);
                                 this.props.update_database();
                             }}>
                                 <i className="far fa-trash-alt"></i>

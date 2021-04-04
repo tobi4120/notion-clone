@@ -147,3 +147,16 @@
         background-color: white;
     }
 }
+
+// Link to page dropdown
+.list-of-pages {
+    width: 324px;
+    max-height: 40vh;
+    overflow: scroll;
+
+    p {
+        margin: 8px 14px;
+        font-size: 0.8rem;
+        color: rgba($dark-gray, 0.6)
+    }
+}

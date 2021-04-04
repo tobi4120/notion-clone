@@ -382,6 +382,15 @@
     width: 46px;
     background-color: white; }
 
+.list-of-pages {
+  width: 324px;
+  max-height: 40vh;
+  overflow: scroll; }
+  .list-of-pages p {
+    margin: 8px 14px;
+    font-size: 0.8rem;
+    color: rgba(55, 53, 47, 0.6); }
+
 .semi-transparent-bg {
   background-color: black;
   height: 100%;

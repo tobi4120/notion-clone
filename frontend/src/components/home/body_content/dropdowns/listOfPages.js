@@ -33,15 +33,26 @@ class ListOfPages extends React.Component {
     render() {
         return (
             <div className="dropdown">
-                {this.state.dropdown_hidden === false? <div className="dropdown-content" ref={this.myRef}>
-                    {this.props.pages.map(page => {
-                        return <a key={page.id} onClick={() => { this.setState({dropdown_hidden: true});
-                            this.props.page_list_toggle();
-                            this.props.create_element(this.props.index, this.props.page.id, "Page_link", 
-                            this.props.order_on_page, this.props.element_above_order, this.props.element, page.id);}
-                        }>{page.name}</a>
-                    })}
-                </div>: null}
+                {this.state.dropdown_hidden === false && 
+                    <div className="dropdown-content list-of-pages" ref={this.myRef}>
+
+                        <p>Select a page</p>
+
+                        {this.props.pages.map(page => {
+                            return (    
+                                <a key={page.id} onClick={() => { 
+                                    this.setState({dropdown_hidden: true});
+                                    this.props.page_list_toggle();
+                                    this.props.create_element(this.props.index, this.props.page.id, "Page_link", 
+                                        this.props.order_on_page, this.props.element_above_order, this.props.element, page.id);
+                                }}>
+                                    <i className="far fa-file-alt"></i>
+                                    {page.name}
+                                </a>
+                            )
+                        })}
+                    </div>
+                }
             </div>
         )
     }
