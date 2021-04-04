@@ -1174,7 +1174,7 @@ a {
     text-decoration: underline;
     text-decoration-color: rgba(55, 53, 47, 0.3);
     margin: 0;
-    width: 90%;
+    width: 85%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }

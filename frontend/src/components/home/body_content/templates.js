@@ -117,13 +117,13 @@ You can also swap the order of groups by clicking and dragging the group title.`
             await props.add_tag_to_cell(tag.data, table.rows[4].data[1].id, 0, 3, 1, { className: "tag-option" }, table)
 
             // Status column
-            await props.add_tag("Received offer!", table.rows[0].data[2], table.rows[1].data[1].id, 0, 0, 2, table, "green")
+            await props.add_tag("Received offer!", table.rows[0].data[2], table.rows[1].data[2].id, 0, 0, 2, table, "green")
 
-            await props.add_tag("Interview scheduled", table.rows[0].data[2], table.rows[2].data[1].id, 0, 1, 2, table, "brown")
+            await props.add_tag("Interview scheduled", table.rows[0].data[2], table.rows[2].data[2].id, 0, 1, 2, table, "brown")
 
-            await props.add_tag("Application sent", table.rows[0].data[2], table.rows[3].data[1].id, 0, 2, 2, table, "orange")
+            await props.add_tag("Application sent", table.rows[0].data[2], table.rows[3].data[2].id, 0, 2, 2, table, "orange")
 
-            await props.add_tag("Rejected", table.rows[0].data[2], table.rows[4].data[1].id, 0, 3, 2, table, "red")
+            await props.add_tag("Rejected", table.rows[0].data[2], table.rows[4].data[2].id, 0, 3, 2, table, "red")
 
 
         // Change page to "loaded"
