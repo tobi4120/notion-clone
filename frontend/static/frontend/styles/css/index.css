@@ -159,6 +159,11 @@
     margin-right: 0px; }
   .page .page_name {
     flex: 1; }
+    .page .page_name .page-title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 100px; }
   .page .fa-file-alt {
     margin-left: 10px;
     margin-right: 7px;
@@ -182,11 +187,7 @@
   background-color: rgba(55, 53, 47, 0.08); }
   .active .page-title {
     font-family: san-fran-med, "Helvetica, sans-serif";
-    color: #37352f;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 125px; }
+    color: #37352f; }
 
 .add-page {
   display: flex;
