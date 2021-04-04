@@ -16,7 +16,7 @@ from django.conf import settings
 
 # Page API
 class PageViewSet(viewsets.ModelViewSet):
-    queryset = Page.objects.all()
+    queryset = Page.objects.all().order_by('id')
     serializer_class = PageSerializer
 
 # Add Page API
