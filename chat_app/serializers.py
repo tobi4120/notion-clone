@@ -124,8 +124,9 @@ class PageSerializer(serializers.ModelSerializer):
         model = Page
         fields = '__all__'
     
-    def get_fields(self):
+    def get_fields(self, instance):
         fields = super(PageSerializer, self).get_fields()
+        elements = instance.pages.all().order_by('id')
         fields['children'] = PageSerializer(many=True, required=False)
 
         return fields
