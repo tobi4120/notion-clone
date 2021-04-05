@@ -130,6 +130,10 @@ class PageSerializer(serializers.ModelSerializer):
 
         return fields
 
+    def get_pages(self, instance):
+        pages = instance.pages.all().order_by('id')
+        return PageSerializer(pages, many=True, read_only=True).data
+
     def get_page_elements(self, instance):
         elements = instance.page_elements.all().order_by('order_on_page')
         return Page_elementSerializer(elements, many=True, read_only=True).data
