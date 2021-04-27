@@ -117,7 +117,6 @@ class Page_elementSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class PageSerializer(serializers.ModelSerializer):
-
     page_elements = serializers.SerializerMethodField()
 
     class Meta:

@@ -72,6 +72,9 @@ class Page(models.Model):
     photo = models.CharField(max_length=100, null=True, blank=True)
     groups = models.IntegerField()
 
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
         return f"{self.name}" 
 
