@@ -4,6 +4,10 @@ import { change_tickBox, change_description } from "../../../actions/to_do"
 import CheckIcon from '@material-ui/icons/Check';
 
 function To_do(props) {
+
+    // In case there is an element whose type is to-do but there is no to-do...
+    if ((props.page_element.to_do).length === 0) return null
+
     const to_do = props.page_element.to_do[0]
 
     // State
@@ -15,9 +19,6 @@ function To_do(props) {
         change_complete(status)
         change_tickBox(status, to_do.id)
     }
-
-    // In case there is an element whose type is to-do but there is no to-do...
-    if (!to_do) return null
 
     return (
         <div className={`to-do ${props.page_element.color}`} 

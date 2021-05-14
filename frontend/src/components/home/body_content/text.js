@@ -1,27 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 
-class Text extends Component {
-    state = {
-        text: this.props.page_element.text[0].text,
-    }
+function Text(props) {
 
-    handle_change = (event) => {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    }
+    // In case there is an element whose type is text but there is no text...
+    if ((props.page_element.text).length === 0) return null
+    
+    const [text, set_text] = useState(props.page_element.text[0].text)
 
-    render() {
-        return (
-            <div className={`text-element ${this.props.page_element.color}`}>
-                <TextareaAutosize autoComplete="off" name="text" onChange={this.handle_change} value={this.state.text} 
-                placeholder="Type your text here..." autoFocus className="text"
-                onBlur={()=> this.props.edit_text(this.props.page_element.text[0].id, this.state.text)} 
-                style={{ opacity: this.props.snapshot.isDragging? '0.5': '1' }} />
-            </div>
-        )
-    }
+    return (
+        <div className={`text-element ${props.page_element.color}`}>
+            <TextareaAutosize 
+                autoComplete="off" 
+                name="text" 
+                onChange={(e) => set_text(e.target.value)} value={text} 
+                placeholder="Type your text here..." 
+                autoFocus 
+                className="text"
+                onBlur={()=> props.edit_text(props.page_element.text[0].id, text)} 
+                style={{ opacity: props.snapshot.isDragging? '0.5': '1' }} />
+        </div>
+    )
 }
-
 export default Text

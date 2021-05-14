@@ -9,6 +9,10 @@ import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import AddIcon from '@material-ui/icons/Add';
 
 function Kanban(props) {
+
+    // In case there is an element whose type is Kanban but there is no kanban...
+    if ((props.page_element.kanban).length === 0) return null
+
     let kanban = props.kanbans[props.kanbans.findIndex(x => x.id === props.page_element.kanban[0].id)]
 
     // State
@@ -161,11 +165,6 @@ function Kanban(props) {
         // Call Redux functions
         props.change_order_kanbanGroup(result.source, result.destination, new_order, kanban.id)
         props.change_order__kanbanGroup_patchReq(parseInt(result.draggableId), new_order)
-    }
-
-    // If for some reason, there is a page element with the name 'Kanban' but no actual kanban present, return null
-    if (props.page_element.kanban.length === 0) {
-        return null
     }
 
     return (

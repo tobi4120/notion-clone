@@ -7,6 +7,10 @@ import { edit_TableName, insert_column, delete_column, move_column, add_row,
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 
 function Table(props) {
+    
+    // In case there is an element whose type is table but there is no table...
+    if ((props.page_element.table).length === 0) return null
+
     // State
     const [table_index] = useState(props.tables.findIndex(x => x.id === props.page_element.table[0].id))
     const [table] = useState(props.tables[table_index]) 
@@ -125,9 +129,6 @@ function Table(props) {
         props.move_row(new_order, source, destination, table_index)
         props.move_row_patchReq(row_id, new_order)
     }
-
-    // In case there is an element whose type is table but there is no table...
-    if (!table) return null
 
     return (
         <div style={{ opacity: props.snapshot.isDragging? '0.5': '1' }} className="table-container">

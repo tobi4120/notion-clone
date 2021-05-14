@@ -360,7 +360,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 7:0-14 */
 /***/ ((module) => {
 
 eval("function _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : {\n    \"default\": obj\n  };\n}\n\nmodule.exports = _interopRequireDefault;\n\n//# sourceURL=webpack://notion-clone/./node_modules/@babel/runtime/helpers/interopRequireDefault.js?");
@@ -373,7 +372,6 @@ eval("function _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? o
   \***********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 55:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ \"./node_modules/@babel/runtime/helpers/typeof.js\");\n\nfunction _getRequireWildcardCache() {\n  if (typeof WeakMap !== \"function\") return null;\n  var cache = new WeakMap();\n\n  _getRequireWildcardCache = function _getRequireWildcardCache() {\n    return cache;\n  };\n\n  return cache;\n}\n\nfunction _interopRequireWildcard(obj) {\n  if (obj && obj.__esModule) {\n    return obj;\n  }\n\n  if (obj === null || _typeof(obj) !== \"object\" && typeof obj !== \"function\") {\n    return {\n      \"default\": obj\n    };\n  }\n\n  var cache = _getRequireWildcardCache();\n\n  if (cache && cache.has(obj)) {\n    return cache.get(obj);\n  }\n\n  var newObj = {};\n  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;\n\n  for (var key in obj) {\n    if (Object.prototype.hasOwnProperty.call(obj, key)) {\n      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;\n\n      if (desc && (desc.get || desc.set)) {\n        Object.defineProperty(newObj, key, desc);\n      } else {\n        newObj[key] = obj[key];\n      }\n    }\n  }\n\n  newObj[\"default\"] = obj;\n\n  if (cache) {\n    cache.set(obj, newObj);\n  }\n\n  return newObj;\n}\n\nmodule.exports = _interopRequireWildcard;\n\n//# sourceURL=webpack://notion-clone/./node_modules/@babel/runtime/helpers/interopRequireWildcard.js?");
@@ -386,9 +384,6 @@ eval("var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ \".
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 5:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 9:4-18 */
-/*! CommonJS bailout: module.exports is used directly at 17:0-14 */
 /***/ ((module) => {
 
 eval("function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") {\n    module.exports = _typeof = function _typeof(obj) {\n      return typeof obj;\n    };\n  } else {\n    module.exports = _typeof = function _typeof(obj) {\n      return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n    };\n  }\n\n  return _typeof(obj);\n}\n\nmodule.exports = _typeof;\n\n//# sourceURL=webpack://notion-clone/./node_modules/@babel/runtime/helpers/typeof.js?");
@@ -2902,7 +2897,6 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2916,7 +2910,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2930,7 +2923,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -2944,7 +2936,6 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2958,7 +2949,6 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -2972,7 +2962,6 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2986,7 +2975,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3000,7 +2988,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3014,7 +3001,6 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3028,7 +3014,6 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3042,7 +3027,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -3056,7 +3040,6 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3070,7 +3053,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3084,7 +3066,6 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3098,7 +3079,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3112,7 +3092,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -3126,7 +3105,6 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3140,7 +3118,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -3154,7 +3131,6 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3168,7 +3144,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -3182,7 +3157,6 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3196,7 +3170,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3210,7 +3183,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3224,7 +3196,6 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -3238,7 +3209,6 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -3592,7 +3562,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\nvar Heading_1 = /*#__PURE__*/function (_Component) {\n  _inherits(Heading_1, _Component);\n\n  var _super = _createSuper(Heading_1);\n\n  function Heading_1() {\n    var _temp, _this;\n\n    _classCallCheck(this, Heading_1);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {\n      heading_1: _this.props.page_element.heading_1[0].heading_text\n    }, _this.handle_change = function (event) {\n      _this.setState(_defineProperty({}, event.target.name, event.target.value));\n    }, _temp));\n  }\n\n  _createClass(Heading_1, [{\n    key: \"render\",\n    value: function render() {\n      var _this2 = this;\n\n      if (this.props.page_element.heading_1.length === 0) {\n        return null;\n      }\n\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"side-by-side e_container\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n        autoComplete: \"off\",\n        onChange: this.handle_change,\n        name: \"heading_1\",\n        className: \"user_input heading_1 \".concat(this.props.page_element.color),\n        placeholder: \"Heading 1\",\n        value: this.state.heading_1,\n        autoFocus: true,\n        onBlur: function onBlur() {\n          return _this2.props.edit_H1(_this2.props.page_element.heading_1[0].id, _this2.state.heading_1);\n        },\n        style: {\n          opacity: this.props.snapshot.isDragging ? '0.5' : '1'\n        }\n      }));\n    }\n  }]);\n\n  return Heading_1;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading_1);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/headings/heading_1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\nfunction Heading_1(props) {\n  // In case there is an element whose type is Heading_1 but there is no heading 1...\n  if (props.page_element.heading_1.length === 0) return null;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.page_element.heading_1[0].heading_text),\n      _useState2 = _slicedToArray(_useState, 2),\n      heading_1 = _useState2[0],\n      set_heading_1 = _useState2[1];\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"side-by-side e_container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoComplete: \"off\",\n    onChange: function onChange(e) {\n      return set_heading_1(e.target.value);\n    },\n    name: \"heading_1\",\n    className: \"user_input heading_1 \".concat(props.page_element.color),\n    placeholder: \"Heading 1\",\n    value: heading_1,\n    autoFocus: true,\n    onBlur: function onBlur() {\n      return props.edit_H1(props.page_element.heading_1[0].id, heading_1);\n    },\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading_1);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/headings/heading_1.js?");
 
 /***/ }),
 
@@ -3607,7 +3577,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\nvar Heading_2 = /*#__PURE__*/function (_Component) {\n  _inherits(Heading_2, _Component);\n\n  var _super = _createSuper(Heading_2);\n\n  function Heading_2() {\n    var _temp, _this;\n\n    _classCallCheck(this, Heading_2);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {\n      heading_2: _this.props.page_element.heading_2[0].heading_text\n    }, _this.handle_change = function (event) {\n      _this.setState(_defineProperty({}, event.target.name, event.target.value));\n    }, _temp));\n  }\n\n  _createClass(Heading_2, [{\n    key: \"render\",\n    value: function render() {\n      var _this2 = this;\n\n      if (this.props.page_element.heading_2.length === 0) {\n        return null;\n      }\n\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"side-by-side e_container\"\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n        autoComplete: \"off\",\n        onChange: this.handle_change,\n        name: \"heading_2\",\n        className: \"user_input heading_2 \".concat(this.props.page_element.color),\n        autoFocus: true,\n        placeholder: \"Heading 2\",\n        value: this.state.heading_2,\n        onBlur: function onBlur() {\n          return _this2.props.edit_H2(_this2.props.page_element.heading_2[0].id, _this2.state.heading_2);\n        },\n        style: {\n          opacity: this.props.snapshot.isDragging ? '0.5' : '1'\n        }\n      }));\n    }\n  }]);\n\n  return Heading_2;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading_2);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/headings/heading_2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\nfunction Heading_2(props) {\n  // In case there is an element whose type is Heading_2 but there is no heading 2...\n  if (props.page_element.heading_2.length === 0) return null;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.page_element.heading_2[0].heading_text),\n      _useState2 = _slicedToArray(_useState, 2),\n      heading_2 = _useState2[0],\n      set_heading_2 = _useState2[1];\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"side-by-side e_container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoComplete: \"off\",\n    onChange: function onChange(e) {\n      return set_heading_2(e.target.value);\n    },\n    name: \"heading_2\",\n    className: \"user_input heading_2 \".concat(props.page_element.color),\n    autoFocus: true,\n    placeholder: \"Heading 2\",\n    value: heading_2,\n    onBlur: function onBlur() {\n      return props.edit_H2(props.page_element.heading_2[0].id, heading_2);\n    },\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading_2);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/headings/heading_2.js?");
 
 /***/ }),
 
@@ -3652,7 +3622,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _actions_kanban__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../actions/kanban */ \"./frontend/src/actions/kanban.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _kanbanGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./kanbanGroup */ \"./frontend/src/components/home/body_content/kanban/kanbanGroup.js\");\n/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-beautiful-dnd */ \"./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js\");\n/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Add */ \"./node_modules/@material-ui/icons/Add.js\");\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\nfunction Kanban(props) {\n  var kanban = props.kanbans[props.kanbans.findIndex(function (x) {\n    return x.id === props.page_element.kanban[0].id;\n  })]; // State\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(\"\"),\n      _useState2 = _slicedToArray(_useState, 2),\n      GroupName = _useState2[0],\n      set_GroupName = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),\n      _useState4 = _slicedToArray(_useState3, 2),\n      enterGroupName = _useState4[0],\n      set_enterGroupName = _useState4[1];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(kanban.name),\n      _useState6 = _slicedToArray(_useState5, 2),\n      kanbanName = _useState6[0],\n      set_KanbanName = _useState6[1]; // Handle change\n\n\n  var handle_change = function handle_change(e) {\n    // If user is trying to change kanban name\n    if (e.target.name === 'kanbanName') set_KanbanName(e.target.value); // If user is trying to add a new group to the kanban and give it a name\n    else set_GroupName(e.target.value);\n  }; // Add a new group on the screen\n\n\n  var add_group = function add_group() {\n    return set_enterGroupName(true);\n  }; // POST Request to add new group\n\n\n  var input_blur = function input_blur(e) {\n    if (e.key === 'Enter' || e.type === \"blur\") {\n      // If user is trying to change kanban name\n      if (e.target.name === 'kanbanName') {\n        props.edit_kanbanName(kanban.id, kanbanName);\n        return;\n      } // Get order of last group in kanban\n\n\n      var order = kanban.kanban_group[kanban.kanban_group.length - 1].order; // If user is trying to add a new group to the kanban and give it a name\n\n      set_enterGroupName(false);\n      if (GroupName) props.add_group(GroupName, kanban.id, order + 1); // Clear input\n\n      set_GroupName('');\n    }\n  }; // Clear new group input\n\n\n  var clear_input = function clear_input() {\n    return set_GroupName('');\n  }; // On drag end\n\n\n  var dragEndFunc = /*#__PURE__*/function () {\n    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(result) {\n      var destination, source, destination_id, index, kanbanColumn, new_order, sourceIndex, card_id;\n      return regeneratorRuntime.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              if (!(result.type === 'column')) {\n                _context.next = 3;\n                break;\n              }\n\n              columnOrder(result);\n              return _context.abrupt(\"return\");\n\n            case 3:\n              destination = result.destination, source = result.source; // If no destiniation, then return\n\n              if (destination) {\n                _context.next = 6;\n                break;\n              }\n\n              return _context.abrupt(\"return\");\n\n            case 6:\n              if (!(source.droppableId === destination.droppableId && source.index === destination.index)) {\n                _context.next = 8;\n                break;\n              }\n\n              return _context.abrupt(\"return\");\n\n            case 8:\n              // Convert string to int\n              destination_id = parseInt(destination.droppableId); // Find the kanban group that the card was dragged to\n\n              index = kanban.kanban_group.findIndex(function (x) {\n                return x.id === destination_id;\n              });\n              kanbanColumn = kanban.kanban_group[index]; // Calculate new order\n\n              new_order = 1; // If we are moving the card to another group\n\n              if (source.droppableId !== destination.droppableId) {\n                // If there are no cards in the group (column) keep new_order at 1 but if not then calculate the new_order\n                if (kanbanColumn.kanban_card.length > 0) {\n                  // If we're trying to move a card to index 0 of the array\n                  if (destination.index === 0) {\n                    new_order = (0 + kanbanColumn.kanban_card[0].order_on_group) / 2; // Else if we are trying to move a card to the last index of the array\n                  } else if (destination.index === kanbanColumn.kanban_card.length) {\n                    new_order = kanbanColumn.kanban_card[destination.index - 1].order_on_group + 1; // Else, we are trying to move it to the middle\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index - 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  }\n                } // Else... if we are moving a card to a different position in the same group\n\n              } else {\n                // If we move a card towards the start of the list (moving a card upwards on the screen)\n                if (source.index > destination.index) {\n                  // If we're trying to move a card to index 0 of the array\n                  if (destination.index === 0) {\n                    new_order = (0 + kanbanColumn.kanban_card[0].order_on_group) / 2;\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index - 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  } // If we move a card towards the end of the list (moving a card downwards on the screen)\n\n                } else {\n                  // If we're trying to move a card to the last index of the list\n                  if (destination.index === kanbanColumn.kanban_card.length - 1) {\n                    new_order = kanbanColumn.kanban_card[destination.index].order_on_group + 1;\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index + 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  }\n                }\n              } // Find source index and get the card ID from it\n\n\n              sourceIndex = kanban.kanban_group.findIndex(function (x) {\n                return x.id === parseInt(source.droppableId);\n              });\n              card_id = kanban.kanban_group[sourceIndex].kanban_card[source.index].id; // Call Redux functions\n\n              _context.next = 17;\n              return props.change_order_kanbanCard(source, destination, new_order, index, sourceIndex, kanban.id);\n\n            case 17:\n              _context.next = 19;\n              return props.change_order__kanbanCard_patchReq(card_id, new_order, parseInt(destination.droppableId));\n\n            case 19:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee);\n    }));\n\n    return function dragEndFunc(_x) {\n      return _ref.apply(this, arguments);\n    };\n  }(); // Calculte column order (for when a column is moved) \n\n\n  var columnOrder = function columnOrder(result) {\n    var destination = result.destination,\n        source = result.source;\n    var new_order = 1; // If we move a group towards the start of the list (moving a group left)\n\n    if (source.index > destination.index) {\n      // If we're trying to move a card to index 0 of the array\n      if (destination.index === 0) {\n        new_order = (0 + kanban.kanban_group[0].order) / 2;\n      } else {\n        new_order = (kanban.kanban_group[destination.index - 1].order + kanban.kanban_group[destination.index].order) / 2;\n      } // If we move a group towards the end of the list (moving a group right)\n\n    } else {\n      // If we're trying to move a group to the last index of the list\n      if (destination.index === kanban.kanban_group.length - 1) {\n        new_order = kanban.kanban_group[destination.index].order + 1;\n      } else {\n        new_order = (kanban.kanban_group[destination.index + 1].order + kanban.kanban_group[destination.index].order) / 2;\n      }\n    }\n\n    console.log(new_order); // Call Redux functions\n\n    props.change_order_kanbanGroup(result.source, result.destination, new_order, kanban.id);\n    props.change_order__kanbanGroup_patchReq(parseInt(result.draggableId), new_order);\n  }; // If for some reason, there is a page element with the name 'Kanban' but no actual kanban present, return null\n\n\n  if (props.page_element.kanban.length === 0) {\n    return null;\n  }\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"kanban\",\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    className: \"user_input kanban-title\",\n    value: kanbanName,\n    name: \"kanbanName\",\n    onChange: handle_change,\n    placeholder: \"Untitled\",\n    onBlur: input_blur\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"hr\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.DragDropContext, {\n    onDragEnd: dragEndFunc\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"kanban_groups\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Droppable, {\n    droppableId: \"all-columns\",\n    direction: \"horizontal\",\n    type: \"column\"\n  }, function (provided) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", _extends({\n      className: \"current_groups\"\n    }, provided.droppableProps, {\n      ref: provided.innerRef\n    }), kanban.kanban_group.map(function (group, index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_kanbanGroup__WEBPACK_IMPORTED_MODULE_3__.default, {\n        key: group.id,\n        group_id: group.id,\n        group_name: group.name,\n        kanban_id: kanban.id,\n        clear_input: clear_input,\n        group_kanbanCards: group.kanban_card,\n        delete_card: props.delete_card,\n        edit_card: props.edit_card,\n        add_card: props.add_card,\n        card_count: group.kanban_card.length,\n        edit_groupName: props.edit_groupName,\n        index: index,\n        color: group.color\n      });\n    }), provided.placeholder);\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"new-group\"\n  }, enterGroupName === false ?\n  /*#__PURE__*/\n  // Button to add a kanban group\n  react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    onClick: add_group\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__.default, {\n    fontSize: 'inherit'\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"Add Group\")) :\n  /*#__PURE__*/\n  // Input to enter the group name\n  react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoFocus: true,\n    placeholder: \"Untitled\",\n    onBlur: input_blur,\n    onKeyPress: input_blur,\n    value: GroupName,\n    name: \"GroupName\",\n    onChange: handle_change\n  })))));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    kanbans: state.kanbans\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps, {\n  add_group: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.add_group,\n  add_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.add_card,\n  delete_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.delete_card,\n  edit_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_card,\n  edit_groupName: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_groupName,\n  edit_kanbanName: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_kanbanName,\n  change_order_kanbanCard: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order_kanbanCard,\n  change_order__kanbanCard_patchReq: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order__kanbanCard_patchReq,\n  change_order_kanbanGroup: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order_kanbanGroup,\n  change_order__kanbanGroup_patchReq: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order__kanbanGroup_patchReq\n})(Kanban));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/kanban/kanban.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _actions_kanban__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../actions/kanban */ \"./frontend/src/actions/kanban.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _kanbanGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./kanbanGroup */ \"./frontend/src/components/home/body_content/kanban/kanbanGroup.js\");\n/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-beautiful-dnd */ \"./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js\");\n/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Add */ \"./node_modules/@material-ui/icons/Add.js\");\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\nfunction Kanban(props) {\n  // In case there is an element whose type is Kanban but there is no kanban...\n  if (props.page_element.kanban.length === 0) return null;\n  var kanban = props.kanbans[props.kanbans.findIndex(function (x) {\n    return x.id === props.page_element.kanban[0].id;\n  })]; // State\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(\"\"),\n      _useState2 = _slicedToArray(_useState, 2),\n      GroupName = _useState2[0],\n      set_GroupName = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),\n      _useState4 = _slicedToArray(_useState3, 2),\n      enterGroupName = _useState4[0],\n      set_enterGroupName = _useState4[1];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(kanban.name),\n      _useState6 = _slicedToArray(_useState5, 2),\n      kanbanName = _useState6[0],\n      set_KanbanName = _useState6[1]; // Handle change\n\n\n  var handle_change = function handle_change(e) {\n    // If user is trying to change kanban name\n    if (e.target.name === 'kanbanName') set_KanbanName(e.target.value); // If user is trying to add a new group to the kanban and give it a name\n    else set_GroupName(e.target.value);\n  }; // Add a new group on the screen\n\n\n  var add_group = function add_group() {\n    return set_enterGroupName(true);\n  }; // POST Request to add new group\n\n\n  var input_blur = function input_blur(e) {\n    if (e.key === 'Enter' || e.type === \"blur\") {\n      // If user is trying to change kanban name\n      if (e.target.name === 'kanbanName') {\n        props.edit_kanbanName(kanban.id, kanbanName);\n        return;\n      } // Get order of last group in kanban\n\n\n      var order = kanban.kanban_group[kanban.kanban_group.length - 1].order; // If user is trying to add a new group to the kanban and give it a name\n\n      set_enterGroupName(false);\n      if (GroupName) props.add_group(GroupName, kanban.id, order + 1); // Clear input\n\n      set_GroupName('');\n    }\n  }; // Clear new group input\n\n\n  var clear_input = function clear_input() {\n    return set_GroupName('');\n  }; // On drag end\n\n\n  var dragEndFunc = /*#__PURE__*/function () {\n    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(result) {\n      var destination, source, destination_id, index, kanbanColumn, new_order, sourceIndex, card_id;\n      return regeneratorRuntime.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              if (!(result.type === 'column')) {\n                _context.next = 3;\n                break;\n              }\n\n              columnOrder(result);\n              return _context.abrupt(\"return\");\n\n            case 3:\n              destination = result.destination, source = result.source; // If no destiniation, then return\n\n              if (destination) {\n                _context.next = 6;\n                break;\n              }\n\n              return _context.abrupt(\"return\");\n\n            case 6:\n              if (!(source.droppableId === destination.droppableId && source.index === destination.index)) {\n                _context.next = 8;\n                break;\n              }\n\n              return _context.abrupt(\"return\");\n\n            case 8:\n              // Convert string to int\n              destination_id = parseInt(destination.droppableId); // Find the kanban group that the card was dragged to\n\n              index = kanban.kanban_group.findIndex(function (x) {\n                return x.id === destination_id;\n              });\n              kanbanColumn = kanban.kanban_group[index]; // Calculate new order\n\n              new_order = 1; // If we are moving the card to another group\n\n              if (source.droppableId !== destination.droppableId) {\n                // If there are no cards in the group (column) keep new_order at 1 but if not then calculate the new_order\n                if (kanbanColumn.kanban_card.length > 0) {\n                  // If we're trying to move a card to index 0 of the array\n                  if (destination.index === 0) {\n                    new_order = (0 + kanbanColumn.kanban_card[0].order_on_group) / 2; // Else if we are trying to move a card to the last index of the array\n                  } else if (destination.index === kanbanColumn.kanban_card.length) {\n                    new_order = kanbanColumn.kanban_card[destination.index - 1].order_on_group + 1; // Else, we are trying to move it to the middle\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index - 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  }\n                } // Else... if we are moving a card to a different position in the same group\n\n              } else {\n                // If we move a card towards the start of the list (moving a card upwards on the screen)\n                if (source.index > destination.index) {\n                  // If we're trying to move a card to index 0 of the array\n                  if (destination.index === 0) {\n                    new_order = (0 + kanbanColumn.kanban_card[0].order_on_group) / 2;\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index - 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  } // If we move a card towards the end of the list (moving a card downwards on the screen)\n\n                } else {\n                  // If we're trying to move a card to the last index of the list\n                  if (destination.index === kanbanColumn.kanban_card.length - 1) {\n                    new_order = kanbanColumn.kanban_card[destination.index].order_on_group + 1;\n                  } else {\n                    new_order = (kanbanColumn.kanban_card[destination.index + 1].order_on_group + kanbanColumn.kanban_card[destination.index].order_on_group) / 2;\n                  }\n                }\n              } // Find source index and get the card ID from it\n\n\n              sourceIndex = kanban.kanban_group.findIndex(function (x) {\n                return x.id === parseInt(source.droppableId);\n              });\n              card_id = kanban.kanban_group[sourceIndex].kanban_card[source.index].id; // Call Redux functions\n\n              _context.next = 17;\n              return props.change_order_kanbanCard(source, destination, new_order, index, sourceIndex, kanban.id);\n\n            case 17:\n              _context.next = 19;\n              return props.change_order__kanbanCard_patchReq(card_id, new_order, parseInt(destination.droppableId));\n\n            case 19:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee);\n    }));\n\n    return function dragEndFunc(_x) {\n      return _ref.apply(this, arguments);\n    };\n  }(); // Calculte column order (for when a column is moved) \n\n\n  var columnOrder = function columnOrder(result) {\n    var destination = result.destination,\n        source = result.source;\n    var new_order = 1; // If we move a group towards the start of the list (moving a group left)\n\n    if (source.index > destination.index) {\n      // If we're trying to move a card to index 0 of the array\n      if (destination.index === 0) {\n        new_order = (0 + kanban.kanban_group[0].order) / 2;\n      } else {\n        new_order = (kanban.kanban_group[destination.index - 1].order + kanban.kanban_group[destination.index].order) / 2;\n      } // If we move a group towards the end of the list (moving a group right)\n\n    } else {\n      // If we're trying to move a group to the last index of the list\n      if (destination.index === kanban.kanban_group.length - 1) {\n        new_order = kanban.kanban_group[destination.index].order + 1;\n      } else {\n        new_order = (kanban.kanban_group[destination.index + 1].order + kanban.kanban_group[destination.index].order) / 2;\n      }\n    }\n\n    console.log(new_order); // Call Redux functions\n\n    props.change_order_kanbanGroup(result.source, result.destination, new_order, kanban.id);\n    props.change_order__kanbanGroup_patchReq(parseInt(result.draggableId), new_order);\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"kanban\",\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    className: \"user_input kanban-title\",\n    value: kanbanName,\n    name: \"kanbanName\",\n    onChange: handle_change,\n    placeholder: \"Untitled\",\n    onBlur: input_blur\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"hr\", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.DragDropContext, {\n    onDragEnd: dragEndFunc\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"kanban_groups\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__.Droppable, {\n    droppableId: \"all-columns\",\n    direction: \"horizontal\",\n    type: \"column\"\n  }, function (provided) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", _extends({\n      className: \"current_groups\"\n    }, provided.droppableProps, {\n      ref: provided.innerRef\n    }), kanban.kanban_group.map(function (group, index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_kanbanGroup__WEBPACK_IMPORTED_MODULE_3__.default, {\n        key: group.id,\n        group_id: group.id,\n        group_name: group.name,\n        kanban_id: kanban.id,\n        clear_input: clear_input,\n        group_kanbanCards: group.kanban_card,\n        delete_card: props.delete_card,\n        edit_card: props.edit_card,\n        add_card: props.add_card,\n        card_count: group.kanban_card.length,\n        edit_groupName: props.edit_groupName,\n        index: index,\n        color: group.color\n      });\n    }), provided.placeholder);\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"new-group\"\n  }, enterGroupName === false ?\n  /*#__PURE__*/\n  // Button to add a kanban group\n  react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    onClick: add_group\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__.default, {\n    fontSize: 'inherit'\n  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", null, \"Add Group\")) :\n  /*#__PURE__*/\n  // Input to enter the group name\n  react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoFocus: true,\n    placeholder: \"Untitled\",\n    onBlur: input_blur,\n    onKeyPress: input_blur,\n    value: GroupName,\n    name: \"GroupName\",\n    onChange: handle_change\n  })))));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    kanbans: state.kanbans\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps, {\n  add_group: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.add_group,\n  add_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.add_card,\n  delete_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.delete_card,\n  edit_card: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_card,\n  edit_groupName: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_groupName,\n  edit_kanbanName: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.edit_kanbanName,\n  change_order_kanbanCard: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order_kanbanCard,\n  change_order__kanbanCard_patchReq: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order__kanbanCard_patchReq,\n  change_order_kanbanGroup: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order_kanbanGroup,\n  change_order__kanbanGroup_patchReq: _actions_kanban__WEBPACK_IMPORTED_MODULE_1__.change_order__kanbanGroup_patchReq\n})(Kanban));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/kanban/kanban.js?");
 
 /***/ }),
 
@@ -3847,7 +3817,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _table_row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./table_row */ \"./frontend/src/components/home/body_content/table/table_row.js\");\n/* harmony import */ var _table_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./table_header */ \"./frontend/src/components/home/body_content/table/table_header.js\");\n/* harmony import */ var _actions_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../actions/table */ \"./frontend/src/actions/table.js\");\n/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-beautiful-dnd */ \"./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js\");\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === \"undefined\" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === \"number\") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it[\"return\"] != null) it[\"return\"](); } finally { if (didErr) throw err; } } }; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\nfunction Table(props) {\n  // State\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.tables.findIndex(function (x) {\n    return x.id === props.page_element.table[0].id;\n  })),\n      _useState2 = _slicedToArray(_useState, 1),\n      table_index = _useState2[0];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.tables[table_index]),\n      _useState4 = _slicedToArray(_useState3, 1),\n      table = _useState4[0];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(table.name),\n      _useState6 = _slicedToArray(_useState5, 2),\n      tableName = _useState6[0],\n      set_tableName = _useState6[1]; // Insert column function\n\n\n  var insertColumn = function insertColumn(col_index, direction) {\n    // Calculate the new column's order\n    var new_order = calculate_colOrder(col_index, direction); // Get the table's row ids\n\n    var row_ids = [];\n    table.rows.forEach(function (row) {\n      row_ids.push(row.id);\n    }); // Call redux function\n\n    props.insert_column(new_order, row_ids, col_index, direction, table_index);\n  }; // Calculate column order (used when a new column is inserted in the table or an existing column is moved)\n\n\n  var calculate_colOrder = function calculate_colOrder(col_index, direction) {\n    var new_order = 0;\n    var header_row = table.rows[0].data; // If column is being moved to start of table\n\n    if (col_index === 0 && direction === 'left') {\n      new_order = header_row[0].order / 2; // If column is being moved to the end of the table\n    } else if (col_index === header_row.length - 1 && direction === 'right') {\n      new_order = header_row[header_row.length - 1].order + 1; // If column is being moved to the middle of the table\n    } else {\n      if (direction === 'left') new_order = (header_row[col_index].order + header_row[col_index - 1].order) / 2;else new_order = (header_row[col_index].order + header_row[col_index + 1].order) / 2;\n    }\n\n    return new_order;\n  }; // Delete column function\n\n\n  var deleteColumn = function deleteColumn(col_index) {\n    // Put the data id's into an array\n    var data_ids = [];\n    table.rows.forEach(function (row) {\n      data_ids.push(row.data[col_index].id);\n    }); // Call redux function\n\n    props.delete_column(data_ids, table_index);\n  }; // Move column function\n\n\n  var moveColumn = function moveColumn(sourceIndex, direction) {\n    var new_order = 0; // Get the column's new order\n\n    if (direction === 'right') new_order = calculate_colOrder(sourceIndex + 1, direction);else new_order = calculate_colOrder(sourceIndex - 1, direction); // Call redux function\n\n    props.move_column(new_order, table, sourceIndex, direction, table_index);\n  }; // Insert row function \n\n\n  var addRow = function addRow(row_index) {\n    var new_order = 0;\n    if (row_index === table.rows.length - 2) new_order = table.rows[row_index + 1].order + 1;else new_order = (table.rows[row_index + 1].order + table.rows[row_index + 2].order) / 2; // Get the widths of each column and put them in an array\n\n    var widths = [];\n\n    var _iterator = _createForOfIteratorHelper(table.rows[0].data),\n        _step;\n\n    try {\n      for (_iterator.s(); !(_step = _iterator.n()).done;) {\n        var data = _step.value;\n        widths.push(data.width);\n      } // Call redux function\n\n    } catch (err) {\n      _iterator.e(err);\n    } finally {\n      _iterator.f();\n    }\n\n    props.add_row(new_order, table.id, table.rows[0].data.length, table_index, row_index, table, widths);\n  }; // Move row function\n\n\n  var onDragEnd = function onDragEnd(result) {\n    var new_order = 0;\n    var source = result.source,\n        destination = result.destination; // If no destination, then return\n\n    if (!destination) return; // If the source = the destination, then return\n\n    if (source.index === destination.index) return; // If we are moving a row to the start of the table (closer to index 0)\n\n    if (source.index > destination.index) {\n      new_order = (table.rows[destination.index + 1].order + table.rows[destination.index].order) / 2;\n    } // Else... we are moving a row to the end of the table (closer to table.rows.length - 1)\n    else {\n        // If destination index is at the end of the table\n        if (destination.index === table.rows.length - 2) new_order = table.rows[destination.index + 1].order + 1;else new_order = (table.rows[destination.index + 2].order + table.rows[destination.index + 1].order) / 2;\n      } // Get the row id of the row we are trying to move\n\n\n    var row_id = table.rows[source.index + 1].id; // Call redux functions\n\n    props.move_row(new_order, source, destination, table_index);\n    props.move_row_patchReq(row_id, new_order);\n  }; // In case there is an element whose type is table but there is no table...\n\n\n  if (!table) return null;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    },\n    className: \"table-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    className: \"table-title user_input\",\n    placeholder: \"Untitled\",\n    value: tableName ? tableName : \"\",\n    onChange: function onChange(e) {\n      return set_tableName(e.target.value);\n    },\n    onBlur: function onBlur() {\n      return props.edit_TableName(tableName, table.id);\n    },\n    onKeyDown: function onKeyDown(e) {\n      if (e.key === 'Enter') e.target.blur();\n    }\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"table-div\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__.DragDropContext, {\n    onDragEnd: onDragEnd\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__.Droppable, {\n    droppableId: \"droppable\"\n  }, function (provided) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", _extends({\n      className: \"table\"\n    }, provided.droppableProps, {\n      ref: provided.innerRef\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n      className: \"table-body\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_table_header__WEBPACK_IMPORTED_MODULE_3__.default, {\n      row: table.rows[0],\n      insertColumn: insertColumn,\n      deleteColumn: deleteColumn,\n      row_index: 0,\n      moveColumn: moveColumn,\n      col_amount: table.rows[0].data.length,\n      table_index: table_index,\n      table: table\n    }), table.rows.slice(1).map(function (row, row_index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_table_row__WEBPACK_IMPORTED_MODULE_2__.default, {\n        key: row.id,\n        row: row,\n        row_index: row_index,\n        addRow: addRow,\n        table_index: table_index,\n        table: table\n      });\n    }), provided.placeholder));\n  }))));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    tables: state.tables\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, {\n  edit_TableName: _actions_table__WEBPACK_IMPORTED_MODULE_4__.edit_TableName,\n  insert_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.insert_column,\n  delete_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.delete_column,\n  move_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_column,\n  add_row: _actions_table__WEBPACK_IMPORTED_MODULE_4__.add_row,\n  move_row: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_row,\n  move_row_patchReq: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_row_patchReq\n})(Table));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/table/table.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _table_row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./table_row */ \"./frontend/src/components/home/body_content/table/table_row.js\");\n/* harmony import */ var _table_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./table_header */ \"./frontend/src/components/home/body_content/table/table_header.js\");\n/* harmony import */ var _actions_table__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../actions/table */ \"./frontend/src/actions/table.js\");\n/* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-beautiful-dnd */ \"./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js\");\nfunction _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }\n\nfunction _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === \"undefined\" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === \"number\") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError(\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it[\"return\"] != null) it[\"return\"](); } finally { if (didErr) throw err; } } }; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\nfunction Table(props) {\n  // In case there is an element whose type is table but there is no table...\n  if (props.page_element.table.length === 0) return null; // State\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.tables.findIndex(function (x) {\n    return x.id === props.page_element.table[0].id;\n  })),\n      _useState2 = _slicedToArray(_useState, 1),\n      table_index = _useState2[0];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.tables[table_index]),\n      _useState4 = _slicedToArray(_useState3, 1),\n      table = _useState4[0];\n\n  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(table.name),\n      _useState6 = _slicedToArray(_useState5, 2),\n      tableName = _useState6[0],\n      set_tableName = _useState6[1]; // Insert column function\n\n\n  var insertColumn = function insertColumn(col_index, direction) {\n    // Calculate the new column's order\n    var new_order = calculate_colOrder(col_index, direction); // Get the table's row ids\n\n    var row_ids = [];\n    table.rows.forEach(function (row) {\n      row_ids.push(row.id);\n    }); // Call redux function\n\n    props.insert_column(new_order, row_ids, col_index, direction, table_index);\n  }; // Calculate column order (used when a new column is inserted in the table or an existing column is moved)\n\n\n  var calculate_colOrder = function calculate_colOrder(col_index, direction) {\n    var new_order = 0;\n    var header_row = table.rows[0].data; // If column is being moved to start of table\n\n    if (col_index === 0 && direction === 'left') {\n      new_order = header_row[0].order / 2; // If column is being moved to the end of the table\n    } else if (col_index === header_row.length - 1 && direction === 'right') {\n      new_order = header_row[header_row.length - 1].order + 1; // If column is being moved to the middle of the table\n    } else {\n      if (direction === 'left') new_order = (header_row[col_index].order + header_row[col_index - 1].order) / 2;else new_order = (header_row[col_index].order + header_row[col_index + 1].order) / 2;\n    }\n\n    return new_order;\n  }; // Delete column function\n\n\n  var deleteColumn = function deleteColumn(col_index) {\n    // Put the data id's into an array\n    var data_ids = [];\n    table.rows.forEach(function (row) {\n      data_ids.push(row.data[col_index].id);\n    }); // Call redux function\n\n    props.delete_column(data_ids, table_index);\n  }; // Move column function\n\n\n  var moveColumn = function moveColumn(sourceIndex, direction) {\n    var new_order = 0; // Get the column's new order\n\n    if (direction === 'right') new_order = calculate_colOrder(sourceIndex + 1, direction);else new_order = calculate_colOrder(sourceIndex - 1, direction); // Call redux function\n\n    props.move_column(new_order, table, sourceIndex, direction, table_index);\n  }; // Insert row function \n\n\n  var addRow = function addRow(row_index) {\n    var new_order = 0;\n    if (row_index === table.rows.length - 2) new_order = table.rows[row_index + 1].order + 1;else new_order = (table.rows[row_index + 1].order + table.rows[row_index + 2].order) / 2; // Get the widths of each column and put them in an array\n\n    var widths = [];\n\n    var _iterator = _createForOfIteratorHelper(table.rows[0].data),\n        _step;\n\n    try {\n      for (_iterator.s(); !(_step = _iterator.n()).done;) {\n        var data = _step.value;\n        widths.push(data.width);\n      } // Call redux function\n\n    } catch (err) {\n      _iterator.e(err);\n    } finally {\n      _iterator.f();\n    }\n\n    props.add_row(new_order, table.id, table.rows[0].data.length, table_index, row_index, table, widths);\n  }; // Move row function\n\n\n  var onDragEnd = function onDragEnd(result) {\n    var new_order = 0;\n    var source = result.source,\n        destination = result.destination; // If no destination, then return\n\n    if (!destination) return; // If the source = the destination, then return\n\n    if (source.index === destination.index) return; // If we are moving a row to the start of the table (closer to index 0)\n\n    if (source.index > destination.index) {\n      new_order = (table.rows[destination.index + 1].order + table.rows[destination.index].order) / 2;\n    } // Else... we are moving a row to the end of the table (closer to table.rows.length - 1)\n    else {\n        // If destination index is at the end of the table\n        if (destination.index === table.rows.length - 2) new_order = table.rows[destination.index + 1].order + 1;else new_order = (table.rows[destination.index + 2].order + table.rows[destination.index + 1].order) / 2;\n      } // Get the row id of the row we are trying to move\n\n\n    var row_id = table.rows[source.index + 1].id; // Call redux functions\n\n    props.move_row(new_order, source, destination, table_index);\n    props.move_row_patchReq(row_id, new_order);\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    },\n    className: \"table-container\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    className: \"table-title user_input\",\n    placeholder: \"Untitled\",\n    value: tableName ? tableName : \"\",\n    onChange: function onChange(e) {\n      return set_tableName(e.target.value);\n    },\n    onBlur: function onBlur() {\n      return props.edit_TableName(tableName, table.id);\n    },\n    onKeyDown: function onKeyDown(e) {\n      if (e.key === 'Enter') e.target.blur();\n    }\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"table-div\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__.DragDropContext, {\n    onDragEnd: onDragEnd\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_5__.Droppable, {\n    droppableId: \"droppable\"\n  }, function (provided) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", _extends({\n      className: \"table\"\n    }, provided.droppableProps, {\n      ref: provided.innerRef\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n      className: \"table-body\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_table_header__WEBPACK_IMPORTED_MODULE_3__.default, {\n      row: table.rows[0],\n      insertColumn: insertColumn,\n      deleteColumn: deleteColumn,\n      row_index: 0,\n      moveColumn: moveColumn,\n      col_amount: table.rows[0].data.length,\n      table_index: table_index,\n      table: table\n    }), table.rows.slice(1).map(function (row, row_index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_table_row__WEBPACK_IMPORTED_MODULE_2__.default, {\n        key: row.id,\n        row: row,\n        row_index: row_index,\n        addRow: addRow,\n        table_index: table_index,\n        table: table\n      });\n    }), provided.placeholder));\n  }))));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    tables: state.tables\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, {\n  edit_TableName: _actions_table__WEBPACK_IMPORTED_MODULE_4__.edit_TableName,\n  insert_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.insert_column,\n  delete_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.delete_column,\n  move_column: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_column,\n  add_row: _actions_table__WEBPACK_IMPORTED_MODULE_4__.add_row,\n  move_row: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_row,\n  move_row_patchReq: _actions_table__WEBPACK_IMPORTED_MODULE_4__.move_row_patchReq\n})(Table));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/table/table.js?");
 
 /***/ }),
 
@@ -3922,7 +3892,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-textarea-autosize */ \"./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\nvar Text = /*#__PURE__*/function (_Component) {\n  _inherits(Text, _Component);\n\n  var _super = _createSuper(Text);\n\n  function Text() {\n    var _temp, _this;\n\n    _classCallCheck(this, Text);\n\n    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _possibleConstructorReturn(_this, (_temp = _this = _super.call.apply(_super, [this].concat(args)), _this.state = {\n      text: _this.props.page_element.text[0].text\n    }, _this.handle_change = function (event) {\n      _this.setState(_defineProperty({}, event.target.name, event.target.value));\n    }, _temp));\n  }\n\n  _createClass(Text, [{\n    key: \"render\",\n    value: function render() {\n      var _this2 = this;\n\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n        className: \"text-element \".concat(this.props.page_element.color)\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_1__.default, {\n        autoComplete: \"off\",\n        name: \"text\",\n        onChange: this.handle_change,\n        value: this.state.text,\n        placeholder: \"Type your text here...\",\n        autoFocus: true,\n        className: \"text\",\n        onBlur: function onBlur() {\n          return _this2.props.edit_text(_this2.props.page_element.text[0].id, _this2.state.text);\n        },\n        style: {\n          opacity: this.props.snapshot.isDragging ? '0.5' : '1'\n        }\n      }));\n    }\n  }]);\n\n  return Text;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Text);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/text.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_textarea_autosize__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-textarea-autosize */ \"./node_modules/react-textarea-autosize/dist/react-textarea-autosize.browser.esm.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\nfunction Text(props) {\n  // In case there is an element whose type is text but there is no text...\n  if (props.page_element.text.length === 0) return null;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.page_element.text[0].text),\n      _useState2 = _slicedToArray(_useState, 2),\n      text = _useState2[0],\n      set_text = _useState2[1];\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"text-element \".concat(props.page_element.color)\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_textarea_autosize__WEBPACK_IMPORTED_MODULE_1__.default, {\n    autoComplete: \"off\",\n    name: \"text\",\n    onChange: function onChange(e) {\n      return set_text(e.target.value);\n    },\n    value: text,\n    placeholder: \"Type your text here...\",\n    autoFocus: true,\n    className: \"text\",\n    onBlur: function onBlur() {\n      return props.edit_text(props.page_element.text[0].id, text);\n    },\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }));\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Text);\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/text.js?");
 
 /***/ }),
 
@@ -3937,7 +3907,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _actions_to_do__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../actions/to_do */ \"./frontend/src/actions/to_do.js\");\n/* harmony import */ var _material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Check */ \"./node_modules/@material-ui/icons/Check.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\nfunction To_do(props) {\n  var to_do = props.page_element.to_do[0]; // State\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(to_do.description),\n      _useState2 = _slicedToArray(_useState, 2),\n      description = _useState2[0],\n      set_description = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(to_do.completed),\n      _useState4 = _slicedToArray(_useState3, 2),\n      complete = _useState4[0],\n      change_complete = _useState4[1]; // Toggle check box\n\n\n  var toggleCheckBox = function toggleCheckBox(status) {\n    change_complete(status);\n    (0,_actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_tickBox)(status, to_do.id);\n  }; // In case there is an element whose type is to-do but there is no to-do...\n\n\n  if (!to_do) return null;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"to-do \".concat(props.page_element.color),\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"checkbox\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    type: \"checkbox\",\n    checked: complete,\n    onChange: function onChange() {\n      return toggleCheckBox(true);\n    }\n  }), complete === true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"to-do-check\",\n    onClick: function onClick() {\n      toggleCheckBox(false);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__.default, {\n    fontSize: \"inherit\"\n  })) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoFocus: true,\n    type: \"text\",\n    onChange: function onChange(e) {\n      return set_description(e.target.value);\n    },\n    onBlur: function onBlur() {\n      return (0,_actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_description)(description, to_do.id);\n    },\n    value: description ? description : \"\",\n    placeholder: \"To-do\",\n    className: complete === false ? \"user_input\" : \"user_input completed\",\n    onKeyDown: function onKeyDown(e) {\n      if (e.key === 'Enter') e.target.blur();\n    }\n  }));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    selected_page: state.selected_page\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, {\n  change_tickBox: _actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_tickBox,\n  change_description: _actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_description\n})(To_do));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/to_do.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ \"./node_modules/react-redux/es/index.js\");\n/* harmony import */ var _actions_to_do__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../actions/to_do */ \"./frontend/src/actions/to_do.js\");\n/* harmony import */ var _material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Check */ \"./node_modules/@material-ui/icons/Check.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\nfunction To_do(props) {\n  // In case there is an element whose type is to-do but there is no to-do...\n  if (props.page_element.to_do.length === 0) return null;\n  var to_do = props.page_element.to_do[0]; // State\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(to_do.description),\n      _useState2 = _slicedToArray(_useState, 2),\n      description = _useState2[0],\n      set_description = _useState2[1];\n\n  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(to_do.completed),\n      _useState4 = _slicedToArray(_useState3, 2),\n      complete = _useState4[0],\n      change_complete = _useState4[1]; // Toggle check box\n\n\n  var toggleCheckBox = function toggleCheckBox(status) {\n    change_complete(status);\n    (0,_actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_tickBox)(status, to_do.id);\n  };\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"to-do \".concat(props.page_element.color),\n    style: {\n      opacity: props.snapshot.isDragging ? '0.5' : '1'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"checkbox\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    type: \"checkbox\",\n    checked: complete,\n    onChange: function onChange() {\n      return toggleCheckBox(true);\n    }\n  }), complete === true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"to-do-check\",\n    onClick: function onClick() {\n      toggleCheckBox(false);\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Check__WEBPACK_IMPORTED_MODULE_3__.default, {\n    fontSize: \"inherit\"\n  })) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"input\", {\n    autoFocus: true,\n    type: \"text\",\n    onChange: function onChange(e) {\n      return set_description(e.target.value);\n    },\n    onBlur: function onBlur() {\n      return (0,_actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_description)(description, to_do.id);\n    },\n    value: description ? description : \"\",\n    placeholder: \"To-do\",\n    className: complete === false ? \"user_input\" : \"user_input completed\",\n    onKeyDown: function onKeyDown(e) {\n      if (e.key === 'Enter') e.target.blur();\n    }\n  }));\n}\n\nvar mapStateToProps = function mapStateToProps(state) {\n  return {\n    selected_page: state.selected_page\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, {\n  change_tickBox: _actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_tickBox,\n  change_description: _actions_to_do__WEBPACK_IMPORTED_MODULE_2__.change_description\n})(To_do));\n\n//# sourceURL=webpack://notion-clone/./frontend/src/components/home/body_content/to_do.js?");
 
 /***/ }),
 
@@ -4196,7 +4166,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4210,7 +4179,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 24:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4224,7 +4192,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 884:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4238,7 +4205,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4252,7 +4218,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 105:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4266,7 +4231,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 34:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4280,7 +4244,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 28:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4294,7 +4257,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 31:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4308,7 +4270,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 40:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4322,7 +4283,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 31:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4336,7 +4296,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4368,7 +4327,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 14:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4382,7 +4340,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 40:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4396,7 +4353,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 36:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4410,7 +4366,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 29:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4424,7 +4379,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 29:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4438,7 +4392,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4452,7 +4405,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 28:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4466,7 +4418,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4480,7 +4431,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 35:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4494,7 +4444,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4508,7 +4457,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 56:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4522,7 +4470,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 45:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4536,7 +4483,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 82:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4550,7 +4496,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 44:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4564,7 +4509,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 47:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4578,7 +4522,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 101:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4592,7 +4535,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4606,7 +4548,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 45:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4620,7 +4561,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 67:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4634,7 +4574,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 45:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4648,7 +4587,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 454:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4662,7 +4600,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4676,7 +4613,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 42:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4690,7 +4626,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 42:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4704,7 +4639,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 42:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4718,7 +4652,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4732,7 +4665,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4746,7 +4678,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4760,7 +4691,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4774,7 +4704,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4788,7 +4717,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4802,7 +4730,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4816,7 +4743,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 77:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4830,7 +4756,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 17:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4844,7 +4769,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 31:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4858,7 +4782,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 59:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4872,7 +4795,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 34:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4886,7 +4808,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 94:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4900,7 +4821,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*********************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4914,7 +4834,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module */
-/*! CommonJS bailout: module.exports is used directly at 20:0-14 */
 /***/ ((module, exports) => {
 
 "use strict";
@@ -4928,7 +4847,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*******************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 161:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4942,7 +4860,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 111:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4956,7 +4873,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 45:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4970,7 +4886,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 1521:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4984,7 +4899,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 572:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -4998,7 +4912,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5012,7 +4925,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5026,7 +4938,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 56:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5040,7 +4951,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5054,7 +4964,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 51:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5068,7 +4977,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5082,7 +4990,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 43:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5096,7 +5003,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 44:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5110,7 +5016,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 67:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5124,7 +5029,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 45:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5138,7 +5042,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 44:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5152,7 +5055,6 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: __webpack_exports__, module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 63:0-14 */
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -5817,7 +5719,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 103:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -5862,7 +5763,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 1:0-14 */
 /***/ ((module) => {
 
 eval("module.exports = Array.isArray || function (arr) {\n  return Object.prototype.toString.call(arr) == '[object Array]';\n};\n\n\n//# sourceURL=webpack://notion-clone/./node_modules/isarray/index.js?");
@@ -6035,7 +5935,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -6049,7 +5948,6 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 6:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var isarray = __webpack_require__(/*! isarray */ \"./node_modules/isarray/index.js\")\n\n/**\n * Expose `pathToRegexp`.\n */\nmodule.exports = pathToRegexp\nmodule.exports.parse = parse\nmodule.exports.compile = compile\nmodule.exports.tokensToFunction = tokensToFunction\nmodule.exports.tokensToRegExp = tokensToRegExp\n\n/**\n * The main path matching regexp utility.\n *\n * @type {RegExp}\n */\nvar PATH_REGEXP = new RegExp([\n  // Match escaped characters that would otherwise appear in future matches.\n  // This allows the user to escape special characters that won't transform.\n  '(\\\\\\\\.)',\n  // Match Express-style parameters and un-named parameters with a prefix\n  // and optional suffixes. Matches appear as:\n  //\n  // \"/:test(\\\\d+)?\" => [\"/\", \"test\", \"\\d+\", undefined, \"?\", undefined]\n  // \"/route(\\\\d+)\"  => [undefined, undefined, undefined, \"\\d+\", undefined, undefined]\n  // \"/*\"            => [\"/\", undefined, undefined, undefined, undefined, \"*\"]\n  '([\\\\/.])?(?:(?:\\\\:(\\\\w+)(?:\\\\(((?:\\\\\\\\.|[^\\\\\\\\()])+)\\\\))?|\\\\(((?:\\\\\\\\.|[^\\\\\\\\()])+)\\\\))([+*?])?|(\\\\*))'\n].join('|'), 'g')\n\n/**\n * Parse a string for the raw tokens.\n *\n * @param  {string}  str\n * @param  {Object=} options\n * @return {!Array}\n */\nfunction parse (str, options) {\n  var tokens = []\n  var key = 0\n  var index = 0\n  var path = ''\n  var defaultDelimiter = options && options.delimiter || '/'\n  var res\n\n  while ((res = PATH_REGEXP.exec(str)) != null) {\n    var m = res[0]\n    var escaped = res[1]\n    var offset = res.index\n    path += str.slice(index, offset)\n    index = offset + m.length\n\n    // Ignore already escaped sequences.\n    if (escaped) {\n      path += escaped[1]\n      continue\n    }\n\n    var next = str[index]\n    var prefix = res[2]\n    var name = res[3]\n    var capture = res[4]\n    var group = res[5]\n    var modifier = res[6]\n    var asterisk = res[7]\n\n    // Push the current path onto the tokens.\n    if (path) {\n      tokens.push(path)\n      path = ''\n    }\n\n    var partial = prefix != null && next != null && next !== prefix\n    var repeat = modifier === '+' || modifier === '*'\n    var optional = modifier === '?' || modifier === '*'\n    var delimiter = res[2] || defaultDelimiter\n    var pattern = capture || group\n\n    tokens.push({\n      name: name || key++,\n      prefix: prefix || '',\n      delimiter: delimiter,\n      optional: optional,\n      repeat: repeat,\n      partial: partial,\n      asterisk: !!asterisk,\n      pattern: pattern ? escapeGroup(pattern) : (asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?')\n    })\n  }\n\n  // Match any characters still remaining.\n  if (index < str.length) {\n    path += str.substr(index)\n  }\n\n  // If the path exists, push it onto the end.\n  if (path) {\n    tokens.push(path)\n  }\n\n  return tokens\n}\n\n/**\n * Compile a string to a template function for the path.\n *\n * @param  {string}             str\n * @param  {Object=}            options\n * @return {!function(Object=, Object=)}\n */\nfunction compile (str, options) {\n  return tokensToFunction(parse(str, options), options)\n}\n\n/**\n * Prettier encoding of URI path segments.\n *\n * @param  {string}\n * @return {string}\n */\nfunction encodeURIComponentPretty (str) {\n  return encodeURI(str).replace(/[\\/?#]/g, function (c) {\n    return '%' + c.charCodeAt(0).toString(16).toUpperCase()\n  })\n}\n\n/**\n * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.\n *\n * @param  {string}\n * @return {string}\n */\nfunction encodeAsterisk (str) {\n  return encodeURI(str).replace(/[?#]/g, function (c) {\n    return '%' + c.charCodeAt(0).toString(16).toUpperCase()\n  })\n}\n\n/**\n * Expose a method for transforming tokens into the path function.\n */\nfunction tokensToFunction (tokens, options) {\n  // Compile all the tokens into regexps.\n  var matches = new Array(tokens.length)\n\n  // Compile all the patterns before compilation.\n  for (var i = 0; i < tokens.length; i++) {\n    if (typeof tokens[i] === 'object') {\n      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$', flags(options))\n    }\n  }\n\n  return function (obj, opts) {\n    var path = ''\n    var data = obj || {}\n    var options = opts || {}\n    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent\n\n    for (var i = 0; i < tokens.length; i++) {\n      var token = tokens[i]\n\n      if (typeof token === 'string') {\n        path += token\n\n        continue\n      }\n\n      var value = data[token.name]\n      var segment\n\n      if (value == null) {\n        if (token.optional) {\n          // Prepend partial segment prefixes.\n          if (token.partial) {\n            path += token.prefix\n          }\n\n          continue\n        } else {\n          throw new TypeError('Expected \"' + token.name + '\" to be defined')\n        }\n      }\n\n      if (isarray(value)) {\n        if (!token.repeat) {\n          throw new TypeError('Expected \"' + token.name + '\" to not repeat, but received `' + JSON.stringify(value) + '`')\n        }\n\n        if (value.length === 0) {\n          if (token.optional) {\n            continue\n          } else {\n            throw new TypeError('Expected \"' + token.name + '\" to not be empty')\n          }\n        }\n\n        for (var j = 0; j < value.length; j++) {\n          segment = encode(value[j])\n\n          if (!matches[i].test(segment)) {\n            throw new TypeError('Expected all \"' + token.name + '\" to match \"' + token.pattern + '\", but received `' + JSON.stringify(segment) + '`')\n          }\n\n          path += (j === 0 ? token.prefix : token.delimiter) + segment\n        }\n\n        continue\n      }\n\n      segment = token.asterisk ? encodeAsterisk(value) : encode(value)\n\n      if (!matches[i].test(segment)) {\n        throw new TypeError('Expected \"' + token.name + '\" to match \"' + token.pattern + '\", but received \"' + segment + '\"')\n      }\n\n      path += token.prefix + segment\n    }\n\n    return path\n  }\n}\n\n/**\n * Escape a regular expression string.\n *\n * @param  {string} str\n * @return {string}\n */\nfunction escapeString (str) {\n  return str.replace(/([.+*?=^!:${}()[\\]|\\/\\\\])/g, '\\\\$1')\n}\n\n/**\n * Escape the capturing group by escaping special characters and meaning.\n *\n * @param  {string} group\n * @return {string}\n */\nfunction escapeGroup (group) {\n  return group.replace(/([=!:$\\/()])/g, '\\\\$1')\n}\n\n/**\n * Attach the keys as a property of the regexp.\n *\n * @param  {!RegExp} re\n * @param  {Array}   keys\n * @return {!RegExp}\n */\nfunction attachKeys (re, keys) {\n  re.keys = keys\n  return re\n}\n\n/**\n * Get the flags for a regexp from the options.\n *\n * @param  {Object} options\n * @return {string}\n */\nfunction flags (options) {\n  return options && options.sensitive ? '' : 'i'\n}\n\n/**\n * Pull out keys from a regexp.\n *\n * @param  {!RegExp} path\n * @param  {!Array}  keys\n * @return {!RegExp}\n */\nfunction regexpToRegexp (path, keys) {\n  // Use a negative lookahead to match only capturing groups.\n  var groups = path.source.match(/\\((?!\\?)/g)\n\n  if (groups) {\n    for (var i = 0; i < groups.length; i++) {\n      keys.push({\n        name: i,\n        prefix: null,\n        delimiter: null,\n        optional: false,\n        repeat: false,\n        partial: false,\n        asterisk: false,\n        pattern: null\n      })\n    }\n  }\n\n  return attachKeys(path, keys)\n}\n\n/**\n * Transform an array into a regexp.\n *\n * @param  {!Array}  path\n * @param  {Array}   keys\n * @param  {!Object} options\n * @return {!RegExp}\n */\nfunction arrayToRegexp (path, keys, options) {\n  var parts = []\n\n  for (var i = 0; i < path.length; i++) {\n    parts.push(pathToRegexp(path[i], keys, options).source)\n  }\n\n  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options))\n\n  return attachKeys(regexp, keys)\n}\n\n/**\n * Create a path regexp from string input.\n *\n * @param  {string}  path\n * @param  {!Array}  keys\n * @param  {!Object} options\n * @return {!RegExp}\n */\nfunction stringToRegexp (path, keys, options) {\n  return tokensToRegExp(parse(path, options), keys, options)\n}\n\n/**\n * Expose a function for taking tokens and returning a RegExp.\n *\n * @param  {!Array}          tokens\n * @param  {(Array|Object)=} keys\n * @param  {Object=}         options\n * @return {!RegExp}\n */\nfunction tokensToRegExp (tokens, keys, options) {\n  if (!isarray(keys)) {\n    options = /** @type {!Object} */ (keys || options)\n    keys = []\n  }\n\n  options = options || {}\n\n  var strict = options.strict\n  var end = options.end !== false\n  var route = ''\n\n  // Iterate over the tokens and create our regexp string.\n  for (var i = 0; i < tokens.length; i++) {\n    var token = tokens[i]\n\n    if (typeof token === 'string') {\n      route += escapeString(token)\n    } else {\n      var prefix = escapeString(token.prefix)\n      var capture = '(?:' + token.pattern + ')'\n\n      keys.push(token)\n\n      if (token.repeat) {\n        capture += '(?:' + prefix + capture + ')*'\n      }\n\n      if (token.optional) {\n        if (!token.partial) {\n          capture = '(?:' + prefix + '(' + capture + '))?'\n        } else {\n          capture = prefix + '(' + capture + ')?'\n        }\n      } else {\n        capture = prefix + '(' + capture + ')'\n      }\n\n      route += capture\n    }\n  }\n\n  var delimiter = escapeString(options.delimiter || '/')\n  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter\n\n  // In non-strict mode we allow a slash at the end of match. If the path to\n  // match already ends with a slash, we remove it for consistency. The slash\n  // is valid at the end of a path match, not in the middle. This is important\n  // in non-ending mode, where \"/test/\" shouldn't match \"/test//route\".\n  if (!strict) {\n    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?'\n  }\n\n  if (end) {\n    route += '$'\n  } else {\n    // In non-ending mode, we need the capturing groups to match as much as\n    // possible by using a positive lookahead to the end or next path segment.\n    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)'\n  }\n\n  return attachKeys(new RegExp('^' + route, flags(options)), keys)\n}\n\n/**\n * Normalize the given path string, returning a regular expression.\n *\n * An empty array can be passed in for the keys, which will hold the\n * placeholder key descriptions. For example, using `/user/:id`, `keys` will\n * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.\n *\n * @param  {(string|RegExp|Array)} path\n * @param  {(Array|Object)=}       keys\n * @param  {Object=}               options\n * @return {!RegExp}\n */\nfunction pathToRegexp (path, keys, options) {\n  if (!isarray(keys)) {\n    options = /** @type {!Object} */ (keys || options)\n    keys = []\n  }\n\n  options = options || {}\n\n  if (path instanceof RegExp) {\n    return regexpToRegexp(path, /** @type {!Array} */ (keys))\n  }\n\n  if (isarray(path)) {\n    return arrayToRegexp(/** @type {!Array} */ (path), /** @type {!Array} */ (keys), options)\n  }\n\n  return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)\n}\n\n\n//# sourceURL=webpack://notion-clone/./node_modules/path-to-regexp/index.js?");
@@ -6062,7 +5960,6 @@ eval("var isarray = __webpack_require__(/*! isarray */ \"./node_modules/isarray/
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -6076,7 +5973,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -6090,7 +5986,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
-/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://notion-clone/./node_modules/prop-types/index.js?");
@@ -6103,7 +5998,6 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -6972,7 +6866,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
-/*! CommonJS bailout: module.exports is used directly at 732:31-45 */
 /***/ ((module) => {
 
 eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nvar runtime = (function (exports) {\n  \"use strict\";\n\n  var Op = Object.prototype;\n  var hasOwn = Op.hasOwnProperty;\n  var undefined; // More compressible than void 0.\n  var $Symbol = typeof Symbol === \"function\" ? Symbol : {};\n  var iteratorSymbol = $Symbol.iterator || \"@@iterator\";\n  var asyncIteratorSymbol = $Symbol.asyncIterator || \"@@asyncIterator\";\n  var toStringTagSymbol = $Symbol.toStringTag || \"@@toStringTag\";\n\n  function define(obj, key, value) {\n    Object.defineProperty(obj, key, {\n      value: value,\n      enumerable: true,\n      configurable: true,\n      writable: true\n    });\n    return obj[key];\n  }\n  try {\n    // IE 8 has a broken Object.defineProperty that only works on DOM objects.\n    define({}, \"\");\n  } catch (err) {\n    define = function(obj, key, value) {\n      return obj[key] = value;\n    };\n  }\n\n  function wrap(innerFn, outerFn, self, tryLocsList) {\n    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.\n    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;\n    var generator = Object.create(protoGenerator.prototype);\n    var context = new Context(tryLocsList || []);\n\n    // The ._invoke method unifies the implementations of the .next,\n    // .throw, and .return methods.\n    generator._invoke = makeInvokeMethod(innerFn, self, context);\n\n    return generator;\n  }\n  exports.wrap = wrap;\n\n  // Try/catch helper to minimize deoptimizations. Returns a completion\n  // record like context.tryEntries[i].completion. This interface could\n  // have been (and was previously) designed to take a closure to be\n  // invoked without arguments, but in all the cases we care about we\n  // already have an existing method we want to call, so there's no need\n  // to create a new function object. We can even get away with assuming\n  // the method takes exactly one argument, since that happens to be true\n  // in every case, so we don't have to touch the arguments object. The\n  // only additional allocation required is the completion record, which\n  // has a stable shape and so hopefully should be cheap to allocate.\n  function tryCatch(fn, obj, arg) {\n    try {\n      return { type: \"normal\", arg: fn.call(obj, arg) };\n    } catch (err) {\n      return { type: \"throw\", arg: err };\n    }\n  }\n\n  var GenStateSuspendedStart = \"suspendedStart\";\n  var GenStateSuspendedYield = \"suspendedYield\";\n  var GenStateExecuting = \"executing\";\n  var GenStateCompleted = \"completed\";\n\n  // Returning this object from the innerFn has the same effect as\n  // breaking out of the dispatch switch statement.\n  var ContinueSentinel = {};\n\n  // Dummy constructor functions that we use as the .constructor and\n  // .constructor.prototype properties for functions that return Generator\n  // objects. For full spec compliance, you may wish to configure your\n  // minifier not to mangle the names of these two functions.\n  function Generator() {}\n  function GeneratorFunction() {}\n  function GeneratorFunctionPrototype() {}\n\n  // This is a polyfill for %IteratorPrototype% for environments that\n  // don't natively support it.\n  var IteratorPrototype = {};\n  IteratorPrototype[iteratorSymbol] = function () {\n    return this;\n  };\n\n  var getProto = Object.getPrototypeOf;\n  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));\n  if (NativeIteratorPrototype &&\n      NativeIteratorPrototype !== Op &&\n      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {\n    // This environment has a native %IteratorPrototype%; use it instead\n    // of the polyfill.\n    IteratorPrototype = NativeIteratorPrototype;\n  }\n\n  var Gp = GeneratorFunctionPrototype.prototype =\n    Generator.prototype = Object.create(IteratorPrototype);\n  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;\n  GeneratorFunctionPrototype.constructor = GeneratorFunction;\n  GeneratorFunction.displayName = define(\n    GeneratorFunctionPrototype,\n    toStringTagSymbol,\n    \"GeneratorFunction\"\n  );\n\n  // Helper for defining the .next, .throw, and .return methods of the\n  // Iterator interface in terms of a single ._invoke method.\n  function defineIteratorMethods(prototype) {\n    [\"next\", \"throw\", \"return\"].forEach(function(method) {\n      define(prototype, method, function(arg) {\n        return this._invoke(method, arg);\n      });\n    });\n  }\n\n  exports.isGeneratorFunction = function(genFun) {\n    var ctor = typeof genFun === \"function\" && genFun.constructor;\n    return ctor\n      ? ctor === GeneratorFunction ||\n        // For the native GeneratorFunction constructor, the best we can\n        // do is to check its .name property.\n        (ctor.displayName || ctor.name) === \"GeneratorFunction\"\n      : false;\n  };\n\n  exports.mark = function(genFun) {\n    if (Object.setPrototypeOf) {\n      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);\n    } else {\n      genFun.__proto__ = GeneratorFunctionPrototype;\n      define(genFun, toStringTagSymbol, \"GeneratorFunction\");\n    }\n    genFun.prototype = Object.create(Gp);\n    return genFun;\n  };\n\n  // Within the body of any async function, `await x` is transformed to\n  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test\n  // `hasOwn.call(value, \"__await\")` to determine if the yielded value is\n  // meant to be awaited.\n  exports.awrap = function(arg) {\n    return { __await: arg };\n  };\n\n  function AsyncIterator(generator, PromiseImpl) {\n    function invoke(method, arg, resolve, reject) {\n      var record = tryCatch(generator[method], generator, arg);\n      if (record.type === \"throw\") {\n        reject(record.arg);\n      } else {\n        var result = record.arg;\n        var value = result.value;\n        if (value &&\n            typeof value === \"object\" &&\n            hasOwn.call(value, \"__await\")) {\n          return PromiseImpl.resolve(value.__await).then(function(value) {\n            invoke(\"next\", value, resolve, reject);\n          }, function(err) {\n            invoke(\"throw\", err, resolve, reject);\n          });\n        }\n\n        return PromiseImpl.resolve(value).then(function(unwrapped) {\n          // When a yielded Promise is resolved, its final value becomes\n          // the .value of the Promise<{value,done}> result for the\n          // current iteration.\n          result.value = unwrapped;\n          resolve(result);\n        }, function(error) {\n          // If a rejected Promise was yielded, throw the rejection back\n          // into the async generator function so it can be handled there.\n          return invoke(\"throw\", error, resolve, reject);\n        });\n      }\n    }\n\n    var previousPromise;\n\n    function enqueue(method, arg) {\n      function callInvokeWithMethodAndArg() {\n        return new PromiseImpl(function(resolve, reject) {\n          invoke(method, arg, resolve, reject);\n        });\n      }\n\n      return previousPromise =\n        // If enqueue has been called before, then we want to wait until\n        // all previous Promises have been resolved before calling invoke,\n        // so that results are always delivered in the correct order. If\n        // enqueue has not been called before, then it is important to\n        // call invoke immediately, without waiting on a callback to fire,\n        // so that the async generator function has the opportunity to do\n        // any necessary setup in a predictable way. This predictability\n        // is why the Promise constructor synchronously invokes its\n        // executor callback, and why async functions synchronously\n        // execute code before the first await. Since we implement simple\n        // async functions in terms of async generators, it is especially\n        // important to get this right, even though it requires care.\n        previousPromise ? previousPromise.then(\n          callInvokeWithMethodAndArg,\n          // Avoid propagating failures to Promises returned by later\n          // invocations of the iterator.\n          callInvokeWithMethodAndArg\n        ) : callInvokeWithMethodAndArg();\n    }\n\n    // Define the unified helper method that is used to implement .next,\n    // .throw, and .return (see defineIteratorMethods).\n    this._invoke = enqueue;\n  }\n\n  defineIteratorMethods(AsyncIterator.prototype);\n  AsyncIterator.prototype[asyncIteratorSymbol] = function () {\n    return this;\n  };\n  exports.AsyncIterator = AsyncIterator;\n\n  // Note that simple async functions are implemented on top of\n  // AsyncIterator objects; they just return a Promise for the value of\n  // the final result produced by the iterator.\n  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {\n    if (PromiseImpl === void 0) PromiseImpl = Promise;\n\n    var iter = new AsyncIterator(\n      wrap(innerFn, outerFn, self, tryLocsList),\n      PromiseImpl\n    );\n\n    return exports.isGeneratorFunction(outerFn)\n      ? iter // If outerFn is a generator, return the full iterator.\n      : iter.next().then(function(result) {\n          return result.done ? result.value : iter.next();\n        });\n  };\n\n  function makeInvokeMethod(innerFn, self, context) {\n    var state = GenStateSuspendedStart;\n\n    return function invoke(method, arg) {\n      if (state === GenStateExecuting) {\n        throw new Error(\"Generator is already running\");\n      }\n\n      if (state === GenStateCompleted) {\n        if (method === \"throw\") {\n          throw arg;\n        }\n\n        // Be forgiving, per 25.3.3.3.3 of the spec:\n        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume\n        return doneResult();\n      }\n\n      context.method = method;\n      context.arg = arg;\n\n      while (true) {\n        var delegate = context.delegate;\n        if (delegate) {\n          var delegateResult = maybeInvokeDelegate(delegate, context);\n          if (delegateResult) {\n            if (delegateResult === ContinueSentinel) continue;\n            return delegateResult;\n          }\n        }\n\n        if (context.method === \"next\") {\n          // Setting context._sent for legacy support of Babel's\n          // function.sent implementation.\n          context.sent = context._sent = context.arg;\n\n        } else if (context.method === \"throw\") {\n          if (state === GenStateSuspendedStart) {\n            state = GenStateCompleted;\n            throw context.arg;\n          }\n\n          context.dispatchException(context.arg);\n\n        } else if (context.method === \"return\") {\n          context.abrupt(\"return\", context.arg);\n        }\n\n        state = GenStateExecuting;\n\n        var record = tryCatch(innerFn, self, context);\n        if (record.type === \"normal\") {\n          // If an exception is thrown from innerFn, we leave state ===\n          // GenStateExecuting and loop back for another invocation.\n          state = context.done\n            ? GenStateCompleted\n            : GenStateSuspendedYield;\n\n          if (record.arg === ContinueSentinel) {\n            continue;\n          }\n\n          return {\n            value: record.arg,\n            done: context.done\n          };\n\n        } else if (record.type === \"throw\") {\n          state = GenStateCompleted;\n          // Dispatch the exception by looping back around to the\n          // context.dispatchException(context.arg) call above.\n          context.method = \"throw\";\n          context.arg = record.arg;\n        }\n      }\n    };\n  }\n\n  // Call delegate.iterator[context.method](context.arg) and handle the\n  // result, either by returning a { value, done } result from the\n  // delegate iterator, or by modifying context.method and context.arg,\n  // setting context.delegate to null, and returning the ContinueSentinel.\n  function maybeInvokeDelegate(delegate, context) {\n    var method = delegate.iterator[context.method];\n    if (method === undefined) {\n      // A .throw or .return when the delegate iterator has no .throw\n      // method always terminates the yield* loop.\n      context.delegate = null;\n\n      if (context.method === \"throw\") {\n        // Note: [\"return\"] must be used for ES3 parsing compatibility.\n        if (delegate.iterator[\"return\"]) {\n          // If the delegate iterator has a return method, give it a\n          // chance to clean up.\n          context.method = \"return\";\n          context.arg = undefined;\n          maybeInvokeDelegate(delegate, context);\n\n          if (context.method === \"throw\") {\n            // If maybeInvokeDelegate(context) changed context.method from\n            // \"return\" to \"throw\", let that override the TypeError below.\n            return ContinueSentinel;\n          }\n        }\n\n        context.method = \"throw\";\n        context.arg = new TypeError(\n          \"The iterator does not provide a 'throw' method\");\n      }\n\n      return ContinueSentinel;\n    }\n\n    var record = tryCatch(method, delegate.iterator, context.arg);\n\n    if (record.type === \"throw\") {\n      context.method = \"throw\";\n      context.arg = record.arg;\n      context.delegate = null;\n      return ContinueSentinel;\n    }\n\n    var info = record.arg;\n\n    if (! info) {\n      context.method = \"throw\";\n      context.arg = new TypeError(\"iterator result is not an object\");\n      context.delegate = null;\n      return ContinueSentinel;\n    }\n\n    if (info.done) {\n      // Assign the result of the finished delegate to the temporary\n      // variable specified by delegate.resultName (see delegateYield).\n      context[delegate.resultName] = info.value;\n\n      // Resume execution at the desired location (see delegateYield).\n      context.next = delegate.nextLoc;\n\n      // If context.method was \"throw\" but the delegate handled the\n      // exception, let the outer generator proceed normally. If\n      // context.method was \"next\", forget context.arg since it has been\n      // \"consumed\" by the delegate iterator. If context.method was\n      // \"return\", allow the original .return call to continue in the\n      // outer generator.\n      if (context.method !== \"return\") {\n        context.method = \"next\";\n        context.arg = undefined;\n      }\n\n    } else {\n      // Re-yield the result returned by the delegate method.\n      return info;\n    }\n\n    // The delegate iterator is finished, so forget it and continue with\n    // the outer generator.\n    context.delegate = null;\n    return ContinueSentinel;\n  }\n\n  // Define Generator.prototype.{next,throw,return} in terms of the\n  // unified ._invoke helper method.\n  defineIteratorMethods(Gp);\n\n  define(Gp, toStringTagSymbol, \"Generator\");\n\n  // A Generator should always return itself as the iterator object when the\n  // @@iterator function is called on it. Some browsers' implementations of the\n  // iterator prototype chain incorrectly implement this, causing the Generator\n  // object to not be returned from this call. This ensures that doesn't happen.\n  // See https://github.com/facebook/regenerator/issues/274 for more details.\n  Gp[iteratorSymbol] = function() {\n    return this;\n  };\n\n  Gp.toString = function() {\n    return \"[object Generator]\";\n  };\n\n  function pushTryEntry(locs) {\n    var entry = { tryLoc: locs[0] };\n\n    if (1 in locs) {\n      entry.catchLoc = locs[1];\n    }\n\n    if (2 in locs) {\n      entry.finallyLoc = locs[2];\n      entry.afterLoc = locs[3];\n    }\n\n    this.tryEntries.push(entry);\n  }\n\n  function resetTryEntry(entry) {\n    var record = entry.completion || {};\n    record.type = \"normal\";\n    delete record.arg;\n    entry.completion = record;\n  }\n\n  function Context(tryLocsList) {\n    // The root entry object (effectively a try statement without a catch\n    // or a finally block) gives us a place to store values thrown from\n    // locations where there is no enclosing try statement.\n    this.tryEntries = [{ tryLoc: \"root\" }];\n    tryLocsList.forEach(pushTryEntry, this);\n    this.reset(true);\n  }\n\n  exports.keys = function(object) {\n    var keys = [];\n    for (var key in object) {\n      keys.push(key);\n    }\n    keys.reverse();\n\n    // Rather than returning an object with a next method, we keep\n    // things simple and return the next function itself.\n    return function next() {\n      while (keys.length) {\n        var key = keys.pop();\n        if (key in object) {\n          next.value = key;\n          next.done = false;\n          return next;\n        }\n      }\n\n      // To avoid creating an additional object, we just hang the .value\n      // and .done properties off the next function object itself. This\n      // also ensures that the minifier will not anonymize the function.\n      next.done = true;\n      return next;\n    };\n  };\n\n  function values(iterable) {\n    if (iterable) {\n      var iteratorMethod = iterable[iteratorSymbol];\n      if (iteratorMethod) {\n        return iteratorMethod.call(iterable);\n      }\n\n      if (typeof iterable.next === \"function\") {\n        return iterable;\n      }\n\n      if (!isNaN(iterable.length)) {\n        var i = -1, next = function next() {\n          while (++i < iterable.length) {\n            if (hasOwn.call(iterable, i)) {\n              next.value = iterable[i];\n              next.done = false;\n              return next;\n            }\n          }\n\n          next.value = undefined;\n          next.done = true;\n\n          return next;\n        };\n\n        return next.next = next;\n      }\n    }\n\n    // Return an iterator with no values.\n    return { next: doneResult };\n  }\n  exports.values = values;\n\n  function doneResult() {\n    return { value: undefined, done: true };\n  }\n\n  Context.prototype = {\n    constructor: Context,\n\n    reset: function(skipTempReset) {\n      this.prev = 0;\n      this.next = 0;\n      // Resetting context._sent for legacy support of Babel's\n      // function.sent implementation.\n      this.sent = this._sent = undefined;\n      this.done = false;\n      this.delegate = null;\n\n      this.method = \"next\";\n      this.arg = undefined;\n\n      this.tryEntries.forEach(resetTryEntry);\n\n      if (!skipTempReset) {\n        for (var name in this) {\n          // Not sure about the optimal order of these conditions:\n          if (name.charAt(0) === \"t\" &&\n              hasOwn.call(this, name) &&\n              !isNaN(+name.slice(1))) {\n            this[name] = undefined;\n          }\n        }\n      }\n    },\n\n    stop: function() {\n      this.done = true;\n\n      var rootEntry = this.tryEntries[0];\n      var rootRecord = rootEntry.completion;\n      if (rootRecord.type === \"throw\") {\n        throw rootRecord.arg;\n      }\n\n      return this.rval;\n    },\n\n    dispatchException: function(exception) {\n      if (this.done) {\n        throw exception;\n      }\n\n      var context = this;\n      function handle(loc, caught) {\n        record.type = \"throw\";\n        record.arg = exception;\n        context.next = loc;\n\n        if (caught) {\n          // If the dispatched exception was caught by a catch block,\n          // then let that catch block handle the exception normally.\n          context.method = \"next\";\n          context.arg = undefined;\n        }\n\n        return !! caught;\n      }\n\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        var record = entry.completion;\n\n        if (entry.tryLoc === \"root\") {\n          // Exception thrown outside of any try block that could handle\n          // it, so set the completion value of the entire function to\n          // throw the exception.\n          return handle(\"end\");\n        }\n\n        if (entry.tryLoc <= this.prev) {\n          var hasCatch = hasOwn.call(entry, \"catchLoc\");\n          var hasFinally = hasOwn.call(entry, \"finallyLoc\");\n\n          if (hasCatch && hasFinally) {\n            if (this.prev < entry.catchLoc) {\n              return handle(entry.catchLoc, true);\n            } else if (this.prev < entry.finallyLoc) {\n              return handle(entry.finallyLoc);\n            }\n\n          } else if (hasCatch) {\n            if (this.prev < entry.catchLoc) {\n              return handle(entry.catchLoc, true);\n            }\n\n          } else if (hasFinally) {\n            if (this.prev < entry.finallyLoc) {\n              return handle(entry.finallyLoc);\n            }\n\n          } else {\n            throw new Error(\"try statement without catch or finally\");\n          }\n        }\n      }\n    },\n\n    abrupt: function(type, arg) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.tryLoc <= this.prev &&\n            hasOwn.call(entry, \"finallyLoc\") &&\n            this.prev < entry.finallyLoc) {\n          var finallyEntry = entry;\n          break;\n        }\n      }\n\n      if (finallyEntry &&\n          (type === \"break\" ||\n           type === \"continue\") &&\n          finallyEntry.tryLoc <= arg &&\n          arg <= finallyEntry.finallyLoc) {\n        // Ignore the finally entry if control is not jumping to a\n        // location outside the try/catch block.\n        finallyEntry = null;\n      }\n\n      var record = finallyEntry ? finallyEntry.completion : {};\n      record.type = type;\n      record.arg = arg;\n\n      if (finallyEntry) {\n        this.method = \"next\";\n        this.next = finallyEntry.finallyLoc;\n        return ContinueSentinel;\n      }\n\n      return this.complete(record);\n    },\n\n    complete: function(record, afterLoc) {\n      if (record.type === \"throw\") {\n        throw record.arg;\n      }\n\n      if (record.type === \"break\" ||\n          record.type === \"continue\") {\n        this.next = record.arg;\n      } else if (record.type === \"return\") {\n        this.rval = this.arg = record.arg;\n        this.method = \"return\";\n        this.next = \"end\";\n      } else if (record.type === \"normal\" && afterLoc) {\n        this.next = afterLoc;\n      }\n\n      return ContinueSentinel;\n    },\n\n    finish: function(finallyLoc) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.finallyLoc === finallyLoc) {\n          this.complete(entry.completion, entry.afterLoc);\n          resetTryEntry(entry);\n          return ContinueSentinel;\n        }\n      }\n    },\n\n    \"catch\": function(tryLoc) {\n      for (var i = this.tryEntries.length - 1; i >= 0; --i) {\n        var entry = this.tryEntries[i];\n        if (entry.tryLoc === tryLoc) {\n          var record = entry.completion;\n          if (record.type === \"throw\") {\n            var thrown = record.arg;\n            resetTryEntry(entry);\n          }\n          return thrown;\n        }\n      }\n\n      // The context.catch method must only be called with a location\n      // argument that corresponds to a known catch block.\n      throw new Error(\"illegal catch attempt\");\n    },\n\n    delegateYield: function(iterable, resultName, nextLoc) {\n      this.delegate = {\n        iterator: values(iterable),\n        resultName: resultName,\n        nextLoc: nextLoc\n      };\n\n      if (this.method === \"next\") {\n        // Deliberately forget the last sent value so that we don't\n        // accidentally pass it on to the delegate.\n        this.arg = undefined;\n      }\n\n      return ContinueSentinel;\n    }\n  };\n\n  // Regardless of whether this script is executing as a CommonJS module\n  // or not, return the runtime object so that we can declare the variable\n  // regeneratorRuntime in the outer scope, which allows this module to be\n  // injected easily by `bin/regenerator --include-runtime script.js`.\n  return exports;\n\n}(\n  // If this script is executing as a CommonJS module, use module.exports\n  // as the regeneratorRuntime namespace. Otherwise create a new empty\n  // object. Either way, the resulting object will be used to initialize\n  // the regeneratorRuntime variable at the top of this file.\n   true ? module.exports : 0\n));\n\ntry {\n  regeneratorRuntime = runtime;\n} catch (accidentalStrictMode) {\n  // This module should not be running in strict mode, so the above\n  // assignment should always work unless something is misconfigured. Just\n  // in case runtime.js accidentally runs in strict mode, we can escape\n  // strict mode using a global Function call. This could conceivably fail\n  // if a Content Security Policy forbids using Function, but in that case\n  // the proper solution is to fix the accidental strict mode problem. If\n  // you've misconfigured your bundler to force strict mode and applied a\n  // CSP to forbid Function, and you're not willing to fix either of those\n  // problems, please detail your unique predicament in a GitHub issue.\n  Function(\"r\", \"regeneratorRuntime = r\")(runtime);\n}\n\n\n//# sourceURL=webpack://notion-clone/./node_modules/regenerator-runtime/runtime.js?");
@@ -7058,16 +6951,6 @@ eval("/** @license React v0.20.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 52:26-46 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 125:13-33 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 149:24-44 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 193:15-35 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 548:28-48 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 565:25-45 */
-/*! CommonJS bailout: exports.unstable_shouldYield(...) prevents optimization as exports is passed as call context at 578:74-102 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 591:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 695:20-40 */
-/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 804:24-44 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
