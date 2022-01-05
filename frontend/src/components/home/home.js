@@ -22,7 +22,16 @@ class Home extends Component {
 
         // Check if user is logged in (by seeing if there is a token in local storage)
         if (localStorage.getItem('token') !== null) {
-            await this.props.get_user_data()
+
+            try {
+                await this.props.get_user_data()
+            } catch {
+
+                // If token is wrong then return back to login and clear token from localstorage
+                localStorage.setItem('token', "")
+                this.setState({ isLoaded: true })
+                return
+            }
 
             this.setState({isLoggedIn: true})
         }
