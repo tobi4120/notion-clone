@@ -46,7 +46,7 @@ flake8-commas==2.0.0
 flake8-comprehensions==3.4.0
 flake8-debugger==3.2.1
 flake8-docstrings==1.6.0
-flake8-eradicate==0.4.0
+flake8-eradicate
 flake8-fixme==1.1.1
 flake8-isort==3.0.1
 flake8-logging-format==0.6.0
@@ -104,7 +104,7 @@ pyparsing==2.4.7
 pytest==6.2.2
 pytest-cov==2.11.1
 python-dateutil==2.8.1
-python-dev-tools==2020.9.10
+python-dev-tools
 python-dotenv==0.17.0
 pytz==2020.1
 pyupgrade==2.11.0
