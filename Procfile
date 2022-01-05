@@ -1,1 +1,1 @@
-web: gunicorn project_1.wsgi --log-file -
+web: gunicorn notionClone.wsgi --log-file -
