@@ -134,6 +134,10 @@
   .search:hover {
     background-color: rgba(55, 53, 47, 0.08); }
 
+.pages {
+  overflow: scroll;
+  height: 78vh; }
+
 .page {
   display: flex;
   align-items: center;

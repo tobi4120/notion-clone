@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "For this project I am creating a Notion clone on a smaller scale. This website will allow users to create pages, add notes to those pages, add to-do's, link to other pages and more!",
   "main": "index.js",
-  "engines": { 
+  "engines": {
     "node": "14.x"
   },
   "dependencies": {
@@ -39,7 +39,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "file-loader": "^6.2.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.1",
     "webpack": "^5.8.0",
     "webpack-cli": "^4.2.0"
   },

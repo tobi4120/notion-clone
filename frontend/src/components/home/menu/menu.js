@@ -215,7 +215,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <div>
+            <div className="menu_body">
                 {/* Menu Header */}
                 <div className="menu-header">
                     <div className="user-icon">

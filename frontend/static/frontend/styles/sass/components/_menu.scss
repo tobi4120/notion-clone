@@ -82,6 +82,11 @@
     margin-bottom: 15px;
 }
 
+.pages {
+    overflow: scroll;
+    height: 78vh;
+}
+
 .page {
     @include menu-item;
 
