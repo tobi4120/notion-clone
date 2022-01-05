@@ -1,4 +1,4 @@
-"""project_1 URL Configuration
+"""notionClone URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -21,5 +21,5 @@ from rest_framework_jwt.views import obtain_jwt_token
 urlpatterns = [
     path('', include('frontend.urls')),
     path('admin/', admin.site.urls),
-    path('', include('chat_app.urls')),
+    path('', include('backend.urls')),
 ]

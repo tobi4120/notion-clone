@@ -256,6 +256,7 @@ class Menu extends Component {
                         }
 
                         if (is_parent_closed === false) {
+
                             return (
                                 <div key={page.id}>
                                     <PageNav
