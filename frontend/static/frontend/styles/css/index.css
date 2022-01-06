@@ -135,7 +135,7 @@
     background-color: rgba(55, 53, 47, 0.08); }
 
 .pages {
-  overflow: scroll;
+  overflow-y: scroll;
   height: 78vh; }
 
 .page {
