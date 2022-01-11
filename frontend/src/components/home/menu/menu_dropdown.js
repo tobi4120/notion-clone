@@ -117,7 +117,7 @@ class MenuDropdown extends React.Component {
             return <Redirect to={address} />
         }
         return (
-            <div className="dropdown" style={{position: "static"}}> {/* Needed to overwrite position: relative */}
+            <div className="dropdown"> {/* Needed to overwrite position: relative */}
                 <div className="dropdown_parent">
                     <i className="fas fa-ellipsis-h page-option" 
                         onClick={() => {

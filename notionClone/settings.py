@@ -30,7 +30,7 @@ SECRET_KEY = 'm1925=zmpn6_1u39lr)=g^q)y+&6ae1=i$(2d=s@%xjc8n!o%e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'notion-app-clone.herokuapp.com', 'testapp492.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'notion-app-clone.herokuapp.com']
 
 # Application definition
 
