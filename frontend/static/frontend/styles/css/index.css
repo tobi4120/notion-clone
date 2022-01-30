@@ -270,6 +270,9 @@
   position: relative;
   display: inline-block; }
 
+.menu-dropdown {
+  position: static !important; }
+
 .dropdown-content, .rename {
   position: absolute;
   border-radius: 3px;
@@ -396,6 +399,15 @@
     margin: 8px 14px;
     font-size: 0.8rem;
     color: rgba(55, 53, 47, 0.6); }
+
+.menu-overlay {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  cursor: default; }
 
 .semi-transparent-bg {
   background-color: black;

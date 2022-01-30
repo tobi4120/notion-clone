@@ -1,4 +1,3 @@
-
 import React from "react";
 import { edit_page_name, edit_name_onChange, delete_page } from "../../../actions/page_menu"
 import { connect } from 'react-redux';
@@ -15,6 +14,7 @@ class MenuDropdown extends React.Component {
         }
         this.myRef = React.createRef();
         this.renameRef = React.createRef();
+        this.dropdownRef = React.createRef();
     }
     
     componentDidMount() {
@@ -55,6 +55,7 @@ class MenuDropdown extends React.Component {
             document.removeEventListener("mousedown", handler)
             document.removeEventListener("mousedown", rename_handler)
         }
+
     }
 
     handle_change = (e) => {
@@ -116,8 +117,10 @@ class MenuDropdown extends React.Component {
             const address = `/${this.state.redirect_page}`
             return <Redirect to={address} />
         }
+
         return (
-            <div className="dropdown"> {/* Needed to overwrite position: relative */}
+            <div className="dropdown menu-dropdown" ref={this.dropdownRef}> 
+            {this.state.dropdown_hidden === false && <div className="menu-overlay"></div> }
                 <div className="dropdown_parent">
                     <i className="fas fa-ellipsis-h page-option" 
                         onClick={() => {
@@ -131,8 +134,8 @@ class MenuDropdown extends React.Component {
                 </div>
 
                 {/* Dropdown content */}
-                {this.state.dropdown_hidden === false?
-                    <div className="dropdown-content" ref={this.myRef}>
+                {this.state.dropdown_hidden === false &&
+                    <div className="dropdown-content" ref={this.myRef} style={{ top: `${this.dropdownRef.current.getBoundingClientRect().top + 20}px` }}>
                         <a className="edit-drpdn" onClick={() => 
                             this.setState({dropdown_hidden: true, dropdown_rename: false})}>
                             <i className="far fa-edit"></i>
@@ -142,11 +145,11 @@ class MenuDropdown extends React.Component {
                             <i className="far fa-trash-alt"></i>
                             Delete
                         </a>
-                    </div>: null}
+                    </div>}
                 
                 {/* Rename page dropdown */}
                 {this.state.dropdown_rename === false?
-                    <div className="rename" ref={this.renameRef}>
+                    <div className="rename" ref={this.renameRef} style={{ top: `${this.dropdownRef.current.getBoundingClientRect().top + 20}px` }}>
                         <a>
                             <input name="page_name" autoFocus onChange={() => { 
                                 this.props.handle_change(this.props.page_id, event.target.value); 
