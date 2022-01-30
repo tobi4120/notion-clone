@@ -864,7 +864,7 @@ a {
     color: #37352f;
     font-size: 0.875rem;
     background-color: rgba(242, 241, 238, 0.6);
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0);
     box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset; }
     .kanban_groups .new-group input:focus {
       border: 1px solid #2eaadc;
@@ -908,7 +908,7 @@ a {
       color: #37352f;
       font-size: 0.875rem;
       background-color: rgba(242, 241, 238, 0.6);
-      border: none;
+      border: 1px solid rgba(0, 0, 0, 0);
       box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
       max-width: 158px; }
       .kanban_group .kanban-group-header input:focus {
@@ -1337,7 +1337,7 @@ a {
         color: #37352f;
         font-size: 0.875rem;
         background-color: rgba(242, 241, 238, 0.6);
-        border: none;
+        border: 1px solid rgba(0, 0, 0, 0);
         box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset; }
         .multi-select-popup .tag-options .tag-option-dropdown input:focus {
           border: 1px solid #2eaadc;
@@ -1559,7 +1559,7 @@ a {
       color: #37352f;
       font-size: 0.875rem;
       background-color: rgba(242, 241, 238, 0.6);
-      border: none;
+      border: 1px solid rgba(0, 0, 0, 0);
       box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
       padding: 8px;
       width: 100%;

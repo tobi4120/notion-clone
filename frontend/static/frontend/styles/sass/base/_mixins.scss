@@ -71,7 +71,7 @@
     color: $dark-gray;
     font-size: $normal-font-size;
     background-color: rgba(242, 241, 238, 0.6);
-    border: none;
+    border: 1px solid rgba(0,0,0,0);
     box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
 
     &:focus {
