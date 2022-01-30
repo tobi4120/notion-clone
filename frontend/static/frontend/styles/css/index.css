@@ -145,8 +145,8 @@
   padding-top: 6.25px;
   padding-bottom: 6.25px;
   cursor: pointer;
-  padding-top: 4px;
-  padding-bottom: 4px; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
   .page i {
     color: rgba(55, 53, 47, 0.4);
     margin-right: 10px;
@@ -162,7 +162,9 @@
     margin-left: 2px;
     margin-right: 0px; }
   .page .page_name {
-    flex: 1; }
+    flex: 1;
+    padding-top: 6.7px;
+    padding-bottom: 6.7px; }
     .page .page_name .page-title {
       text-overflow: ellipsis;
       overflow: hidden;
@@ -1615,11 +1617,11 @@ a {
       font-size: 1rem; }
     .menu .user-first-name {
       font-size: 1.1rem; }
-    .menu .page {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .menu .page .page-options .fa-ellipsis-h, .menu .page .page-options .fa-plus {
-        font-size: 0.9rem; }
+    .menu .page .page_name {
+      padding-top: 11px;
+      padding-bottom: 11px; }
+    .menu .page .page-options .fa-ellipsis-h, .menu .page .page-options .fa-plus {
+      font-size: 0.9rem; }
     .menu .logout {
       width: 100%; }
       .menu .logout i {
