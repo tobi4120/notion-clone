@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { add_page } from "../../../actions/page_menu"
 import PageNav from "./page-nav";
 import QuickFind from "./quick_find";
+import MenuHeader from "./menu_header";
 
 function Menu(props) {
     const [ state, setState ] = useState({
@@ -214,19 +215,9 @@ function Menu(props) {
     return (
         <div className="menu_body">
             {/* Menu Header */}
-            <div className="menu-header">
-                <div className="user-icon">
-                    {props.current_user.first_name.charAt(0)}
-                </div>
-                <div className="user-first-name">
-                    <p>{props.current_user.first_name.charAt(0).toUpperCase()}
-                        {props.current_user.first_name.substring(1)}'s Notion </p> 
-                </div>
-                <div className="arrows" onClick={() => props.close_menu_animation()}>
-                    <div className="arrow-left"></div>
-                    <div className="arrow-left"></div>
-                </div>
-            </div>
+            <MenuHeader
+                current_user={props.current_user}
+                close_menu_animation={props.close_menu_animation} />
 
             {/* Quick Find */}
             <div className="search" onClick={() => setState(prevState => ({ ...prevState, quick_find_open: true }))}>
@@ -279,7 +270,6 @@ function Menu(props) {
                 </div>
 
                 {/* Logout */}
-                
                 <div onClick={() => props.logout()} className="logout">
                     <i className="fas fa-sign-out-alt"></i>
                     <p>Logout</p>
