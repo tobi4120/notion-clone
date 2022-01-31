@@ -18,6 +18,8 @@ export const get_user_data = () =>
         }})
 
         dispatch({ type: 'GET_USER_DATA', payload: response });
+
+        return response.data
     };
 
 // Register
