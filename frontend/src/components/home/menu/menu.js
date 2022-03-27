@@ -25,8 +25,7 @@ function Menu(props) {
             if (page.parent === null) {
 
                 // Create an object and store the page inside it
-                let page_object = {"id": page.id, "name": page.name, "depth": 0, "parent": page.parent, "closed": true, 
-                "children": page.children}
+                let page_object = { ...page, "depth": 0, "closed": true }
 
                 // Store the page object in an array called page_list
                 setState(prevState => ({

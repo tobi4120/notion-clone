@@ -169,7 +169,8 @@
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      max-width: 100px; }
+      max-width: 100px;
+      min-height: 16px; }
   .page .fa-file-alt {
     margin-left: 10px;
     margin-right: 7px;
