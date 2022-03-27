@@ -37,13 +37,15 @@ function Home(props) {
                 setState({ ...state, isLoaded: true })
                 return
             }
+            // Fetch the pages
+            await props.fetch_pages(userResponse.id)
+
+            // Update state
+            setState({ ...state, isLoaded: true, isLoggedIn: true })
+        } else {
+            // Update state
+            setState({ ...state, isLoaded: true })
         }
-
-        // Fetch the pages
-        await props.fetch_pages(userResponse.id)
-
-        // Update state
-        setState({ ...state, isLoaded: true, isLoggedIn: true })
     }
 
     const logout = () => {
