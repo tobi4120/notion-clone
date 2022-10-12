@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ListOfPages from "./listOfPages";
-import DropdownContainer from "../../dropdown_container";
 import DropdownOption from "./dropdown_option";
 
 // Redux
@@ -38,80 +37,78 @@ const CreateElement_dropdownContent = (props) => {
 
     if (!listOfPage_open)
         return (
-            <DropdownContainer setDropdownShown={props.setDropdownShown} className={"add-element-drpdn-parent"}>
-                <div className="dropdown-content add-element-drpdn">
-                    {/* Text */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="Text"
-                        element_above_order={element_above_order}
-                        photo={text}
-                        header="Text"
-                        subheader="Just start writing with plain text."
-                    />
+            <div className="dropdown-content add-element-drpdn">
+                {/* Text */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="Text"
+                    element_above_order={element_above_order}
+                    photo={text}
+                    header="Text"
+                    subheader="Just start writing with plain text."
+                />
 
-                    {/* To do */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="To_do"
-                        element_above_order={element_above_order}
-                        photo={to_do}
-                        header="To-do list"
-                        subheader="Track tasks with a to-do list."
-                    />
+                {/* To do */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="To_do"
+                    element_above_order={element_above_order}
+                    photo={to_do}
+                    header="To-do list"
+                    subheader="Track tasks with a to-do list."
+                />
 
-                    {/* Heading 1 */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="Heading_1"
-                        element_above_order={element_above_order}
-                        photo={heading_1}
-                        header="Heading 1"
-                        subheader="Big section heading."
-                    />
+                {/* Heading 1 */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="Heading_1"
+                    element_above_order={element_above_order}
+                    photo={heading_1}
+                    header="Heading 1"
+                    subheader="Big section heading."
+                />
 
-                    {/* Heading 2 */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="Heading_2"
-                        element_above_order={element_above_order}
-                        photo={heading_2}
-                        header="Heading 2"
-                        subheader="Sub-section heading."
-                    />
+                {/* Heading 2 */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="Heading_2"
+                    element_above_order={element_above_order}
+                    photo={heading_2}
+                    header="Heading 2"
+                    subheader="Sub-section heading."
+                />
 
-                    {/* Link to page */}
-                    <div onClick={() => setListOfPage_open(true)}>
-                        <a>
-                            <img className="drpdn-icon" src={link_to_page} alt="Link to page" />
-                            <div className="drpdn-text">
-                                <p className="drpdn-head">Link to page</p>
-                                <p className="drpdn-sub-head">Link to an existing page.</p>
-                            </div>
-                        </a>
-                    </div>
+                {/* Link to page */}
+                <div onClick={() => setListOfPage_open(true)}>
+                    <a>
+                        <img className="drpdn-icon" src={link_to_page} alt="Link to page" />
+                        <div className="drpdn-text">
+                            <p className="drpdn-head">Link to page</p>
+                            <p className="drpdn-sub-head">Link to an existing page.</p>
+                        </div>
+                    </a>
+                </div>
 
-                    {/* Table */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="Table"
-                        element_above_order={element_above_order}
-                        photo={table}
-                        header="Table"
-                        subheader="Create a table."
-                    />
+                {/* Table */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="Table"
+                    element_above_order={element_above_order}
+                    photo={table}
+                    header="Table"
+                    subheader="Create a table."
+                />
 
-                    {/* Kanban */}
-                    <DropdownOption
-                        create_element_func={create_element_func}
-                        elementType="Kanban"
-                        element_above_order={element_above_order}
-                        photo={board}
-                        header="Board"
-                        subheader="Create a kanban board."
-                    />
-                </div>    
-            </DropdownContainer>
+                {/* Kanban */}
+                <DropdownOption
+                    create_element_func={create_element_func}
+                    elementType="Kanban"
+                    element_above_order={element_above_order}
+                    photo={board}
+                    header="Board"
+                    subheader="Create a kanban board."
+                />
+            </div>    
         )
     return (
         <ListOfPages

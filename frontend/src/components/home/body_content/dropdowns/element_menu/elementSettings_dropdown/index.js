@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ToggleButton from "../../toggle_button";
 import ElementSettings_dropdownContent from "./dropdown_content";
 import DragIndicatorIcon from '@material-ui/icons/DragIndicator';
 import DropdownContainer from "../../dropdown_container";
 
 const ElementSettings_dropdown = (props) => {
-    const [dropdownShown, setDropdownShown] = useState(false)
+    const [dropdownShown, setDropdownShown] = useState(false);
+    const dropdownRef = useRef(null);
 
     return (
-        <div className="element_settings_dropdown">
+        <div className="element_settings_dropdown" ref={dropdownRef}>
             <ToggleButton 
                 dropdownShown={dropdownShown} 
                 setDropdownShown={setDropdownShown}>
@@ -16,7 +17,10 @@ const ElementSettings_dropdown = (props) => {
             </ToggleButton>
                 
             { dropdownShown && 
-                <DropdownContainer setDropdownShown={setDropdownShown} className={"element-settings-drpdn-parent"}>
+                <DropdownContainer 
+                    setDropdownShown={setDropdownShown} 
+                    className={"element-settings-drpdn-parent"}
+                    ref={dropdownRef}>
                     <ElementSettings_dropdownContent
                         page={props.page}
                         order_on_page={props.order_on_page}

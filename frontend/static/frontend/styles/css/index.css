@@ -266,6 +266,9 @@
 .create_element_dropdown, .element_settings_dropdown {
   position: relative; }
 
+.add-element-drpdn-parent, .element-settings-drpdn-parent {
+  margin-top: 3px; }
+
 .dropdown {
   position: absolute;
   border-radius: 3px;

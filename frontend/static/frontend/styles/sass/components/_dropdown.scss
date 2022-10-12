@@ -2,9 +2,9 @@
     position: relative;
 }
 
-// .add-element-drpdn-parent, .element-settings-drpdn-parent, .color-drpdn {
-//     position: absolute !important;
-// }
+.add-element-drpdn-parent, .element-settings-drpdn-parent {
+    margin-top: 3px;
+}
 
 .dropdown {
     @include dropdown;
