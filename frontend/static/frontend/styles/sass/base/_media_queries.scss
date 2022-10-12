@@ -9,61 +9,6 @@
         width: 80%;
     }
 
-    // Menu
-    .menu {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        .arrows {
-            opacity: 1;
-        }
-
-        .user-first-name {
-            flex: 0.99;
-        }
-
-        .quick-find-modal {
-            width: 90%;
-        }
-
-        .page, .search, .add-page, .logout {
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        .user-first-name {
-            font-size: 1.1rem;
-        }
-
-        .page {
-            .page_name {
-                padding-top: 11px;
-                padding-bottom: 11px;
-            }
-        }
-        
-        .logout {
-            width: 100%;
-
-            i {
-                font-size: 1rem;
-            }
-        }
-
-        .menu-dropdown {
-            .page-nav-icons {
-                opacity: 1 !important;
-            }
-
-            .dropdown {
-                transform: translateX(-90%);
-            }
-        }
-
-        .add-page {
-            height: 50px;
-        }
-    }
-
     // Body General
     .body-container {
         overflow-x: hidden;
@@ -195,6 +140,64 @@
         margin-left: 30px;
     }
 
+}
+
+@media (max-width: 350px) {
+    
+    // Menu
+    .menu {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .arrows {
+            opacity: 1;
+        }
+
+        .user-first-name {
+            flex: 0.99;
+        }
+
+        .quick-find-modal {
+            width: 90%;
+        }
+
+        .page, .search, .add-page, .logout {
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .user-first-name {
+            font-size: 1.1rem;
+        }
+
+        .page {
+            .page_name {
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+        }
+        
+        .logout {
+            width: 100%;
+
+            i {
+                font-size: 1rem;
+            }
+        }
+
+        .menu-dropdown {
+            .page-nav-icons {
+                opacity: 1 !important;
+            }
+
+            .dropdown {
+                transform: translateX(-90%);
+            }
+        }
+
+        .add-page {
+            height: 50px;
+        }
+    }
 }
 
 // Login and sign up -- below 330px

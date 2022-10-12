@@ -71,7 +71,7 @@ const Body = (props) => {
                 toggle_menu={toggle_menu}
                 breadcrumb={breadcrumb} />
 
-            <div className="body-scroller" style={{ overflow: menu_shown? screen.width <= 725 && "hidden": "scroll" }}>
+            <div className="body-scroller" style={{ overflow: menu_shown? screen.width <= 350? "hidden": "scroll": "scroll" }}>
                 <CoverPhoto page={selected_page} />
 
                 <div className="body-content">
