@@ -1,179 +1,127 @@
-import React from "react";
-import { edit_page_name, edit_name_onChange, delete_page } from "../../../actions/page_menu"
+import React, { useState, useRef } from "react";
+import { edit_page_name, changeNameOnBody } from "../../../actions/page_menu"
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import DropdownContainer from "../body_content/dropdowns/dropdown_container";
+import AddIcon from '@material-ui/icons/Add';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
-class MenuDropdown extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            dropdown_hidden: true,
-            dropdown_rename: true, 
-            modal_hidden: true,
-            redirect_page: null,
-        }
-        this.myRef = React.createRef();
-        this.renameRef = React.createRef();
-        this.dropdownRef = React.createRef();
-    }
-    
-    componentDidMount() {
-        // Add event listener to detect when someone clicks away from menu
-        let handler = (event) => {
-            if (!this.myRef.current) {
-                return
-            }
+const MenuDropdown = (props) => {
+    const [dropdownShown, setDropdownShown] = useState(false);
+    const [dropdownRenameShown, setDropdownRenameShownState] = useState(false);
+    const [modalShown, setModalShown] = useState(false);
+    const dropdownRef = useRef(null);
+    const navigate = useNavigate();
 
-            if (!this.myRef.current.contains(event.target)) {
-                this.setState({dropdown_hidden: true})
-
-                // Hide menu icons
-                this.props.set_dropdownOpen(false)
-                this.props.set_optionOpacity(0)
-            }
-        }
-
-        let rename_handler = (event) => {
-            if(!this.renameRef.current) {
-                return
-            }
-
-            if (!this.renameRef.current.contains(event.target)) {
-                this.setState({dropdown_rename: true})
-                this.update_name()
-
-                // Hide menu icons
-                this.props.set_dropdownOpen(false)
-                this.props.set_optionOpacity(0)
-            }
-        }
-
-        document.addEventListener("mousedown", handler)
-        document.addEventListener("mousedown", rename_handler)
-
-        return () => {
-            document.removeEventListener("mousedown", handler)
-            document.removeEventListener("mousedown", rename_handler)
-        }
-
+    const setDropdownRenameShown = (status) => {
+        update_name();
+        setDropdownRenameShownState(status);
     }
 
-    handle_change = (e) => {
-        this.setState({[e.target.name]: e.target.value})
-    }
-
-    shouldBlur = (e) => {
+    const shouldBlur = (e) => {
         if (e.keyCode === 13) {
-            this.setState({dropdown_rename: true})
-            this.update_name()
-
-            // Hide menu icons
-            this.props.set_dropdownOpen(false)
-            this.props.set_optionOpacity(0)
+            update_name();
+            setDropdownRenameShownState(false);
         }
     }
 
     // Call redux action to rename the page title (patch request)
-    update_name = () => {
-        let name = this.props.page_name
+    const update_name = () => {
+        let name = props.page.name
 
         if (!name) {
             name = "Untitled"
-            this.props.handle_change(this.props.page_id, "Untitled")
+            props.changeNameOnMenu(props.page.id, "Untitled")
         }
-
-        this.props.edit_page_name(this.props.page_id, name)
+        props.edit_page_name(props.page.id, name)
     }
 
-    delete_page = () => {
-
-        // Hide menu elipse icon
-        this.props.set_dropdownOpen(false)
-        this.props.set_optionOpacity(0)
-        
+    const delete_page = () => {
         // Get number of pages that have no parent
         let page_count = 0
-
-        for (const page of this.props.pages) {
+        for (const page of props.pages) {
             if (!page.parent) page_count ++
         }
-
-        if (page_count === 1 && !this.props.parent) {
-            alert("You have to have at least one page")
-            this.setState({modal_hidden: true})
-
+        if (page_count === 1 && !props.page.parent) {
+            alert("Error: You must have at least one page.")
+            setModalShown(false);
             return
         }
+        props.deletePage(props.page.id, props.page.parent)
+        setModalShown(false);
 
-        this.props.delete_page(this.props.page_id)
-        this.setState({modal_hidden: true})
-        this.props.delete_page_menu(this.props.page_id)
-
-        this.setState({redirect_page: this.props.pages[0].id})
+        // Redirect to first page
+        navigate(`/${props.pages[0].id}`);
     }
 
-    render() {
-        if (this.state.redirect_page) {
-            const address = `/${this.state.redirect_page}`
-            return <Redirect to={address} />
-        }
+    return (
+        <div className="menu-dropdown" ref={dropdownRef}> 
+            {dropdownShown && <div className="menu-overlay" />}
 
-        return (
-            <div className="dropdown menu-dropdown" ref={this.dropdownRef}> 
-            {this.state.dropdown_hidden === false && <div className="menu-overlay"></div> }
-                <div className="dropdown_parent">
-                    <i className="fas fa-ellipsis-h page-option" 
-                        onClick={() => {
-                            this.setState({dropdown_hidden: false});
-                            this.props.set_dropdownOpen(true);
-                        }}>
-                    </i>
-                    <i className="fas fa-plus" onClick={() => 
-                        this.props.add_page(this.props.page_id, this.props.depth + 1)}>
-                    </i>
-                </div>
+            {/* Icons */}
+            <div className="page-nav-icons">
+                <span className="morehoriz-icon">
+                    <MoreHorizIcon 
+                        onClick={() => setDropdownShown(true)}
+                        fontSize="inherit" />
+                </span>
 
-                {/* Dropdown content */}
-                {this.state.dropdown_hidden === false &&
-                    <div className="dropdown-content" ref={this.myRef} style={{ top: `${this.dropdownRef.current.getBoundingClientRect().top + 20}px` }}>
-                        <a className="edit-drpdn" onClick={() => 
-                            this.setState({dropdown_hidden: true, dropdown_rename: false})}>
+                <span className="add-icon">
+                    <AddIcon 
+                    onClick={() => props.addPage(props.page.id, props.page.depth + 1)}
+                    fontSize="inherit" />
+                </span>
+            </div>
+
+            {/* Dropdown content */}
+            {dropdownShown &&
+                <DropdownContainer setDropdownShown={setDropdownShown} ref={dropdownRef}>
+                    <div className="dropdown-content">
+                        <a className="edit-drpdn" onClick={() => { setDropdownShown(false); setDropdownRenameShownState(true); }}>
                             <i className="far fa-edit"></i>
                             Rename
                         </a>
-                        <a onClick={() => this.setState({dropdown_hidden: true, modal_hidden: false})}>
+                        <a onClick={() => { setDropdownShown(false); setModalShown(true); }}>
                             <i className="far fa-trash-alt"></i>
                             Delete
                         </a>
-                    </div>}
-                
-                {/* Rename page dropdown */}
-                {this.state.dropdown_rename === false?
-                    <div className="rename" ref={this.renameRef} style={{ top: `${this.dropdownRef.current.getBoundingClientRect().top + 20}px` }}>
+                    </div>
+                </DropdownContainer>}
+            
+            {/* Rename page dropdown */}
+            {dropdownRenameShown &&
+                <DropdownContainer setDropdownShown={setDropdownRenameShown} ref={dropdownRef}>
+                    <div className="rename">
                         <a>
-                            <input name="page_name" autoFocus onChange={() => { 
-                                this.props.handle_change(this.props.page_id, event.target.value); 
-                                this.props.edit_name_onChange(event.target.value, this.props.page_id);
-                            }} 
-                            placeholder="Untitled" value={this.props.page_name} onKeyDown={this.shouldBlur} />
+                            <input 
+                                name="page_name" 
+                                autoFocus 
+                                onChange={(e) => {
+                                    props.changeNameOnMenu(props.page.id, e.target.value); 
+                                    props.changeNameOnBody(e.target.value, props.page.id);
+                                }} 
+                                placeholder="Untitled" 
+                                value={props.page.name} 
+                                onKeyDown={shouldBlur} />
                         </a>
-                    </div>: null}
-                
-                {/* Delete confirmation modal */}
-                {this.state.modal_hidden === false? <div className="semi-transparent-bg">
+                    </div>
+                </DropdownContainer>}
+            
+            {/* Delete confirmation modal */}
+            {modalShown && 
+                <div className="semi-transparent-bg">
                     <div className="modal">
                         <p>Are you sure you want to delete this page?</p>
-                        <button className="delete-btn" onClick={this.delete_page}>Delete</button>
-                        <button className="cancel-btn" onClick={() => this.setState({modal_hidden: true})}>Cancel</button>
+                        <button className="delete-btn" onClick={delete_page}>Delete</button>
+                        <button className="cancel-btn" onClick={() => setModalShown(false)}>Cancel</button>
                     </div>
-                </div>: null}
-            </div>
-        )
-    }
+                </div>}
+        </div>
+    )
 };
 
 const mapStateToProps = (state) => {
     return { pages: state.pages }
 }
 
-export default connect(mapStateToProps, {edit_page_name, edit_name_onChange, delete_page})(MenuDropdown)
+export default connect(mapStateToProps, {edit_page_name, changeNameOnBody})(MenuDropdown)

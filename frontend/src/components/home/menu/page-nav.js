@@ -1,47 +1,40 @@
-import React, { useState } from "react";
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from 'react-router-dom';
 import MenuDropdown from "./menu_dropdown";
 
 function PageNav(props) {
-    const [optionOpacity, set_optionOpacity] = useState(0)
-    const [dropdownOpen, set_dropdownOpen] = useState(false)
-    const history = useHistory();
+    const navigate = useNavigate();
 
     return (
-        <div className={props.selected_page && props.selected_page.id === props.page_id? "active page": "page"} 
-            key={props.page_id} style={{paddingLeft: `${20 * props.depth + 15}px`}} 
-            onMouseEnter={() => set_optionOpacity(100)} 
-            onMouseLeave={() =>
-                dropdownOpen === false? 
-                set_optionOpacity(0):
-                null
-            }
+        <div className={props.selected_page && props.selected_page.id === props.page.id? "active page": "page"} 
+            style={{paddingLeft: `${20 * props.depth + 12}px`}} 
             onClick={(e) => {
                 if (e.target.className === "page_name" ||  e.target.className === "page-title" 
-                ||  e.target.className === "active page" ||  e.target.className === "far fa-file-alt") {
-                    history.push(`/${props.page_id}`);
+                ||  e.target.className === "page" ||  e.target.className === "far fa-file-alt") {
+                    navigate(`/${props.page.id}`);
+                    if (screen.width <= 725) props.toggle_menu(false);
                 }
             }}>
+            
+            {/* Open/close arrow */}
+            <div className="arrow-toggle-button" onClick={() => props.openClosePages(props.page.id)}>
+                <div className="triangle" style={{ transform: !props.page.closed && "rotate(90deg)" }}/>
+            </div>
 
-            <i className={props.closed === true?"fas fa-caret-right": "fas fa-caret-down"}
-                onClick={() => props.open_close_page_folder(props.page_id)}>
-            </i>
+            {/* File icon */}
             <i className="far fa-file-alt"></i>
+
+            {/* Page name */}
             <div className="page_name">
-                <p className="page-title">{props.name}</p>
+                <p className="page-title">{props.page.name || "Untitled"}</p>
             </div>
-            <div className="page-options" style={{ opacity: optionOpacity }}>
-                <MenuDropdown 
-                    page_id={props.page_id} 
-                    page_name={props.name}
-                    depth={props.depth}
-                    handle_change={props.handle_change} 
-                    delete_page_menu={props.delete_page_menu}
-                    add_page={props.add_page}
-                    parent={props.parent}
-                    set_optionOpacity={set_optionOpacity}
-                    set_dropdownOpen={set_dropdownOpen} />
-            </div>
+
+            {/* Dropdown */}
+            <MenuDropdown 
+                page={props.page}
+                changeNameOnMenu={props.changeNameOnMenu} 
+                deletePage={props.deletePage}
+                addPage={props.addPage} />
         </div>)
 }
 export default PageNav

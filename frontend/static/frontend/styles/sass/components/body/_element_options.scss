@@ -1,7 +1,8 @@
-.element-options {
+.element-options, .element-options-row  {
     display: flex;
     align-items: center;
     margin-right: 7px;
+    opacity: 0;
     transition: $transition;
 
     .add_element, .element-option-icon {

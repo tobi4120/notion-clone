@@ -5,30 +5,21 @@
 
 .body {
     height: 100vh;
-    width: auto;
-
-    &[hide_menu_animation = '1'] {
-        animation-name: body-full-width;
-        animation-duration: .4s;
-    }
-
-    &[show_menu_animation = '1'] {
-        animation-name: body-condensed;
-        animation-duration: .4s;
-    } 
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.body-container {
-    height: 100%;
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    width: 100%;
+.body-scroller {
+    flex: 1;
 }
 
 .body-content {
     padding-left: 50px;
     padding-bottom: 200px;
-    width: 100%;
+    padding-right: 120px;
 }
 
 .test {
@@ -36,18 +27,24 @@
 }
 
 .page_title {
-    margin-left: 19px;
+    margin-left: 14px;
     color: $dark-gray;
     font-size: 1.21rem;
     margin-bottom: 33px;
+    display: flex;
+    align-items: center;
 
     h1 {
         font-family: san-fran-bold, $back-up-fonts;
     }
 }
 
-.element {
+.element, .page_title {
     display: flex;
+
+    &:hover .element-options {
+        opacity: 1;
+    }
 }
 
 .first_child {
@@ -118,20 +115,8 @@ a {
 .group {
     display: flex;
     max-width: 90%;
-    //background-color: red;
-}
-
-.column {
-    height: 100%;
-    width: 100%;
-}
-
-.empty {
-    //box-shadow: 0px 0px 0px 3px rgba(45, 170, 219, 0.3);
-    flex-grow: 1;
 }
 
 .dragging-over {
     box-shadow: 0px 0px 0px 3px rgba(45, 170, 219, 0.3);
 }
-

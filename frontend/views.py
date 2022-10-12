@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseNotFound
 import os
 from django.views import View
 
-def index(request):
+def index(request, *args, **kwargs):
     return render(request, "frontend/index.html")
 
 class Assets(View):

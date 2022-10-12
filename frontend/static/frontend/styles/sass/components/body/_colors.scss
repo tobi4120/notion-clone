@@ -1,42 +1,42 @@
 // Standard Colors
 .default {
-    background: rgba(206, 205, 202, 0.5);
+    background: rgba(227, 226, 224, 0.5);
 }
 
 .grey {
-    background: rgba(155, 154, 151, 0.4);
+    background: rgb(227, 226, 224);
 }
 
 .brown {
-    background: rgba(140, 46, 0, 0.2);
+    background: rgb(238, 224, 218);
 }
 
 .orange {
-    background: rgba(245, 93, 0, 0.2);
+    background: rgb(250, 222, 201);
 }
 
 .yellow {
-    background: rgba(233, 168, 0, 0.2);
+    background: rgb(253, 236, 200);
 }
 
 .green {
-    background: rgba(0, 135, 107, 0.2);
+    background: rgb(219, 237, 219);
 }
 
 .blue {
-    background: rgba(0, 120, 223, 0.2);
+    background: rgb(211, 229, 239);
 }
 
 .purple {
-    background: rgba(103, 36, 222, 0.2);
+    background: rgb(232, 222, 238);
 }
 
 .pink {
-    background: rgba(221, 0, 129, 0.2);
+    background: rgb(245, 224, 233);
 }
 
 .red {
-    background: rgba(255, 0, 26, 0.2);
+    background: rgb(255, 226, 221);
 }
 
 // Background Colors
@@ -74,4 +74,41 @@
 
 .red-bg {
     background: rgb(251, 228, 228);
+}
+
+// Text
+.default-text, .grey-text {
+    color: rgb(50, 48, 44);
+}
+
+.brown-text {
+    color: rgb(68, 42, 30);
+}
+
+.orange-text {
+    color: rgb(73, 41, 14);
+}
+
+.yellow-text {
+    color: rgb(67,47,30);
+}
+
+.green-text {
+    color: rgb(47,73,58);
+}
+
+.blue-text {
+    color: rgb(27,53,73);
+}
+
+.purple-text {
+    color: rgb(65, 36, 84);
+}
+
+.pink-text {
+    color: rgb(76, 35, 55);
+}
+
+.red-text {
+    color: rgb(93, 23, 21);
 }

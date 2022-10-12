@@ -2,6 +2,7 @@
 .photo-container {
     margin-bottom: 45px;
     width: 100%;
+    position: relative;
 
     .photo-container-placeholder {
         background-color: green;
@@ -26,9 +27,8 @@
     .cover-buttons {
         position: absolute;
         right: 0;
-        top: 208px;
-        margin: 15px;
-        margin-right: 125px;
+        top: 175px;
+        margin-right: 120px;    
         background-color: white;
         align-items: center;
         cursor: pointer;
@@ -72,7 +72,7 @@
 .photo-dropdown {
     position: absolute;
     right: 0;
-    top: 245px;
+    top: 600px;
     margin-right: 15px;
     background-color: white;
     border-radius: 3px;
@@ -82,7 +82,6 @@
     background-color: white;
     box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, 
     rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
-    z-index: 2;
     padding: 10px;
 }
 

@@ -70,7 +70,7 @@ class Page(models.Model):
     parent = models.ForeignKey("Page", related_name='children', null=True, blank=True, on_delete=models.CASCADE)
     creator = models.ForeignKey("User", on_delete=models.CASCADE)
     photo = models.CharField(max_length=100, null=True, blank=True)
-    groups = models.IntegerField()
+    closed=models.BooleanField(default=True)
 
     class Meta:
         ordering = ['id']
@@ -82,8 +82,6 @@ class Page_element(models.Model):
     page = models.ForeignKey("Page", related_name="page_elements", on_delete=models.CASCADE)
     element_type = models.CharField(max_length=85)
     order_on_page = models.FloatField()
-    group = models.IntegerField()
-    column = models.IntegerField()
     color = models.CharField(max_length=100, null=True, blank=True)
 
     def __str__(self):

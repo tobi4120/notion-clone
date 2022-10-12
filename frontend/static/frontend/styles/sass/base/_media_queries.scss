@@ -11,10 +11,7 @@
 
     // Menu
     .menu {
-        max-width: none;
-        min-width: 0;
-        width: 100%;
-
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         .arrows {
             opacity: 1;
         }
@@ -25,14 +22,6 @@
 
         .quick-find-modal {
             width: 90%;
-        }
-
-        .dropdown-content, .rename {
-            transform: translateX(-80%);
-        }
-
-        .page-options {
-            opacity: 1 !important;
         }
 
         .page, .search, .add-page, .logout {
@@ -50,12 +39,6 @@
                 padding-top: 11px;
                 padding-bottom: 11px;
             }
-
-            .page-options {
-                .fa-ellipsis-h, .fa-plus {
-                    font-size: 0.9rem;
-                }
-            }
         }
         
         .logout {
@@ -65,6 +48,20 @@
                 font-size: 1rem;
             }
         }
+
+        .menu-dropdown {
+            .page-nav-icons {
+                opacity: 1 !important;
+            }
+
+            .dropdown {
+                transform: translateX(-90%);
+            }
+        }
+
+        .add-page {
+            height: 50px;
+        }
     }
 
     // Body General
@@ -72,12 +69,13 @@
         overflow-x: hidden;
     }
 
-    .body-content {
-        padding-left: 0;
+    .body-header {
+        background-color: rgba(0,0,0,0);;
     }
 
-    .group {
-        display: block;
+    .body-content {
+        padding-left: 0;
+        padding-right: 50px;
     }
 
     .element {
@@ -86,34 +84,9 @@
         overflow-x: scroll;
     }
 
-    .add-element-drpdn {
-        transform: translateX(0%) !important;
-    }
-
-    .add_element {
-        opacity: 1 !important;
-    }
-
     .element-options {
+        opacity: 1;
         margin-left: 10px;
-
-        .dropdown {
-            position: static;
-
-            .dropdown-content {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%) !important;
-            }
-
-            .dropdown_parent {
-
-                .add_element, .element-option-icon {
-                    opacity: 1 !important;
-                }
-            }
-        }
     }
 
     // Cover Photo
@@ -129,6 +102,10 @@
             width: 200px;
             margin: 0;
         }
+    }
+
+    .photo-container {
+        z-index: -1;
     }
 
     .photo-dropdown {
@@ -178,10 +155,6 @@
             }
         }
 
-        .dropdown-content {
-            transform: translate(0) !important;
-        }
-
         .row-dropdown {
             position: absolute;
             top: 50%;
@@ -215,10 +188,6 @@
     .Kanban {
         padding-bottom: 250px;
         margin-bottom: -250px;
-
-        .dropdown-content {
-            transform: translate(-88%, 0) !important
-        }
     }
 
     // Login and sign up 

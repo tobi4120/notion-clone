@@ -1,18 +1,21 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from "./home/home"
 import Login from "./login"
 import Register from "./register"
+import Body from "./home/body_content"
 
 const App = () => {
     return (
         <Router>
-            <Switch>
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/register" component={Register} />
-                <Home />
-            </Switch>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/" element={<Home />}>
+                    <Route path="/:pageId/*" element={<Body />} />
+                </Route>
+            </Routes>
         </Router>
     )
 }

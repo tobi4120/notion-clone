@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     padding: $menu-padding;
-    padding-top: 6.25px;
-    padding-bottom: 6.25px;
     cursor: pointer;
+    border-radius: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
 
     i {
         color: $medium-gray;
@@ -28,7 +29,7 @@
     border-radius: 3px;
     background-color: white;
     font-size: $normal-font-size;
-    z-index: 10;
+    z-index: 100;
     min-width: 180px;
     box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
     rgba(15, 15, 15, 0.2) 0px 9px 24px;
@@ -39,6 +40,7 @@
         padding: 6px 6px;
         display: flex;
         cursor: pointer;
+        align-items: center;
 
         &:hover {
             background-color: $hover-color;
@@ -48,7 +50,7 @@
     i {
         margin: 0px 10px 0px 8px;
         color: $dark-gray;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -103,7 +105,7 @@
 }
 
 @mixin hr {
-    background:rgb(223, 223, 222);
+    background: $border-color;
     height:1px;
     border:none;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { login, logout } from '../actions/LogIn_out_register';
-import { Redirect, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import NotionLogo from './notion-logo';
 import { Alert } from '@material-ui/lab';
@@ -9,9 +9,9 @@ function Login(props) {
     const [ state, setState ] = useState({
         email: 'guest@example.com',
         password: 'password',
-        login_submitted: false,
         incorrect_credentials: false,
     });
+    const navigate = useNavigate();
 
     // Check if user is logged in. If so then log them out.
     useEffect(() => {
@@ -37,16 +37,12 @@ function Login(props) {
         if (response === "Incorrect Credentials") {
             setState({ ...state, incorrect_credentials: true, email: '', password: '' })
         } else {
-            // Set login_submitted to true so that we redirect to home page
-            setState({ ...state, login_submitted: true })
+            // Navigate to home page
+            navigate("/");
         }
     }
 
-    if (state.login_submitted) {
-        return <Redirect to="/" />
-    }
-
-    return(
+    return (
         <div className="login-page">
 
             {/* Incorrect Credentials Alert */}
@@ -61,18 +57,26 @@ function Login(props) {
 
             {/* Log in form */}
             <div className="form">
-                <form onSubmit={handle_submit}>
-
+                <form onSubmit={handle_submit} onChange={handle_change} >
                     <h1>Log in</h1>
 
                     <label>Email</label>
-                    <input type="email" onChange={handle_change} name="email" 
-                    placeholder="Enter your email address..." 
-                    value={state.email} required  /><br />
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Enter your email address..." 
+                        value={state.email} 
+                        required/>
+                    <br />
 
                     <label>Password</label>
-                    <input type="password" onChange={handle_change} name="password" 
-                    placeholder="Enter your password..." value={state.password} required  /><br />
+                    <input 
+                        type="password" 
+                        name="password" 
+                        placeholder="Enter your password..." 
+                        value={state.password} 
+                        required/>
+                    <br />
                     
                     <input type="submit" value="Log in" />
                     <div className="bottom-text">

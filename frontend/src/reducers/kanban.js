@@ -150,8 +150,6 @@ export const kanbansReducer = (kanbans=[], action) => {
 
             kanban_array[index].kanban_group.splice(action.payload.destination.index, 0, ...group)
 
-            console.log(kanban_array)
-
             return kanban_array
 
         case "CHANGE_GROUP_COLOR":

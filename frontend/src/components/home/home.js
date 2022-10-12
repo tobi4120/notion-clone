@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Route, Redirect } from 'react-router-dom';
+import { Navigate, Outlet, useParams } from 'react-router-dom';
 import { connect } from 'react-redux'; 
-
-import Menu from "./menu/menu"
-import Main from "./body_content/main"
-import { fetch_pages } from "../../actions"
-import { get_user_data, logout } from "../../actions/LogIn_out_register"
+import Menu from "./menu";
+import { fetch_pages } from "../../actions";
+import { get_user_data, logout } from "../../actions/LogIn_out_register";
 import Loader from "./loader";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Home(props) {
     const [state, setState] = useState({  
         isLoaded: false,
         isLoggedIn: false,
-        menu_shown: true,
-        hide_menu_animation: 0,
-        show_menu_animation: 0,
-        marginLeft: "235px" 
+        menu_shown: true
     })
+    const { pageId } = useParams();
 
     useEffect(() => {
         componentStart();
@@ -27,23 +24,18 @@ function Home(props) {
 
         // Check if user is logged in (by seeing if there is a token in local storage)
         if (localStorage.getItem('token')) {
-
             try {
                 userResponse = await props.get_user_data()
             } catch {
-
                 // If token is wrong then return back to login and clear token from localstorage
                 localStorage.setItem('token', "")
                 setState({ ...state, isLoaded: true })
                 return
             }
-            // Fetch the pages
+            // Fetch the pages and update state
             await props.fetch_pages(userResponse.id)
-
-            // Update state
             setState({ ...state, isLoaded: true, isLoggedIn: true })
         } else {
-            // Update state
             setState({ ...state, isLoaded: true })
         }
     }
@@ -60,68 +52,32 @@ function Home(props) {
         setState({ ...state, menu_shown: status })
     }
 
-    const close_menu_animation = () => {
-        setState(prevState => ({ ...prevState, hide_menu_animation: 1 }))
-    }
-
-    const open_menu_animation = () => {
-        setState(prevState => ({ ...prevState, show_menu_animation: 1 }))
-    }
-
     if (!state.isLoaded) return <Loader />
-
-    if (!state.isLoggedIn) return <Redirect to="/login" />
-    
-    if (props.computedMatch.isExact) {
-        const address = `/${props.pages[0].id}`
-        return <Redirect to={address} />
-    }
+    if (!state.isLoggedIn) return <Navigate to="/login" />
+    if (!pageId) return <Navigate to={`/${props.pages[0].id}`} />
 
     return (
-        <Router>
-            <div className="home-page">
+        <div className="home-page">
+            {/* Menu */}
+            <AnimatePresence initial={false}>
                 {state.menu_shown &&
-                    <div 
-                        className="menu" 
-                        hide_menu_animation={state.hide_menu_animation}
-                        show_menu_animation={state.show_menu_animation}
-                        onAnimationEnd={(e) => {
-                            if (e.animationName === "hide-menu") 
-                                setState({ ...state, 
-                                            menu_shown: false, 
-                                            marginLeft: 0, 
-                                            hide_menu_animation: 0, 
-                                            show_menu_animation: 0 
-                                        });
-                            else setState({ ...state, 
-                                            marginLeft: "235px",
-                                            hide_menu_animation: 0, 
-                                            show_menu_animation: 0
-                                        });
-                        }}
-                    >
+                    <motion.div 
+                        key="menu"
+                        className="motion-div_menu-anim"
+                        animate={{ width: screen.width <= 725? "90vw": "240px" }}
+                        initial={{ width: "0px" }}
+                        exit={{ width: "0px", transition: { duration: 0.4 } }}
+                        transition={{ duration: 0.3 }}>
                         <Menu 
                             pages={props.pages}
-                            close_menu_animation={close_menu_animation}
+                            toggle_menu={toggle_menu} 
                             logout={logout} />
-                    </div>}
-                
-                <div 
-                    className="body" 
-                    style={{ marginLeft: state.marginLeft }}
-                    hide_menu_animation={state.hide_menu_animation}
-                    show_menu_animation={state.show_menu_animation} 
-                >
-                    <Route path="/:page_id" 
-                        render={(props) => (
-                            <Main {...props} 
-                                menu_shown={state.menu_shown} 
-                                toggle_menu={toggle_menu}
-                                open_menu_animation={open_menu_animation}  />
-                        )} />
-                </div>
-            </div>
-        </Router>
+                    </motion.div>}
+            </AnimatePresence>
+            
+            {/* Body */}
+            <Outlet context={[toggle_menu, state.menu_shown]} />
+        </div>
     )
 }
 

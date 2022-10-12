@@ -19,7 +19,7 @@ from django.views.generic import TemplateView
 from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
-    path('', include('frontend.urls')),
-    path('admin/', admin.site.urls),
     path('', include('backend.urls')),
+    path('', include('frontend.urls')),
+    path('admin/', admin.site.urls)
 ]

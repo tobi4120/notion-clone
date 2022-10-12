@@ -1,7 +1,7 @@
 .kanban {
     margin-bottom: 35px;
     width: 100%;
-    margin-left: 3px;
+    overflow: hidden;
 
     hr {
         @include hr
@@ -18,9 +18,12 @@
 
 .kanban_groups {
     display: flex;
-    margin-top: 10px;
+    padding-top: 10px;
+    overflow: scroll;
+    padding-left: 3px;
 
     .new-group {
+        margin-right: 2px;
         button {
             @include kanabn_button
         }
@@ -52,6 +55,7 @@
             color: $medium-gray;
             padding: 5px;
             border-radius: 3px;
+            // font-size: 1rem;
         }
 
         i:hover {
@@ -73,7 +77,6 @@
             }
 
             p {
-                color: $dark-gray;
                 font-size: $normal-font-size;
                 border-radius: 3px;
                 padding: 1.5px 6px;
@@ -92,12 +95,18 @@
             margin-left: 10px;
         }
     }
+
+    .placeholder {
+        opacity: 0;
+        font-size: 0.1rem;
+    }
 }
 
 .new-card {
     @include kanabn_button;
     height: 32px;
     width: 260px;
+    // margin-top: -20px;
 }
 
 // Kanban Card

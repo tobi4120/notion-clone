@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { register } from '../actions/LogIn_out_register';
 import { add_page } from '../actions/page_menu';
 import { connect } from 'react-redux';
-import { Redirect, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import NotionLogo from './notion-logo';
 import { Alert } from '@material-ui/lab';
 
@@ -13,9 +13,9 @@ function Register(props) {
         email: '',
         password: '',
         confirm_password: '',
-        register_submitted: false,
         alert: ''
-    });     
+    });
+    const navigate = useNavigate();     
 
     const handle_change = (event) => {
         setState({
@@ -47,12 +47,10 @@ function Register(props) {
             // Create a new page for the user
             await props.add_page(null, response.user.id)
 
-            // Set register_submitted to true so that we redirect to home page
-            setState({ ...state, register_submitted: true})
+            // Redirect to home page
+            navigate("/");
         }
     }
-
-    if (state.register_submitted) return <Redirect to="/" />
 
     return(
         <div>
@@ -68,28 +66,27 @@ function Register(props) {
 
             {/* Sign up form */}
             <div className="form" style={{ height: "90vh"}}>
-                <form onSubmit={handleSubmit}>
-
+                <form onSubmit={handleSubmit} onChange={handle_change} >
                     <h1>Sign up</h1>
 
                     <label>First name</label>
-                    <input type="text" onChange={handle_change} name="first_name" 
+                    <input type="text" name="first_name" 
                     placeholder="Enter your first name..." value={state.first_name} required /><br />
 
                     <label>Last name</label>
-                    <input type="text" onChange={handle_change} name="last_name" 
+                    <input type="text" name="last_name" 
                     placeholder="Enter your last name..." value={state.last_name} required /><br />
                     
                     <label>Email</label>
-                    <input type="email" onChange={handle_change} name="email" 
+                    <input type="email" name="email" 
                     placeholder="Enter your email..." value={state.email} required  /><br />
 
                     <label>Password</label>
-                    <input type="password" onChange={handle_change} name="password" 
+                    <input type="password" name="password" 
                     placeholder="Create a password..." value={state.password} required /><br />
 
                     <label>Confirm password</label>
-                    <input type="password" onChange={handle_change} name="confirm_password" 
+                    <input type="password" name="confirm_password" 
                     placeholder="Confirm your password..." value={state.confirm_password} required /><br />
                     
                     <input type="submit" value="Sign up" />

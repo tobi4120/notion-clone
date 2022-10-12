@@ -6,13 +6,21 @@ function ColorDropdown (props) {
         <div className="colors">
             <h3>Colors</h3>
 
-            <div className="side-by-side color" onClick={() => 
-                props.change_color('default')}>
-                <div className="default square"></div>
-                <p>Default</p>
-                {props.selected_color === 'default' && <span className="check"><CheckIcon fontSize={'inherit'} /></span>}
-            </div>
-
+            {props.forElementBackground? 
+                <div className="side-by-side color" onClick={() => 
+                    props.change_color("")}>
+                    <div className="white square"></div>
+                    <p>White</p>
+                    {!props.selected_color && <span className="check"><CheckIcon fontSize={'inherit'} /></span>}
+                </div> :
+                <div className="side-by-side color" onClick={() => 
+                    props.change_color('default')}>
+                    <div className="default square"></div>
+                    <p>Default</p>
+                    {props.selected_color === 'default' && <span className="check"><CheckIcon fontSize={'inherit'} /></span>}
+                </div>
+            }
+           
             <div className="side-by-side color" onClick={() => 
                 props.change_color('grey')}>
                 <div className="grey square"></div>

@@ -16,7 +16,19 @@ from django.conf import settings
 
 # Page API
 class PageViewSet(viewsets.ModelViewSet):
-    queryset = Page.objects.all().order_by('id')
+    def get_queryset(self):
+        user_id = self.request.query_params.get('user_id')
+        orphan = self.request.query_params.get('orphan')
+
+        if user_id and orphan:
+            queryset = Page.objects.filter(creator=user_id, parent=None)
+        elif user_id:
+            queryset = Page.objects.filter(creator=user_id)
+        elif orphan:
+            queryset = Page.objects.filter(parent=None)
+        else:
+            queryset = Page.objects.all()
+        return queryset.order_by('id')
     serializer_class = PageSerializer
 
 # Add Page API

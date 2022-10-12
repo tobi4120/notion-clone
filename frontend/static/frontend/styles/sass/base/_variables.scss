@@ -3,12 +3,16 @@ $dark-gray: rgb(55, 53, 47);
 $medium-gray: rgba($dark-gray, 0.4);
 $med-light-gray: rgba(25, 23, 17, 0.6);
 $hover-color: rgba($dark-gray, 0.08);
-$border-color: rgb(223, 223, 222);
+$border-color: rgb(233, 233, 231);
+$menu-icon-color: rgba(55, 53, 47, 0.45);
 
 // Padding
-$menu-padding: 0px 15px 0px 15px;
+$menu-padding: 5px 14px 5px 14px;
 
 // Font
 $normal-font-size: 0.875rem;
 $menu-font-weight: 600;
 $back-up-fonts: "Helvetica, sans-serif";
+
+// Animations
+$transition: 0.3s;

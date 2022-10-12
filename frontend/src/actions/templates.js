@@ -11,8 +11,7 @@ axios.defaults.xsrfCookieName = 'csrftoken'
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
 // Create and configure table for travel planner template
-export const create_template_table = (current_index, page_id, element_type, order_on_page, element_above_order,
-    element, table_type) => 
+export const create_template_table = (current_index, page_id, element_type, order_on_page, element_above_order, table_type) => 
     async (dispatch) => {
 
         // Get the order for the element on the page
@@ -27,9 +26,7 @@ export const create_template_table = (current_index, page_id, element_type, orde
         const response = await axios.post('/api_page_elements/', {
             element_type: element_type,
             page: page_id,
-            order_on_page: order,
-            group: element.group,
-            column: element.column,
+            order_on_page: order
         }, {headers: headers});
 
         let Table_response = null

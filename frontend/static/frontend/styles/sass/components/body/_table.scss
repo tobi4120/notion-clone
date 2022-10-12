@@ -5,10 +5,19 @@
 
 .table {
     width: 100%;
+
+    .element-options-row {
+        margin-right: 0px;
+    }
 }
 
 .table-container {
     margin-left: 2px;
+    overflow: hidden;
+}
+
+.table-div  {
+    overflow: scroll;
 }
 
 // Table title
@@ -59,12 +68,8 @@
 
 // Table row
 .table-row {
-    .element-options {
-        transition: 0.3s;
-
-        &:hover {
-            transition: 0.3s;
-        }
+    &:hover .element-options-row  {
+        opacity: 1;
     }
 }
 
@@ -80,6 +85,7 @@
     align-items: start;
     padding: 7px 8px;
     white-space: normal;
+    flex-shrink: 0;
 
     &:nth-last-child(2) {
         border-right: none;
@@ -156,6 +162,7 @@
         margin-left: 233px;
         top: 0;
         width: 150px;
+        position: absolute;
 
         p {
             margin-left: 8px;
@@ -210,7 +217,7 @@
     color: $dark-gray;
 
     input {
-        position: absolute;
+        position: fixed;
         background-color: white;
         min-width: 240px;
         box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
@@ -218,9 +225,6 @@
         padding: 9px 10px;
         z-index: 1;
         border-radius: 3px;
-        top: -8px;
-        left: -9px;
-        width: 102.5%;
     }
 
     p {
@@ -256,6 +260,8 @@
 //Multi-select
 .multi-select {
     display: flex;
+    width: 100%;
+    height: 100%;
 
     // Tags shown inside the cell
     .tags {
@@ -272,7 +278,6 @@
 }
 
 .multi-select-popup {
-    position: absolute;
     background-color: white;
     top: -3px;
     left: 0;
@@ -282,6 +287,8 @@
     box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, 
         rgba(15, 15, 15, 0.2) 0px 9px 24px;
     border-radius: 5px;
+    padding: 0px;
+    width: 300px;
 
     // Tag input to create a new tag or select an existing one
     .tag-input-box {
@@ -364,7 +371,6 @@
             border: 1px solid lightgray;
             right: -10%;
             border-radius: 5px;
-            z-index: 2;
             width: 190px;
             box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
             cursor: default;
@@ -403,7 +409,9 @@
     opacity: 0;
     transition: 20ms ease-in 0s;
     padding: 5px;
-    color: rgba(55, 53, 47, 0.4);
+    color: rgba(55, 53, 47, 0.4) !important;
+    font-size: small !important;
+    line-height: 0.9 !important;
 }
 
 .tag-elipse:hover {
@@ -427,6 +435,7 @@
 // Date
 .table-date {
     height: 16.626px;
+    width: 100%;
 
     input {
         padding: 0px;

@@ -1,21 +1,11 @@
 .menu {
-    height: 100%;
-    max-width: 235px;
-    min-width: 235px;
-    padding: 8px 0px 8px 0px;
-    background: rgb(247, 246, 243);
-    position: fixed;
+    background: rgb(251, 251, 250);
     z-index: 5;
-
-    &[hide_menu_animation = '1'] {
-        animation-name: hide-menu;
-        animation-duration: .4s;
-    }
-
-    &[show_menu_animation = '1'] {
-        animation-name: show-menu;
-        animation-duration: .4s;
-    }
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;   /* do not shrink */
+    overflow: hidden;
+    height: 100%;
 
     .arrows {
         display: flex;
@@ -29,9 +19,13 @@
         .arrow-left {
             height: 9px;
             width: 9px;
-            border-bottom: 2px solid $medium-gray;
-            border-right: 2px solid $medium-gray;
+            border-bottom: 1.7px solid $medium-gray;
+            border-right: 1.7px solid $medium-gray;
             transform: rotate(135deg);
+
+            &:first-child {
+                margin-right: -2px;
+            }
         }
 
         &:hover {
@@ -48,13 +42,13 @@
 .menu-header {
     display: flex;
     align-items: center;
-    padding: $menu-padding;
-    margin-bottom: 15px;
+    height: 45px;
+    padding: 2px 14px;
 }
 
 .user-icon {
     text-transform: uppercase;
-    background: $medium-gray;
+    background: rgb(208, 208, 207);
     color: rgba(255, 255, 255, 0.9);
     display: table;
     border-radius: 3px;
@@ -75,6 +69,7 @@
     font-size: 0.9rem;
     font-weight: 600;
     flex: 1;
+    font-family: san-fran-bold, $back-up-fonts;
 }
 
 .search {
@@ -84,64 +79,84 @@
 
 .pages {
     overflow-y: scroll;
-    height: 78vh;
+    flex: 1;
 }
 
 .page {
     @include menu-item;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    margin-left: 3px;
 
-    .fa-caret-right, .fa-caret-down {
-        font-size: 1.2rem;
-        margin-left: 2px;
-        margin-right: 0px;
+    &:hover .page-nav-icons {
+        opacity: 1 !important;
+    }
+
+    .arrow-toggle-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 3px;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+            background-color: rgba(55, 53, 47, 0.08);
+        }
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-left: 7px solid $menu-icon-color;
+        border-bottom: 5px solid transparent;
+        transition: 0.2s;
     }
     
     .page_name {
         flex: 1;
 
-        padding-top: 6.7px;
-        padding-bottom: 6.7px;
-
         .page-title {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            max-width: 100px;
+            max-width: 120px;
             min-height: 16px;
         }
         
     }
 
     .fa-file-alt {
-        margin-left: 10px;
+        margin-left: 5px;
         margin-right: 7px;
         font-size: 1rem;
     }
 
-    .page-options {
+    .menu-dropdown {
+        position: static !important;
 
-        .dropdown_parent {
+        .page-nav-icons  {
+            opacity: 0;
             display: flex;
-            align-items: center;
-        }
 
-        .fa-ellipsis-h, .fa-plus {
-            font-size: 0.8rem;
-            border-radius: 3px;
-            padding: 2.5px;
-            color: rgba(25, 23, 17, 0.6);
-            margin: 0;
-        } 
+            .morehoriz-icon, .add-icon {
+                border-radius: 3px;
+                display: inline-flex;
 
-        .fa-plus {
-            border: 0.5px solid lightgray;
-            margin-left: 5px;
-        }
+                svg {
+                    font-size: 1.1rem;
+                    color: rgba(25, 23, 17, 0.6);
+                }
+        
+                &:hover {
+                    background-color: $hover-color;
+                }
+            }
 
-        .fa-ellipsis-h:hover, .fa-plus:hover {
-            background-color: $hover-color;
+            .add-icon {
+                margin-left: 3px;
+            }
         }
     }
 }
@@ -157,14 +172,20 @@
 
 .add-page {
     @include menu-item;
+    padding-left: 10px;
+
+    svg {
+        font-size: 1.3rem;
+        color: $menu-icon-color;
+        margin-right: 5px;
+    }
 }
 
 .logout {
     @include menu-item;
-
-    position: absolute;
-    bottom: 0;
-    width: 235px;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     box-shadow: rgba(55, 53, 47, 0.09) 0px -1px 0px;
     padding: 15px;
 }
@@ -191,10 +212,9 @@
         color: $medium-gray;
     }
 }
+
 .search-results {
-    div:last-of-type {
-        margin-bottom: 8px;
-    }
+    padding-bottom: 8px;
 }
 
 .result {

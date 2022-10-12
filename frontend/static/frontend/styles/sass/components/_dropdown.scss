@@ -1,22 +1,23 @@
-.dropdown {
+.create_element_dropdown, .element_settings_dropdown {
     position: relative;
-    display: inline-block;
-    
 }
 
-.menu-dropdown {
-    position: static !important;
-}
+// .add-element-drpdn-parent, .element-settings-drpdn-parent, .color-drpdn {
+//     position: absolute !important;
+// }
 
-.dropdown-content, .rename {    
+.dropdown {
     @include dropdown;
-
+    position: fixed;
+    animation-name: dropdownEnterAnimation;
+    animation-duration: 0.3s;
+    
     .element-color {
         color: $dark-gray;
         align-items: center;
 
         i {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: 0;
             margin-right: 7px;
             margin-left: 8px;
@@ -26,6 +27,11 @@
             flex: 1;
         }
     }
+}
+
+@keyframes dropdownEnterAnimation {
+    0%   {opacity: 0}
+    100% {opacity: 1}
 }
 
 .edit-drpdn {
@@ -61,6 +67,14 @@
 
 .left-aligned {
     right: 0;
+}
+
+.dropdown-screen {
+    z-index: 99 !important;
+
+    &:hover .element-options {
+        opacity: 1;
+    }
 }
 
 // Color dropdown
@@ -110,7 +124,7 @@
     flex: 1;
 }
 
-.element-dropdown {
+.element_settings_dropdown {
     .sub-menu {
         top: 0;
         right: -180px;

@@ -1,8 +1,10 @@
 // Base
-@import "base/_animations";
 @import "base/_layout";
 @import "base/_mixins";
 @import "base/_variables";
+
+// Home
+@import "components/_home";
 
 // Components
 @import "components/_menu";

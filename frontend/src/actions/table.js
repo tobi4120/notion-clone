@@ -52,7 +52,7 @@ const createData = async (cols, row_id, rowCount) => {
         const response = await axios.post(`/api_table_data/`, {
             header: header,
             property_type: 'Text',
-            width: 329,
+            width: 309,
             order: dataCount,
             table_row: row_id
         })
@@ -99,7 +99,7 @@ export const insert_column = (order, table_rows, col_index, direction, table_ind
             const response = await axios.post(`api_table_data/`, {
                 header: header,
                 property_type: 'Text',
-                width: 329,
+                width: 309,
                 order: order,
                 table_row: table_rows[i]
             })

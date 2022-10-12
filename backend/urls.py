@@ -5,7 +5,7 @@ from knox import views as knox_views
 from .views import RegisterAPI, LoginAPI, UserAPI
 
 router = routers.DefaultRouter()
-router.register(r'pages', views.PageViewSet)
+router.register(r'pages', views.PageViewSet, basename='Pages')
 router.register(r'add_pages', views.AddPageViewSet)
 router.register(r'page_elements', views.Page_elementViewSet)
 router.register(r'Heading_1s', views.Heading_1ViewSet)

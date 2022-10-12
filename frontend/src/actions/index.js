@@ -32,18 +32,10 @@ axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 // Get all pages
 export const fetch_pages = (user_id) => 
     async (dispatch) => {
-        const response = await axios.get("/api_pages/")
-
-        const pages = []
-
-        // Only get the pages for the current user
-        response.data.forEach(page => {
-            if (page.creator === user_id) {
-                pages.push(page)
-            }
-        });
-
-        dispatch({ type: 'FETCH_PAGES', payload: pages });
+        const response = await axios.get("/api_pages/", { 
+            params: { user_id: user_id, orphan: true } 
+        })
+        dispatch({ type: 'FETCH_PAGES', payload: response.data });
     };
 
 // Select page
@@ -58,11 +50,12 @@ export const select_page = (page_id) =>
             payload = response
         };
         dispatch({ type: 'SELECT_PAGE', payload: payload });
+        return payload.data
     };
 
 // Create page element
 export const create_element = (current_index, page_id, element_type, order_on_page, element_above_order,
-    element, link_pageId, optional_text) => 
+    link_pageId, optional_text) => 
     async (dispatch) => {
 
         // Get the order for the element on the page
@@ -77,9 +70,7 @@ export const create_element = (current_index, page_id, element_type, order_on_pa
         const response = await axios.post('/api_page_elements/', {
             element_type: element_type,
             page: page_id,
-            order_on_page: order,
-            group: element.group,
-            column: element.column,
+            order_on_page: order
         }, {headers: headers});
 
         if (element_type === "Heading_1") {
@@ -142,38 +133,17 @@ export const delete_element = (element) =>
         source.droppableId = `${element.group}${element.column}`
 
         dispatch({ type: 'DELETE_ELEMENT', payload: element });
-        dispatch({ type: 'CHANGE_ORDER', payload: { source } });
     };
 
 // Change order of page element (Updates store)
 export const change_order = (source, destination, new_order, element_id) => {
+    axios.patch(`/api_page_elements/${element_id}/`, {
+        order_on_page: new_order,
+    }, {headers: headers});
 
     const payload = {source, destination, new_order, element_id}
     return { type: 'CHANGE_ORDER', payload: payload };
 };
-
-// Change order of page element (Patch Request)
-export const change_order_patchReq = (page_elements, selected_page) => 
-    async () => {
-        for (const group of page_elements) {
-            for (const column of group) {
-                if (column.length > 0) {
-                    for (const element of column) {
-                        await axios.patch(`/api_page_elements/${element.id}/`, {
-                            order_on_page: element.order_on_page,
-                            group: element.group,
-                            column: element.column,
-                        }, {headers: headers});
-                    }
-                }
-            }
-        };
-
-        // Update the number of groups property
-        await axios.patch(`/api_pages/${selected_page.id}/`, {
-            groups: selected_page.groups
-        })
-    }
 
 // Create a Heading 1
 const create_H1 = async (element_id) => {
@@ -230,24 +200,24 @@ export const edit_text = (text_id, text) =>
     };
 
 // Get page breadcrumb that shows the page location
-let breadcrumb = []
+export const get_breadcrumb = (selectedPage, pages) => {
+    let breadcrumb = []
+    get_breadcrumb_helper(selectedPage, pages, breadcrumb)
+    return { type: 'GET_BREADCRUMB', payload: breadcrumb };
+}
 
-export const get_breadcrumb = (selected_page, page_list) => {
-    if (selected_page.parent === null) {
-
-        breadcrumb.unshift({id: selected_page.id, name: selected_page.name})
-
-        // Copy breadcrumb
-        let breadcrumb_copy = breadcrumb
-
-        // Clear breadcrumb
-        breadcrumb = []
-        return { type: 'GET_BREADCRUMB', payload: breadcrumb_copy };
+const get_breadcrumb_helper = (selectedPage, pages, breadcrumb) => {
+    for (const page of pages) {
+        breadcrumb.push({ id: page.id, name: page.name })
+        
+        if (page.id === selectedPage.id)
+            return true
+        
+        const result = get_breadcrumb_helper(selectedPage, page.children, breadcrumb)
+        if (result) return true
+        breadcrumb.pop()
     }
-    breadcrumb.unshift({id: selected_page.id, name: selected_page.name})
-
-    let index = page_list.findIndex(x => x.id === selected_page.parent)
-        return get_breadcrumb(page_list[index], page_list)
+    return false
 }
 
 // Create a page link
@@ -261,11 +231,11 @@ const create_pageLink = async (element_id, page_id) => {
 }
 
 // Change element background color
-export const change_bgColor = (element_id, color, group, column) => 
+export const change_bgColor = (element_id, color) => 
     async (dispatch) => {
         await axios.patch(`/api_page_elements/${element_id}/`, {
             color: color,
         }, {headers: headers});
 
-        dispatch({ type: 'CHANGE_BG_COLOR', payload: { element_id, color, group, column } });
+        dispatch({ type: 'CHANGE_BG_COLOR', payload: { element_id, color } });
     };

@@ -47,8 +47,8 @@ export const edit_page_name = (page_id, page_name) =>
         dispatch({ type: 'EDIT_PAGE_NAME', payload: response.data });
     };
 
-// On change handler for editing a page name
-export const edit_name_onChange = (page_name, page_id) => {
+// On change handler for editing a page name (updates select page reducer)
+export const changeNameOnBody = (page_name, page_id) => {
     if (!page_name) {
         page_name = "Untitled"
     }
