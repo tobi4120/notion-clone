@@ -11,7 +11,7 @@ function TagOption_dropdown(props) {
             {dropdownShown && 
                 <DropdownContainer 
                     setDropdownShown={setDropdownShown} 
-                    translate_Y="-90%" 
+                    translate_Y="-70%" 
                     className="tag-option-dropdown"> 
                     <TagOptions_dropdownContent
                         tag={props.tag}
