@@ -10,7 +10,6 @@ const MultiSelect_PopUp = (props) => {
 
     return (
         <div>
-
             {/* Tag input - where you can type in new tags + remove tags */}
             <div className="tag-input-box">
                 {data.tags.map((tag, tag_index) => {

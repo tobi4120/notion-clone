@@ -28,7 +28,6 @@ export default function TableData_multi_select(props) {
                     translate_Y="-98%" 
                     translate_X="-37%"
                     className="multi-select-popup"
-                    screen={false}
                     ref={dropdownRef}
                     topSubtraction={22}
                     leftSubtraction={9}>
