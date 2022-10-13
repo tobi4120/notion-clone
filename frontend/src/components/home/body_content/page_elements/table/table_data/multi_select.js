@@ -8,6 +8,8 @@ export default function TableData_multi_select(props) {
 
     return (
         <div className="multi-select" onClick={() => setMultiSelectPopupShown(true)} ref={dropdownRef}>
+
+            {/* Shows the tags in the table cell */}
             <div className="tags">
                 {props.tables[props.table_index].rows[props.row_index + 1].data[props.index].tags.map(
                     tag => {
@@ -18,6 +20,8 @@ export default function TableData_multi_select(props) {
                         )
                     })}
             </div>
+
+            {/* Popup for multi-select tags */}
             {multiSelectPopupShown && 
                 <DropdownContainer
                     setDropdownShown={setMultiSelectPopupShown} 
