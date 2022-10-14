@@ -7,7 +7,7 @@ export default function TableData_multi_select(props) {
     const dropdownRef = useRef(null);
 
     return (
-        <div className="multi-select" onClick={() => setMultiSelectPopupShown(true)} ref={dropdownRef}>
+        <div className="multi-select">
 
             {/* Shows the tags in the table cell */}
             <div className="tags">
@@ -22,23 +22,28 @@ export default function TableData_multi_select(props) {
             </div>
 
             {/* Popup for multi-select tags */}
-            {multiSelectPopupShown && 
-                <DropdownContainer
-                    setDropdownShown={setMultiSelectPopupShown} 
-                    translate_Y="-98%" 
-                    translate_X="-37%"
-                    className="multi-select-popup"
-                    ref={dropdownRef}
-                    topSubtraction={22}
-                    leftSubtraction={9}>
+            <div className="popup-container" 
+                onClick={() => setMultiSelectPopupShown(true)} 
+                ref={dropdownRef}>
 
-                    <MultiSelect_PopUp 
-                        table={props.table}
-                        table_index={props.table_index} 
-                        col_index={props.index}
-                        row_index={props.row_index} />
+                {multiSelectPopupShown && 
+                    <DropdownContainer
+                        setDropdownShown={setMultiSelectPopupShown} 
+                        translate_Y="-98%" 
+                        translate_X="-37%"
+                        className="multi-select-popup"
+                        ref={dropdownRef}
+                        topSubtraction={22}
+                        leftSubtraction={1}>
+
+                        <MultiSelect_PopUp 
+                            table={props.table}
+                            table_index={props.table_index} 
+                            col_index={props.index}
+                            row_index={props.row_index} />
 
                 </DropdownContainer>}
+            </div>
         </div>
     )
 }

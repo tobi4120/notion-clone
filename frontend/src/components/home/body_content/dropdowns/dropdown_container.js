@@ -18,6 +18,8 @@ const DropdownContainer = React.forwardRef((props, ref) => {
         if (window.innerHeight - rect.bottom < 5) {
             transform = `translateY(${props.translate_Y || '-95%'})`
 
+            console.log(true)
+
             // Check if dropdown is past the width of the window size
             if (rect.right > window.innerWidth) {
                 transform = `translateY(${props.translate_Y || '-95%'}) translateX(${props.translate_X || '-20%'})`

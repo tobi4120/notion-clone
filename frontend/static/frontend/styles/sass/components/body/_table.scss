@@ -260,8 +260,6 @@
 //Multi-select
 .multi-select {
     display: flex;
-    width: 100%;
-    height: 100%;
 
     // Tags shown inside the cell
     .tags {
@@ -274,6 +272,14 @@
             margin-right: 7px;
             margin-top: 7px;
         }
+    }
+
+    .popup-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
