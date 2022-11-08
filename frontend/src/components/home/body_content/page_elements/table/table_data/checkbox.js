@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CheckIcon from '@material-ui/icons/Check';
 
-export default function TableData_checkbox() {
+export default function TableData_checkbox(props) {
     const [checkbox, setCheckbox] = useState(props.data.checkbox);
 
     return (

@@ -13,6 +13,7 @@ import TableData_text from "./text";
 import TableData_number from "./number";
 import TableData_multi_select from "./multi_select";
 import TableData_date from "./date";
+import TableData_checkbox from "./checkbox";
 import TableData_url from "./url";
 
 function TableData(props) {
@@ -117,7 +118,7 @@ function TableData(props) {
                     
                 // Checkbox 
                 props.data.property_type === "Checkbox"? 
-                    <TableData_date 
+                    <TableData_checkbox 
                         data={props.data}
                         edit_cell={props.edit_cell} />:
 
